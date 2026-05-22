@@ -60,9 +60,26 @@ interface ModuleViewProps {
   moduleId: string;
 }
 
+const PrintMarkdownComponents: import("react-markdown").Components = {
+  h1: ({ node, ...props }) => <h1 className="text-3xl font-bold mb-6 text-black" {...props} />,
+  h2: ({ node, ...props }) => <h2 className="text-2xl font-bold mt-8 mb-4 border-b border-gray-200 pb-2 text-black" {...props} />,
+  h3: ({ node, ...props }) => <h3 className="text-xl font-bold mt-6 mb-3 text-black" {...props} />,
+  p: ({ node, ...props }) => <p className="mb-4 text-black text-base leading-relaxed" {...props} />,
+  ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-4 text-black" {...props} />,
+  ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-4 text-black" {...props} />,
+  li: ({ node, ...props }) => <li className="mb-2 text-black" {...props} />,
+  strong: ({ node, ...props }) => <strong className="font-bold text-black" {...props} />,
+  blockquote: ({ node, children, ...props }) => (
+    <blockquote className="border-l-4 border-gray-300 pl-4 py-2 my-4 italic text-gray-700 bg-gray-50" {...props}>
+      {children}
+    </blockquote>
+  ),
+};
+
 export default function ModuleView({ moduleId }: ModuleViewProps) {
   const [activeSection, setActiveSection] = useState<Section>("teoria");
   const [content, setContent] = useState<string | QuizQuestion[] | null>(null);
+  const [fullContent, setFullContent] = useState<Record<string, string | QuizQuestion[]>>({});
   const [generatedSections, setGeneratedSections] = useState<Set<string>>(
     new Set()
   );
@@ -78,15 +95,20 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
     const progress = getProgress();
     setIsDone(progress[moduleId] === "done");
 
-    // Check which sections are generated
+    // Check which sections are generated and load full content
     const sections: Section[] = ["teoria", "pratica", "quiz", "projeto"];
     const generated = new Set<string>();
+    const loadedFull: Record<string, string | QuizQuestion[]> = {};
+    
     sections.forEach((s) => {
       if (hasContent(moduleId, s)) {
         generated.add(s);
       }
+      const savedSection = getContent(moduleId, s);
+      if (savedSection) loadedFull[s] = savedSection;
     });
     setGeneratedSections(generated);
+    setFullContent(loadedFull);
 
     // Load current section content
     const saved = getContent(moduleId, "teoria");
@@ -105,6 +127,15 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
           // Force update current view if data for this section was just loaded
           const freshContent = newCache[`${moduleId}_${activeSection}`];
           if (freshContent) setContent(freshContent);
+          
+          // Update full content for print
+          const loadedFull: Record<string, string | QuizQuestion[]> = {};
+          ["teoria", "pratica", "quiz", "projeto"].forEach(s => {
+            if (newCache[`${moduleId}_${s}`]) {
+              loadedFull[s] = newCache[`${moduleId}_${s}`];
+            }
+          });
+          setFullContent(loadedFull);
         }
       })
       .catch(e => console.log("Erro ao buscar JSON em ModuleView", e));
@@ -187,11 +218,20 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
               Fase {phase.id}: {phase.title}
             </p>
           </div>
-          {isDone && (
-            <span className="ml-auto px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-sm font-medium border border-green-500/20">
-              ✓ Concluído
-            </span>
-          )}
+          <div className="ml-auto flex items-center gap-3">
+            <button
+              onClick={() => window.print()}
+              className="px-4 py-2 rounded-lg bg-[#1a2a3f] text-gray-300 hover:text-white hover:bg-[#2a3f5f] transition-colors text-sm font-medium border border-[#2a3f5f] flex items-center gap-2"
+            >
+              <span>🖨️</span>
+              <span className="hidden sm:inline">Exportar PDF</span>
+            </button>
+            {isDone && (
+              <span className="px-3 py-1.5 rounded-full bg-green-500/10 text-green-400 text-sm font-medium border border-green-500/20">
+                ✓ Concluído
+              </span>
+            )}
+          </div>
         </div>
       </div>
 
@@ -286,6 +326,37 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
         ) : (
           <div />
         )}
+      </div>
+
+      {/* Hidden Print View for Entire Module */}
+      <div className="hidden print:block text-black bg-white">
+        <div className="mb-12 border-b-2 border-black pb-4">
+          <h1 className="text-4xl font-extrabold text-black mb-2">{module.id} - {module.title}</h1>
+          <p className="text-xl text-gray-700">Fase {phase.id}: {phase.title}</p>
+        </div>
+        
+        {(["teoria", "pratica", "projeto", "quiz"] as Section[]).map((section) => {
+          if (!fullContent[section]) return null;
+          return (
+            <div key={section} className="page-break mb-12">
+              <h2 className="text-3xl font-bold uppercase mb-6 text-black bg-gray-100 p-3 rounded-lg border-l-8 border-gray-800">
+                {section === "teoria" ? "Teoria" : section === "pratica" ? "Prática" : section === "projeto" ? "Projeto" : "Quiz"}
+              </h2>
+              {section === "quiz" && Array.isArray(fullContent[section]) ? (
+                 <QuizView questions={fullContent[section] as QuizQuestion[]} />
+              ) : (
+                <div className="max-w-none text-black">
+                  <ReactMarkdown 
+                    remarkPlugins={[remarkGfm]}
+                    components={PrintMarkdownComponents}
+                  >
+                    {fullContent[section] as string}
+                  </ReactMarkdown>
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
