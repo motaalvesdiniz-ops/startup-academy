@@ -99,22 +99,22 @@ export default function ApostilaView({ moduleId }: ApostilaViewProps) {
       <div className="print-apostila w-full max-w-[21cm] mx-auto space-y-10 print:space-y-0">
         
         {/* Capa */}
-        <div className="bg-white shadow-[0_10px_40px_rgba(0,0,0,0.1)] print:shadow-none min-h-[29.7cm] flex flex-col items-center justify-center text-center p-10 border border-gray-300 print:border-none print:min-h-0" style={{ pageBreakAfter: 'always', paddingTop: '5cm', paddingBottom: '5cm' }}>
-          <div className="border-4 border-gray-900 p-16 w-[90%] mx-auto relative bg-white">
-            <h3 className="text-xl text-gray-500 uppercase tracking-[0.3em] font-semibold mb-10">
+        <div className="bg-white shadow-[0_10px_40px_rgba(0,0,0,0.1)] print:shadow-none flex flex-col items-center justify-center text-center border border-gray-300 print:border-none break-inside-avoid min-h-[29.7cm] print:min-h-[24cm] print:py-0 py-20" style={{ pageBreakAfter: 'always' }}>
+          <div className="border-4 border-gray-900 p-10 sm:p-16 w-[85%] mx-auto relative bg-white break-inside-avoid">
+            <h3 className="text-xl text-gray-500 uppercase tracking-[0.3em] font-semibold mb-8">
               Startup Academy
             </h3>
-            <h1 className="text-5xl font-extrabold text-black mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-black mb-6 leading-tight">
               {module.title}
             </h1>
-            <div className="h-1 w-32 bg-gray-900 mx-auto mb-8"></div>
-            <p className="text-3xl text-gray-800 font-medium">
+            <div className="h-1 w-24 bg-gray-900 mx-auto mb-6"></div>
+            <p className="text-2xl sm:text-3xl text-gray-800 font-medium">
               Fase {phase.id}
             </p>
-            <p className="text-2xl text-gray-600 mt-2">
+            <p className="text-xl sm:text-2xl text-gray-600 mt-2">
               {phase.title}
             </p>
-            <p className="text-lg text-gray-400 mt-20 font-mono">
+            <p className="text-base sm:text-lg text-gray-400 mt-16 font-mono">
               MÓDULO {module.id}
             </p>
           </div>
