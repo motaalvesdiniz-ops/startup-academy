@@ -219,13 +219,13 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
             </p>
           </div>
           <div className="ml-auto flex items-center gap-3">
-            <button
-              onClick={() => window.print()}
+            <Link
+              href={`/apostila/${module.id}`}
               className="px-4 py-2 rounded-lg bg-[#1a2a3f] text-gray-300 hover:text-white hover:bg-[#2a3f5f] transition-colors text-sm font-medium border border-[#2a3f5f] flex items-center gap-2"
             >
               <span>🖨️</span>
               <span className="hidden sm:inline">Exportar PDF</span>
-            </button>
+            </Link>
             {isDone && (
               <span className="px-3 py-1.5 rounded-full bg-green-500/10 text-green-400 text-sm font-medium border border-green-500/20">
                 ✓ Concluído
@@ -326,58 +326,6 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
         ) : (
           <div />
         )}
-      </div>
-
-      {/* Hidden Print View for Entire Module (Apostila Format) */}
-      <div className="hidden print:block print-apostila bg-white w-full">
-        
-        {/* Capa */}
-        <div className="flex flex-col items-center justify-center text-center pb-20" style={{ minHeight: '25cm', pageBreakAfter: 'always', paddingTop: '5cm' }}>
-          <div className="border-4 border-gray-900 p-16 w-[80%] mx-auto relative">
-            <h3 className="text-xl text-gray-500 uppercase tracking-[0.3em] font-semibold mb-10">
-              Startup Academy
-            </h3>
-            <h1 className="text-5xl font-extrabold text-black mb-8 leading-tight">
-              {module.title}
-            </h1>
-            <div className="h-1 w-32 bg-gray-900 mx-auto mb-8"></div>
-            <p className="text-3xl text-gray-800 font-medium">
-              Fase {phase.id}
-            </p>
-            <p className="text-2xl text-gray-600 mt-2">
-              {phase.title}
-            </p>
-            <p className="text-lg text-gray-400 mt-20 font-mono">
-              MÓDULO {module.id}
-            </p>
-          </div>
-        </div>
-        
-        {/* Conteúdo */}
-        {(["teoria", "pratica", "projeto", "quiz"] as Section[]).map((section) => {
-          if (!fullContent[section]) return null;
-          return (
-            <div key={section} className="page-break mb-12">
-              <div className="border-b-4 border-gray-900 pb-4 mb-8">
-                <h2 className="text-3xl font-black uppercase tracking-wider text-black">
-                  {section === "teoria" ? "1. Teoria" : section === "pratica" ? "2. Prática" : section === "projeto" ? "3. Projeto" : "4. Quiz"}
-                </h2>
-              </div>
-              {section === "quiz" && Array.isArray(fullContent[section]) ? (
-                 <QuizView questions={fullContent[section] as QuizQuestion[]} />
-              ) : (
-                <div className="max-w-none text-black">
-                  <ReactMarkdown 
-                    remarkPlugins={[remarkGfm]}
-                    components={PrintMarkdownComponents}
-                  >
-                    {fullContent[section] as string}
-                  </ReactMarkdown>
-                </div>
-              )}
-            </div>
-          );
-        })}
       </div>
     </div>
   );
