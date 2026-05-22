@@ -1,0 +1,288 @@
+# Projeto: Sistema de OKRs e Liderança para sua Startup
+
+## Visão Geral do Desafio
+
+Você irá construir, do zero, um **Sistema Operacional de OKRs** completo para sua startup (real ou fictícia) — incluindo diagnóstico de liderança, OKRs trimestrais, cadência de revisão e dashboard de acompanhamento. O deliverable final será um documento executivo que você poderá apresentar para co-founders, investidores e membros da equipe.
+
+Este projeto simula uma das transições mais críticas no desenvolvimento de qualquer startup: **o momento em que a empresa deixa de ser um grupo de pessoas com uma ideia e se torna uma organização com processos e sistemas de gestão**.
+
+---
+
+## Contexto de Negócio
+
+Você está fundando (ou lidera) uma startup que acaba de fechar sua primeira rodada de financiamento — seja um pre-seed de amigos e família, um cheque de acelerador, ou um seed de anjos. Isso significa que você tem recursos para os próximos 12-18 meses, mas também tem **obrigações reais**: investidores esperam progresso mensurável, a equipe espera direção clara, e o mercado espera que você valide seu modelo.
+
+Nesse contexto, Ben Horowitz e Paul Graham convergem: sem um sistema de metas claro, com revisões regulares e liderança engajada, o dinheiro será consumido sem progresso real demonstrável. OKRs bem implementados são a diferença entre um relatório de progresso que impressiona investidores e um que gera pedidos de explicação.
+
+---
+
+## O Desafio em 5 Etapas
+
+### Etapa 1: Perfil da Startup e Diagnóstico de Liderança (1-2 horas)
+
+Documente sua startup com as seguintes informações:
+
+**1.1 Perfil da Empresa**
+
+| Campo | Sua Startup |
+|-------|-------------|
+| Nome | |
+| Setor/Vertical | |
+| Problema que resolve | |
+| Cliente-alvo (ICP) | |
+| Estágio atual | Discovery / Validation / Efficiency / Scale |
+| Tamanho da equipe | |
+| MRR atual (ou R$ 0) | |
+| Runway disponível | |
+| Principal métrica de sucesso hoje | |
+
+**1.2 Diagnóstico de Estilo de Liderança**
+
+Responda às seguintes perguntas de forma honesta:
+
+1. Quando surge um problema crítico na sua startup, qual é sua primeira reação?
+   - [ ] Reúno o time para decidirmos juntos
+   - [ ] Decido rapidamente e comunico à equipe
+   - [ ] Analiso por alguns dias antes de agir
+   - [ ] Delego a decisão ao responsável pela área
+
+2. Com que frequência você conversa diretamente com membros da equipe que não são seus reports diretos?
+   - [ ] Raramente — prefiro respeitar a hierarquia
+   - [ ] Semanalmente — faço "rondas" pela empresa/Slack
+   - [ ] Somente em crises
+   - [ ] Diariamente — estou sempre circulando
+
+3. Quando você compartilha informações difíceis (problemas financeiros, pivot, demissão):
+   - [ ] Só falo quando tenho a solução
+   - [ ] Falo assim que tenho clareza do problema
+   - [ ] Filtro para proteger a equipe de stress desnecessário
+   - [ ] Falo imediatamente, mesmo sem solução
+
+Com base nas respostas, identifique:
+- Seu **modo predominante** (Founder Mode vs. Manager Mode)
+- Seu **contexto situacional** (Tempo de Paz vs. Tempo de Guerra)
+- Uma **lacuna de liderança** que você quer desenvolver neste trimestre
+
+---
+
+### Etapa 2: Construção dos OKRs Trimestrais (2-3 horas)
+
+Siga o processo em três camadas:
+
+**Camada 1: OKR da Empresa (1 Objetivo, 3-5 KRs)**
+
+Antes de escrever, responda:
+- Qual é o **maior risco** para o negócio nos próximos 90 dias?
+- Qual é a **maior oportunidade** que podemos capturar?
+- Se conseguíssemos apenas **uma coisa** este trimestre, o que tornaria o trimestre um sucesso?
+
+Agora escreva o OKR da empresa usando a fórmula de Doerr:
+
+```
+Nós vamos [OBJETIVO] como medido por:
+
+KR1: [Resultado mensurável 1]
+KR2: [Resultado mensurável 2]
+KR3: [Resultado mensurável 3]
+[KR4: opcional]
+[KR5: opcional]
+```
+
+**Critérios de qualidade (autoavaliação):**
+- [ ] O Objetivo causa um leve desconforto (é ambicioso)?
+- [ ] Cada KR tem baseline e meta numérica?
+- [ ] Cada KR mede resultado, não atividade?
+- [ ] A equipe consegue citar o Objetivo de cabeça?
+- [ ] Atingir 70% dos KRs seria considerado bom resultado?
+
+**Camada 2: OKRs de Área (1 Objetivo por área, 2-3 KRs)**
+
+Para cada área da sua empresa (Produto, Vendas, CS, etc.), crie 1 OKR que:
+- Seja diretamente ligado ao OKR da empresa
+- Seja definido pelo líder da área (bottom-up)
+- Seja validado pelo CEO (top-down)
+
+Use a tabela:
+
+| Área | Objetivo de Área | KR1 (baseline → meta) | KR2 (baseline → meta) | KR3 (baseline → meta) |
+|------|-----------------|----------------------|----------------------|----------------------|
+| | | | | |
+| | | | | |
+| | | | | |
+
+**Camada 3: Mapa de Alinhamento**
+
+Crie um diagrama (pode ser texto ou visual) que mostre como cada OKR de área **contribui diretamente** para pelo menos um KR da empresa:
+
+```
+OKR EMPRESA
+├── KR1: [Métrica de empresa]
+│   ├── Área Vendas: [OKR de vendas que contribui para KR1]
+│   └── Área Growth: [OKR de growth que contribui para KR1]
+├── KR2: [Métrica de empresa]
+│   └── Área Produto: [OKR de produto que contribui para KR2]
+└── KR3: [Métrica de empresa]
+    └── Área CS: [OKR de CS que contribui para KR3]
+```
+
+---
+
+### Etapa 3: Cadência de Revisão e Rituais de Gestão (1-2 horas)
+
+Defina a cadência de rituais de gestão que manterão os OKRs vivos:
+
+**3.1 Check-in Semanal (toda segunda-feira, 15 minutos)**
+
+Template de atualização assíncrona (via Notion/Slack):
+
+```markdown
+## OKR Check-in — Semana [N] de [Mês]
+
+**Data:** ___________
+**Responsável:** ___________
+
+### Score atual dos KRs:
+- KR1: [X]/10 → [Comentário em 1 frase]
+- KR2: [X]/10 → [Comentário em 1 frase]
+- KR3: [X]/10 → [Comentário em 1 frase]
+
+### Status geral: 🟢 No Caminho / 🟡 Atenção / 🔴 Em Risco
+
+### Principal bloqueio desta semana:
+[Descreva em 1-2 frases]
+
+### Ajuda necessária do CEO/liderança:
+[Específico e acionável]
+```
+
+**3.2 Revisão de Meio-Trimestre (semana 6 do trimestre, 60-90 min)**
+
+Pauta sugerida:
+1. Leitura dos scores de todos os KRs (15 min)
+2. Para cada KR em risco (score < 5/10): análise de causa-raiz (20 min)
+3. Decisão: manter, ajustar ou descontinuar KR (10 min)
+4. Repriorização de recursos se necessário (15 min)
+5. Comprometimento com ações até o final do trimestre (10 min)
+
+**3.3 Revisão Final (última semana do trimestre, 90-120 min)**
+
+Pauta:
+1. Score final de cada KR (0-10)
+2. Retrospectiva: o que aprendemos? (não quem falhou)
+3. Definição dos OKRs do próximo trimestre
+4. Celebração das conquistas
+
+**3.4 Calendário de 1:1s**
+
+Defina o calendário usando o template:
+
+| Pessoa | Cargo | Frequência | Dia/hora fixo | Duração |
+|--------|-------|-----------|--------------|---------|
+| | | Semanal | | 30 min |
+| | | Semanal | | 30 min |
+| | | Quinzenal | | 20 min |
+
+---
+
+### Etapa 4: Dashboard de OKRs (1-2 horas)
+
+Crie um **dashboard visual** que pode ser atualizado semanalmente. Pode ser em Notion, Google Sheets, ou desenhado à mão e fotografado.
+
+**Elementos obrigatórios do dashboard:**
+1. **Score visual de cada KR** (barra de progresso ou nota 0-10)
+2. **Status semáforo** por KR (🟢/🟡/🔴)
+3. **Responsável** por cada KR
+4. **Prazo** do trimestre e semanas restantes
+5. **Histórico de scores** (últimas 4 semanas)
+
+**Template mínimo de dashboard:**
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│  DASHBOARD OKRs — [Nome da Startup] — Q[X] 20XX               │
+│  Semanas restantes: [N]  |  Atualizado em: [DATA]             │
+├────────────────────────────────────────────────────────────────┤
+│  OBJETIVO: [Escreva aqui]                                      │
+├──────┬─────────────────────────────┬────────┬────────┬────────┤
+│  KR  │  Descrição                  │ Atual  │ Meta   │ Score  │
+├──────┼─────────────────────────────┼────────┼────────┼────────┤
+│  KR1 │                             │        │        │  /10 🟡│
+│  KR2 │                             │        │        │  /10 🟢│
+│  KR3 │                             │        │        │  /10 🔴│
+│  KR4 │                             │        │        │  /10 🟡│
+├──────┴─────────────────────────────┴────────┴────────┴────────┤
+│  SCORE MÉDIO DO TRIMESTRE:    /10                              │
+│  MAIORES RISCOS: [Descreva]                                    │
+│  PRÓXIMA AÇÃO CRÍTICA: [O que faremos até sexta?]             │
+└────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### Etapa 5: Apresentação para Stakeholders (2-3 horas)
+
+Prepare um documento de **2-3 páginas** (o formato de "Memo" amazônico) que apresente seus OKRs para:
+- Co-founders (se houver)
+- Investidores (para próximo board meeting ou update mensal)
+- Membros da equipe (para o kickoff do trimestre)
+
+**Estrutura do Memo:**
+
+**Página 1: Contexto e Objetivo**
+- Onde estamos hoje (métricas-chave atuais)
+- Por que este trimestre é crítico
+- Objetivo do trimestre (O do OKR)
+
+**Página 2: Os Key Results e o Plano**
+- Tabela de KRs com baseline e meta
+- Para cada KR: por que essa meta? como vamos atingi-la?
+- Mapa de responsabilidades (quem é dono de cada KR)
+
+**Página 3: Cadência e Governança**
+- Quando revisamos os OKRs?
+- Como a equipe pode acompanhar?
+- O que faremos se um KR entrar em risco?
+- Critério de sucesso do trimestre
+
+---
+
+## Deliverables Esperados
+
+Ao final do projeto, você deve ter produzido:
+
+| Deliverable | Formato | Mínimo |
+|-------------|---------|--------|
+| Perfil da startup + diagnóstico de liderança | Documento | 1 página |
+| OKR da empresa (O + 3-5 KRs) | Tabela | 1 página |
+| OKRs de área (2-3 áreas) | Tabela | 1 página |
+| Mapa de alinhamento (empresa ↔ áreas) | Diagrama/texto | Meia página |
+| Cadência de rituais (calendário) | Tabela | Meia página |
+| Dashboard de OKRs | Visual | 1 página |
+| Memo para stakeholders | Texto | 2-3 páginas |
+
+**Total esperado:** 7-10 páginas de material executivo de qualidade
+
+---
+
+## Rubrica de Avaliação
+
+| Critério | Insuficiente (0-5) | Satisfatório (6-7) | Exemplar (8-10) | Peso |
+|----------|-------------------|--------------------|----------------|------|
+| **Qualidade dos OKRs** | KRs medem atividades; Objetivo vago | KRs mensuram resultados reais; Objetivo claro | OKRs aspiracionais e precisos; alinhamento entre empresa e áreas perfeito | 30% |
+| **Diagnóstico de Liderança** | Superficial, sem auto-crítica | Identifica modo e contexto corretamente | Análise profunda com plano de desenvolvimento pessoal | 20% |
+| **Cadência de Gestão** | Sem rituais definidos ou genéricos | Rituais definidos com frequência e responsáveis | Cadência customizada ao contexto da startup com templates prontos | 20% |
+| **Dashboard** | Ausente ou incompleto | Presente com dados básicos | Visual, completo e com histórico; pronto para uso imediato | 15% |
+| **Memo para Stakeholders** | Confuso ou muito longo | Claro e objetivo | Profissional, conciso e convincente; pode ser enviado hoje | 15% |
+
+---
+
+## Conexão com a Realidade
+
+Este projeto replicou, em microcosmo, o processo que **todo fundador de startup passa ao estruturar sua empresa para crescer**. As ferramentas que você construiu:
+
+- **OKRs bem escritos** são o que investidores querem ver em board meetings — não planilhas de atividades, mas compromissos mensuráveis com resultados específicos
+- **1:1s regulares** são o mecanismo que Ben Horowitz identificou como mais efetivo para detectar problemas antes que se tornem crises — e você agora tem um template e calendário prontos
+- **Dashboard de OKRs público** cria a transparência radical que Horowitz prega — equipes que veem o progresso dos OKRs da empresa se sentem parte do resultado, não apenas executores de tarefas
+- **Memo de OKRs** é o formato que empresas como Amazon e Airbnb usam para comunicação interna e para atualizações de investidores — você praticou a disciplina de ser claro, conciso e orientado a dados
+
+O founder que conclui este projeto sai com documentos que podem ser **usados imediatamente** — não são exercícios teóricos, são artefatos de gestão reais para uma organização real.

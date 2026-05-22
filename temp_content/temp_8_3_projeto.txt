@@ -1,0 +1,267 @@
+# Projeto Final: **Cap Table Simulator** — Da Fundação ao Exit
+
+## Visão Geral do Projeto
+
+Você irá construir uma simulação completa do ciclo de vida acionário de uma startup fictícia — da fundação até uma saída (IPO ou aquisição) — percorrendo quatro rodadas de captação e gerenciando a complexidade crescente de uma cap table real. O deliverable é uma **planilha profissional de cap table** com análise de waterfall e um **memorando de estratégia de fundraising** explicando as decisões tomadas.
+
+Este projeto simula o trabalho que fundadores e CFOs de startups fazem rotineiramente, e que investidores avaliam quando analisam uma empresa.
+
+---
+
+## Contexto de Negócio
+
+Você é co-fundador(a) da **LogiStack**, uma startup B2B de software de gestão logística para pequenas e médias indústrias brasileiras. Fundada há 6 meses, o produto está em beta com 8 clientes piloto pagando R$ 2.000/mês.
+
+**Founders:**
+- **Você** (CEO): foco em produto e vendas
+- **Parceiro(a)** (CTO): foco em tecnologia e infraestrutura
+
+**Missão do projeto**: Simular as decisões acionárias desde a fundação até um exit em 5 anos, passando por rodadas de Seed, Série A, Série B e uma saída.
+
+---
+
+## Premissas Iniciais da LogiStack
+
+| Parâmetro | Valor |
+|-----------|-------|
+| Data de fundação | 6 meses atrás |
+| Ações iniciais emitidas | 10.000.000 |
+| Divisão inicial | CEO 60% / CTO 40% |
+| ARR atual | R$ 192.000 (8 clientes × R$ 2K/mês × 12) |
+| Crescimento mensal | ~20% (beta phase) |
+| Produto | SaaS B2B, MRR growing |
+
+---
+
+## Etapas do Projeto
+
+### Etapa 1: Estrutura Inicial e Fundação (Pré-Investimento)
+
+**1.1 Monte a cap table de fundação:**
+
+```
+CAP TABLE — LOGISTACK — FUNDAÇÃO
+==================================
+| Acionista | Tipo | Ações | % | Preço | Investido |
+|-----------|------|-------|---|-------|-----------|
+| CEO (Você) | Ordinária | 6.000.000 | 60% | R$0,001 | R$6.000 |
+| CTO (Parceiro) | Ordinária | 4.000.000 | 40% | R$0,001 | R$4.000 |
+| TOTAL | | 10.000.000 | 100% | | R$10.000 |
+```
+
+**1.2 Defina o vesting dos founders:**
+- Determine um cronograma de vesting para CEO e CTO
+- Justifique o cliff e o período total
+- Calcule quantas ações estariam "unvested" se um founder saísse após 14 meses
+
+**Pergunta para reflexão**: Por que founders precisam de vesting mesmo entre si? O que aconteceria se o CTO saísse após 6 meses sem vesting?
+
+---
+
+### Etapa 2: Rodada Seed (Mês 8 da Startup)
+
+**Contexto**: Um angel investor com experiência no setor de logística oferece um term sheet.
+
+**Term sheet do angel:**
+```
+RODADA SEED — LOGISTACK
+========================
+Investimento: R$ 800.000
+Pre-money valuation: R$ 3.200.000
+Tipo: Ações Preferenciais Seed
+Option pool: 10% criado pre-money
+Liquidation preference: 1x não-participante
+Board: 3 membros (2 founders, 1 independente)
+Vesting founders: mantém cronograma existente
+Dividendos: não aplicável
+```
+
+**Tarefas da Etapa 2:**
+
+a) **Calcule a diluição completa** considerando:
+   - Criação do option pool pre-money (10%)
+   - Emissão de ações para o angel
+   - Participação final de cada acionista (fully diluted)
+
+b) **Monte a nova cap table** com todas as classes de ações
+
+c) **Calcule o preço por ação da Série Seed**:
+   - Preço = Post-money valuation ÷ Total de ações fully diluted
+
+d) **Analise dois cenários de saída hipotéticos** (no mês 9, logo após a Série Seed):
+   - Venda por R$ 2M (abaixo do post-money)
+   - Venda por R$ 6M (acima do post-money)
+
+---
+
+### Etapa 3: Série A (18 meses após fundação)
+
+**Contexto**: Após 18 meses, a LogiStack atingiu R$ 1,2M ARR com 50 clientes. Um fundo VC top-tier oferece Série A.
+
+**Term sheet Série A:**
+```
+SÉRIE A — LOGISTACK
+====================
+Investimento: R$ 5.000.000
+Pre-money valuation: R$ 15.000.000
+Tipo: Ações Preferenciais Série A
+Option pool: Refresh para 15% fully diluted (criado pre-money)
+Liquidation preference: 1x não-participante
+Anti-diluição: Broad-based weighted average
+Board: 5 membros (2 founders, 2 VC, 1 independente)
+Pro rata: VC tem direito de manter participação em rodadas futuras
+```
+
+**Tarefas da Etapa 3:**
+
+a) **Calcule a nova diluição** a partir da cap table pós-Seed
+
+b) **Avalie o option pool refresh**: O pool existente era de 10%, mas agora o VC quer 15% fully diluted. Quantas ações novas precisam ser criadas? Quem é diluído?
+
+c) **Monte a cap table completa pós-Série A** com todas as classes
+
+d) **Analise o impacto no board**: Os founders ainda têm controle? O que acontece em votações divididas (2 founders vs. 2 VCs)?
+
+e) **Proponha uma contra-oferta** a pelo menos dois termos do term sheet, justificando sua posição
+
+---
+
+### Etapa 4: Série B (36 meses após fundação)
+
+**Contexto**: Com R$ 8M ARR e presença em 3 estados, a LogiStack atrai interesse de fundo de crescimento para Série B.
+
+**Parâmetros da Série B (você define os termos):**
+
+Com base no que aprendeu, **você** é quem propõe os termos da Série B. Use as seguintes premissas:
+- ARR: R$ 8M (múltiplo de receita típico para SaaS B2B: 8-12x ARR)
+- Investimento necessário: R$ 20M (para expansão nacional e contratações)
+- Defina: pre-money valuation, % do novo investidor, liquidation preference, board
+
+**Justifique cada decisão** com base nos frameworks do módulo.
+
+**Tarefas da Etapa 4:**
+
+a) Calcule a pré-money usando múltiplo de ARR de sua escolha (documente a escolha)
+
+b) Calcule diluição dos acionistas existentes
+
+c) Monte a cap table pós-Série B
+
+d) Analise o "retorno do fundo" (*return the fund* analysis):
+   - O fundo VC da Série A investiu R$ 5M
+   - A que valuation de saída o fundo teria retorno de 10x?
+   - Isso é realista dado o crescimento da LogiStack?
+
+---
+
+### Etapa 5: Exit Analysis (Mês 60 — Ano 5)
+
+**Contexto**: A LogiStack recebe duas propostas simultâneas:
+
+**Proposta A — Aquisição estratégica:**
+- Comprador: Grande ERP nacional
+- Valor: R$ 120M à vista
+- Motivação: Adquirir base de clientes e tecnologia
+
+**Proposta B — IPO (abertura de capital):**
+- Banco de investimento estima valuation de R$ 200M na abertura
+- Processo: 6-18 meses, lock-up de 6 meses para founders e VCs
+- Custo do processo: ~R$ 3-5M
+
+**Tarefas da Etapa 5:**
+
+a) **Waterfall completo para a Proposta A (R$ 120M)**:
+   - Liste ordem de pagamento para cada classe de ação
+   - Calcule valor recebido por cada acionista (em R$ e em %)
+   - Compare com o percentual fully diluted de cada um
+
+b) **Análise comparativa A vs. B**:
+   | Fator | Aquisição R$ 120M | IPO R$ 200M |
+   |-------|-------------------|------------|
+   | Liquidez imediata | | |
+   | Risco de execução | | |
+   | Valor para founders | | |
+   | Valor para VCs | | |
+   | Lock-up | | |
+   | Complexidade | | |
+
+c) **Recomendação fundamentada**: Qual opção você escolheria e por quê?
+
+---
+
+## Deliverables Esperados
+
+### 1. Planilha de Cap Table Completa
+
+Uma planilha (Google Sheets ou Excel) com **5 abas**:
+- **Aba 1**: Cap Table Fundação
+- **Aba 2**: Cap Table Pós-Seed (com cálculo de diluição)
+- **Aba 3**: Cap Table Pós-Série A (com cálculo de diluição)
+- **Aba 4**: Cap Table Pós-Série B (com cálculo de diluição)
+- **Aba 5**: Waterfall Analysis — Exit Scenarios
+
+Cada aba deve incluir:
+- Tabela de acionistas com ações e percentuais
+- Preço por ação na rodada
+- Cálculo detalhado de diluição
+- Notas explicativas sobre cada classe de ação
+
+### 2. Memorando de Estratégia de Fundraising (3-5 páginas)
+
+Um documento estratégico cobrindo:
+
+**Seção 1: Decisões e Justificativas** — Para cada rodada, explique:
+- Por que levantou esse valor?
+- Por que aceitou (ou resistiu a) essa valuation?
+- Quais termos foram mais importantes negociar?
+
+**Seção 2: Evolução Acionária** — Tabela resumo mostrando:
+- % de cada grupo (founders, pool, seed, série A, série B) em cada momento
+- Valor em R$ da participação dos founders em cada cenário de exit
+
+**Seção 3: Lições Aprendidas** — 3-5 insights sobre:
+- O que você faria diferente?
+- Qual cláusula teve maior impacto?
+- Como a composição do board evoluiu e o que isso significa?
+
+**Seção 4: Recomendação de Exit** — Justificativa detalhada da decisão A vs. B
+
+---
+
+## Rubrica de Avaliação
+
+| Critério | Insuficiente (0-5) | Satisfatório (6-7) | Exemplar (8-10) | Peso |
+|----------|-------------------|--------------------|----------------|------|
+| **Precisão matemática da cap table** | Erros em cálculos de diluição ou ações | Cálculos corretos com pequenos erros de arredondamento | Todos os cálculos corretos, opções verificadas, formulas explicadas | 30% |
+| **Análise de waterfall** | Ignorou liquidation preferences ou ordem de pagamento | Aplicou preferences corretamente em 1-2 cenários | Análise completa em todos cenários, incluindo análise de conversão vs. preferência | 25% |
+| **Qualidade das decisões de termos** | Aceitou todos os termos sem negociação justificada | Identificou 1-2 pontos para negociar com justificativa básica | Análise estratégica completa, contra-propostas fundamentadas, trade-offs explicados | 20% |
+| **Memorando estratégico** | Apenas descreveu números sem análise | Conectou decisões financeiras com estratégia de negócio | Análise aprofundada, perspectiva de múltiplos stakeholders, recomendação convincente | 15% |
+| **Apresentação e organização** | Planilha confusa, memorando mal estruturado | Layout organizado, fácil de seguir | Profissional, com formatação consistente, cores e nomenclatura claras | 10% |
+
+**Nota mínima para aprovação:** 7.0
+
+**Bônus (+0.5 cada, até +1.0 total):**
+- 📊 Incluiu análise de sensibilidade (o que muda se a valuation da Série B for 30% menor?)
+- 🔢 Calculou o retorno de cada investidor em múltiplos (ex: "Seed angel investiu R$ 800K e receberá R$ X no exit = Xmulti-X")
+
+---
+
+## Conexão com a Realidade
+
+### Por que isso importa para você como founder?
+
+**Cenário real 1 — Antes de uma reunião com VC:**
+Você chega à reunião sabendo exatamente qual é sua posição de negociação. Se o VC propuser option pool pre-money de 20%, você sabe que isso te custa 5 pontos percentuais a mais do que post-money. Você pode contra-propor fundamentadamente.
+
+**Cenário real 2 — Avaliando uma oferta de aquisição:**
+A empresa que comprar a LogiStack oferece R$ 50M. Você consegue calcular em 10 minutos quanto cada sócio, cada investidor e cada funcionário com opções vai receber. Não há surpresas desagradáveis na mesa de assinatura.
+
+**Cenário real 3 — Contratando executivos com equity:**
+Você quer oferecer 0,5% de stock options ao seu novo VP de Vendas. Com a cap table em mãos, você sabe exatamente quantas ações isso representa, qual o preço de exercício, e qual seria o valor em diferentes cenários de exit.
+
+### Depoimento de Founder
+
+> *"Eu assinarei meu primeiro term sheet sem entender a cláusula de liquidation preference. Três anos depois, quando fomos adquiridos por R$ 12M, fiquei chocado ao descobrir que o investidor levaria R$ 8M (sua preferência 2x) e eu ficaria com apenas R$ 2,4M dos R$ 4M restantes — depois de 5 anos de trabalho. Se tivesse feito esse exercício de waterfall antes, nunca teria aceitado aquela cláusula."*
+> — **Founder anônimo, exit em 2023**
+
+Este projeto existe para garantir que você nunca passe por isso.

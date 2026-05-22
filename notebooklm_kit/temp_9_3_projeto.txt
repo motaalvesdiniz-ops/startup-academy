@@ -1,0 +1,176 @@
+# Projeto: Plataforma com Network Effects — Design e Estratégia de Lançamento
+
+## Contexto de Negócio
+
+Você foi selecionado para participar de um programa de aceleração focado em plataformas digitais. A condição de entrada é apresentar uma **Tese de Plataforma** — um documento que demonstra que você compreende os mecanismos de network effects e tem uma estratégia concreta de construção.
+
+O investidor avaliador conhece bem a teoria: ele leu Thiel, Parker, e os papers de Metcalfe. O que ele quer ver é se você consegue **aplicar** esses conceitos ao seu negócio específico, com métricas mensuráveis e estratégia de cold start realista.
+
+> *"Uma startup de plataforma sem estratégia de cold start é como um restaurante sem receita — você pode ter a cozinha mais bonita do mundo, mas não vai servir ninguém."* — Princípio de construção de plataformas
+
+---
+
+## Objetivo do Projeto
+
+Produzir uma **Tese de Plataforma** completa para um negócio com network effects reais, incluindo:
+1. Mapeamento dos lados da rede e do ciclo virtuoso
+2. Estratégia de cold start com milestones
+3. Modelo de monetização que não prejudica o network effect
+4. Métricas de saúde do network e targets para 12 meses
+
+---
+
+## Etapas Detalhadas
+
+### Etapa 1: Seleção e Validação da Tese (2-3 horas)
+
+**1.1 Escolha seu negócio**
+
+Opção A: Use uma ideia própria que você está desenvolvendo
+Opção B: Escolha uma plataforma brasileira existente e refaça sua estratégia de lançamento original
+Opção C: Identifique um setor com baixa digitalização no Brasil e projete a plataforma que o transformaria
+
+**Critério de validação**: Responda SIM a estas 3 perguntas para validar que é uma plataforma com network effect genuíno:
+- Há pelo menos dois grupos distintos de usuários?
+- Cada grupo torna o produto mais valioso para o outro grupo?
+- O produto fica melhor (não apenas maior) com mais usuários?
+
+**1.2 Documente a tese em 1 parágrafo**:
+"[Nome da plataforma] conecta [Grupo A] com [Grupo B]. Quanto mais [Grupo A] usa a plataforma, [benefício para Grupo B]. Isso atrai mais [Grupo B], que por sua vez [benefício para Grupo A], criando um ciclo virtuoso de crescimento. O network effect é do tipo [direto/indireto/dados/local]."
+
+---
+
+### Etapa 2: Mapeamento Profundo da Estrutura da Plataforma (3-4 horas)
+
+**2.1 Análise dos Lados da Rede**
+
+Para cada lado, documente:
+
+| Dimensão | Lado A (Oferta/Produtor) | Lado B (Demanda/Consumidor) |
+|----------|--------------------------|------------------------------|
+| Quem são | [Descreva o perfil] | [Descreva o perfil] |
+| Tamanho estimado no Brasil | [Número] | [Número] |
+| Dor principal sem a plataforma | [Qual problema têm hoje] | [Qual problema têm hoje] |
+| Valor entregue pela plataforma | [O que ganham] | [O que ganham] |
+| Custo de aquisição estimado (CAC) | [R$] | [R$] |
+| Disposição a pagar (willingness to pay) | [Alta/Média/Baixa — por quê] | [Alta/Média/Baixa — por quê] |
+
+**2.2 Diagrama do Ciclo Virtuoso**
+
+Crie um diagrama (pode ser desenhado à mão e fotografado, ou usando Miro/Figma):
+```
+Fase 1: [Ação inicial] 
+    ↓
+Fase 2: [Benefício gerado]
+    ↓
+Fase 3: [Atração de novo grupo]
+    ↓
+Fase 4: [Benefício para o grupo original]
+    ↓
+[Retorna à Fase 1]
+```
+
+---
+
+### Etapa 3: Estratégia de Cold Start (4-5 horas)
+
+Esta é a etapa mais crítica do projeto.
+
+**3.1 Identifique o "harder side"**
+
+Qual lado é mais difícil de adquirir? Justifique com base em:
+- Tamanho do mercado e fragmentação
+- Urgência da dor sem a plataforma
+- Resistência a mudar comportamento
+- Custo de aquisição estimado
+
+**3.2 Crie o "Bowling Pin Map"**
+
+Inspire-se em Thiel (PayPal/eBay) e Moore (Crossing the Chasm). Defina:
+
+| Fase | Nicho Alvo | Meta de Usuários | Critério de Sucesso |
+|------|-----------|-----------------|---------------------|
+| **Fase 0** (MVP) | [Nicho ultra-específico] | [A: X, B: Y] | [Network effect perceptível] |
+| **Fase 1** (Expansão do nicho) | [Nicho adjacente] | [A: X, B: Y] | [Fill rate > X%] |
+| **Fase 2** (Expansão geográfica) | [Segunda cidade/região] | [A: X, B: Y] | [Autossustentável sem subsídio] |
+| **Fase 3** (Escala nacional) | [Brasil inteiro] | [A: X, B: Y] | [Líder de mercado no segmento] |
+
+**3.3 Estratégia de Subsídio**
+
+Defina: qual lado vai subsidiar no lançamento? Como? Quanto? Por quanto tempo?
+
+Template:
+- **Lado a subsidiar**: [Qual e por quê]
+- **Forma do subsídio**: [Grátis / Desconto / Comissão zero / Garantia de renda]
+- **Custo estimado do subsídio**: [R$ por usuário × meta de usuários da Fase 0]
+- **Trigger de remoção do subsídio**: [Quando param os subsídios? Qual métrica valida isso?]
+
+---
+
+### Etapa 4: Modelo de Monetização (2-3 horas)
+
+Plataformas com network effects precisam monetizar sem "envenenar o poço". Analise e escolha:
+
+| Modelo | Como funciona | Risco para o network effect | Quando usar |
+|--------|--------------|---------------------------|-------------|
+| **Take rate** (comissão) | % de cada transação | Médio — pode incentivar bypass | Marketplaces transacionais |
+| **Assinatura** | Fee mensal por acesso | Baixo | SaaS com network effect |
+| **Freemium** | Básico grátis, premium pago | Baixo | Redes com dois segmentos de usuários |
+| **Anúncios** | Empresas pagam para aparecer | Alto — pode alienar usuários | Quando usuário é o produto (atenção) |
+| **Dados** | Venda de insights agregados | Alto — requer consentimento | B2B com dados estratégicos |
+
+**Defina seu modelo e justifique** por que não prejudica o ciclo virtuoso.
+
+---
+
+### Etapa 5: Painel de Métricas de Network Effect (2-3 horas)
+
+Crie um **Dashboard de Saúde do Network** com 6 métricas:
+
+| Métrica | Fórmula | Meta 3 meses | Meta 6 meses | Meta 12 meses | Frequência de medição |
+|---------|---------|-------------|-------------|--------------|----------------------|
+| Fill rate | Pedidos atendidos / Pedidos totais | [%] | [%] | [%] | Diária |
+| DAU/MAU | Ativos diários / Ativos mensais | [%] | [%] | [%] | Semanal |
+| K-factor | Convites enviados × Taxa conv. | [número] | [número] | [número] | Mensal |
+| NPS Lado A | Survey: % Promotores - % Detratores | [score] | [score] | [score] | Mensal |
+| NPS Lado B | Survey: % Promotores - % Detratores | [score] | [score] | [score] | Mensal |
+| Retenção D30 | Usuários ativos D30 / Cadastros | [%] | [%] | [%] | Mensal |
+
+---
+
+## Deliverables
+
+1. **Documento de Tese de Plataforma** (formato livre, 10-15 páginas ou slides equivalentes):
+   - Parágrafo de tese (Etapa 1.2)
+   - Análise dos lados (Etapa 2.1)
+   - Diagrama do ciclo virtuoso (Etapa 2.2)
+   - Bowling Pin Map (Etapa 3.2)
+   - Estratégia de subsídio (Etapa 3.3)
+   - Modelo de monetização (Etapa 4)
+   - Dashboard de métricas (Etapa 5)
+
+2. **Pitch de 5 minutos** (opcional, para turmas com apresentação):
+   - Problema sem plataforma (1 min)
+   - Mecanismo do network effect (2 min)
+   - Estratégia de cold start e monetização (1 min)
+   - Métricas alvo e próximos passos (1 min)
+
+---
+
+## Rubrica de Avaliação
+
+| Critério | Insuficiente (0-5) | Satisfatório (6-7) | Exemplar (8-10) | Peso |
+|----------|-------------------|-------------------|----------------|------|
+| **Validade do Network Effect** | Negócio não tem NE genuíno ou não consegue articular mecanismo | Identifica NE mas com mecanismo vago | Demonstra claramente ciclo virtuoso, tipo de NE, e por que é defensável | 25% |
+| **Estratégia de Cold Start** | Sem estratégia ou "vou fazer marketing" genérico | Identifica o harder side e propõe estratégia | Bowling pin detalhado, fases, subsídio quantificado e trigger de remoção | 30% |
+| **Modelo de Monetização** | Modelo que envenena o NE (ex: cobrar demais cedo) | Modelo adequado com lógica básica | Justifica como monetização preserva ou fortalece o ciclo virtuoso | 20% |
+| **Métricas e Targets** | Sem métricas ou métricas de vaidade | Métricas relevantes sem targets ou sem justificativa | 6 métricas com targets realistas, formula de cálculo e periodicidade | 15% |
+| **Qualidade da Apresentação** | Confuso, sem estrutura lógica | Claro, estruturado, data-driven | Narrativa persuasiva, benchmarks de mercado, visualmente excelente | 10% |
+
+---
+
+## Conexão com a Realidade
+
+A habilidade de construir uma Tese de Plataforma convincente é exatamente o que differentía founders que captam investimento early-stage. Quando Kupor (Andreessen Horowitz) descreve o processo de pitch de VCs, ele enfatiza: a startup precisa convencer sobre **market size + team + go-to-market + product**. Para plataformas, o go-to-market é inseparável da estratégia de cold start e network effects.
+
+Founders que conseguem articular precisamente "como vou resolver o ovo-e-galinha e quando o network effect vai se tornar meu moat" estão dramaticamente mais bem posicionados do que aqueles que apenas descrevem funcionalidades. Como Thiel observa: todo monopólio é único, mas todas as plataformas duráveis compartilham a mesma estrutura fundamental — e agora você sabe como mapeá-la.

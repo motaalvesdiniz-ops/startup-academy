@@ -1,0 +1,270 @@
+# Projeto: Desenhando o Cap Table do Futuro — Da Fundação à Série A
+
+## Visão Geral
+
+Neste projeto, você irá construir um **Cap Table completo e dinâmico** para uma startup do momento da fundação até uma hipotética rodada Série A — com projeção de como a participação dos founders evolui ao longo do tempo.
+
+Um Cap Table (Capitalization Table) é a tabela que mostra quem possui o quê em uma startup: founders, funcionários com opções, investidores anjo, VCs. É um dos documentos mais importantes para qualquer startup que pretenda captar investimento ou ser adquirida.
+
+Construir este projeto força você a pensar através de todas as consequências de cada decisão de equity: quanto diluir em cada rodada, quando conceder opções para funcionários, e como proteger os founders ao longo do caminho.
+
+**Entregável:** Um Cap Table funcional em planilha (Google Sheets ou Excel) com narrativa explicativa de 5-8 páginas justificando cada decisão.
+
+---
+
+## Contexto de Negócio
+
+Você é um dos co-founders da **LogiTrack** — uma plataforma B2B SaaS para gestão de frotas de pequenas transportadoras no Brasil. O produto usa IoT + IA para monitorar veículos, otimizar rotas e prever manutenções.
+
+**Dados do ponto de partida:**
+- 3 co-founders: Lucas (CEO, ex-executivo de logística), Priya (CTO, dev sênior), Fernando (COO, ex-gerente de operações de transportadora)
+- Produto em MVP desde 3 meses, 4 clientes piloto
+- Sem investimento externo até o momento
+- Decisão pendente: como dividir equity e preparar para uma rodada Anjo de R$ 500.000
+
+---
+
+## Etapas do Projeto
+
+### Etapa 1: Fundação — Definindo o Cap Table Inicial (2 horas)
+
+**1.1 Divisão entre os três co-founders**
+
+Usando o framework da aula, determine a divisão inicial de equity entre Lucas, Priya e Fernando. Você precisa justificar sua escolha entre:
+- **Equal split** (33.3% / 33.3% / 33.3%): Argumento para uso quando contributions são difíceis de separar
+- **Diferenciação leve** (40% / 35% / 25%): Reconhece diferentes contribuições sem criar disparidade grande
+- **Diferenciação forte** (50% / 30% / 20%): Reconhece um founder claramente mais crítico
+
+**Para a LogiTrack, considere:**
+- Lucas teve a ideia e tem a rede do setor logístico (mas sem habilidade técnica)
+- Priya construiu 100% do MVP em 3 meses (full-time, sem salário)
+- Fernando entrou 1.5 meses depois, trouxe os 4 clientes pilotos através de sua rede
+
+**Documente sua decisão e justificativa.**
+
+**1.2 Reserva de Option Pool**
+
+Antes de qualquer investimento, crie um **Option Pool** para futuras contratações:
+- Quanto você vai reservar? (Benchmark: 10-20% pré-Anjo; 15-20% pré-Série A)
+- Quem tem autoridade para conceder opções?
+- Qual o plano de vesting para funcionários (sugestão: 4 anos + 1 ano cliff)
+
+**1.3 Template do Cap Table — Momento 0 (Fundação)**
+
+Crie uma aba "Fundação" na planilha com:
+
+| Sócio/Detentor | Tipo de Ação | Ações | % do Total |
+|----------------|-------------|-------|------------|
+| Lucas (CEO) | Ações Ordinárias | | |
+| Priya (CTO) | Ações Ordinárias | | |
+| Fernando (COO) | Ações Ordinárias | | |
+| Option Pool | Opções Reservadas | | |
+| **TOTAL** | | | **100%** |
+
+---
+
+### Etapa 2: Rodada Anjo — Primeira Diluição (2 horas)
+
+**2.1 Negociação da rodada Anjo**
+
+Um investidor anjo oferece R$ 500.000 por 15% da LogiTrack.
+
+Antes de aceitar, calcule:
+- **Valuation implícito:** Se R$ 500.000 = 15%, então 100% = R$ 3.33M
+- **Razoabilidade:** Este valuation faz sentido para uma startup com 4 clientes piloto e MVP funcional?
+- **Dilução dos founders:** Após a rodada, quanto cada founder tem?
+- **Teste da Equity Equation de Graham:** Você acredita que este investidor melhorará seu outcome em mais de 1/(1-0.15) = 1.176 = 17.6%?
+
+**2.2 Considere negociar termos**
+
+Documente quais termos você aceitaria e quais recusaria:
+
+| Termo | Pedido do Anjo | Aceito? | Justificativa |
+|-------|---------------|---------|---------------|
+| Participação | 15% | | |
+| Board seat | 1 cadeira | | |
+| Pro-rata rights | Sim | | |
+| Information rights | Relatórios mensais | | |
+| Anti-dilution | Sim, full ratchet | | |
+| Liquidation preference | 1x participante | | |
+
+**2.3 Cap Table pós-Anjo**
+
+Atualize o Cap Table na aba "Pós-Anjo":
+
+| Sócio/Detentor | Ações | % Antes do Anjo | % Após Anjo |
+|----------------|-------|-----------------|-------------|
+| Lucas | | | |
+| Priya | | | |
+| Fernando | | | |
+| Option Pool | | | |
+| Investidor Anjo | | | |
+| **TOTAL** | | | **100%** |
+
+---
+
+### Etapa 3: Contratações-Chave — Concessão de Opções (2 horas)
+
+Após a rodada Anjo, a LogiTrack precisa de dois contratados críticos:
+
+**Contratação 1:** Head de Vendas
+- Experiência: 5 anos em SaaS B2B, conhece o setor de logística
+- Proposta: Salário R$ 8.000/mês (abaixo do mercado) + opções
+- Expectativa: Quanto de equity é razoável para este perfil?
+
+**Contratação 2:** Engenheiro de Machine Learning (Sênior)
+- Experiência: 7 anos, PhD em otimização de rotas
+- Proposta: Salário R$ 12.000/mês (70% do mercado) + opções
+- Expectativa: Quanto de equity é razoável?
+
+**Use a fórmula de Graham para calcular:**
+```
+Se um novo funcionário pode melhorar o outcome médio da empresa em i%,
+ele vale n = (i-1)/i de equity (descontando o efeito do salário).
+```
+
+**Documente:**
+- Porcentagem oferecida a cada contratado
+- Estrutura de vesting (cliff, período, aceleração)
+- Impacto no Option Pool disponível
+- Cap Table atualizado com opções concedidas
+
+**Aba "Pós-Contratações":**
+
+| Detentor | Tipo | Ações | % | Vesting |
+|----------|------|-------|---|---------|
+| Lucas | Ord. | | | 4a/1a cliff |
+| Priya | Ord. | | | 4a/1a cliff |
+| Fernando | Ord. | | | 4a/1a cliff |
+| Inv. Anjo | Pref. | | | N/A |
+| Head Vendas | Opções | | | 4a/1a cliff |
+| ML Engineer | Opções | | | 4a/1a cliff |
+| Option Pool restante | Opções | | | |
+| **TOTAL** | | | **100%** | |
+
+---
+
+### Etapa 4: Série A — Segunda Rodada de Diluição (2 horas)
+
+18 meses após a rodada Anjo, a LogiTrack atingiu:
+- R$ 1.2M ARR (crescendo 15% ao mês)
+- 40 clientes pagantes
+- 2 funcionários contratados com opções
+
+Um VC oferece Série A: R$ 5.000.000 por 22% da empresa.
+
+**4.1 Análise da oferta:**
+
+```
+Valuation pós-money implícito = R$ 5M / 22% = R$ 22.7M
+Valuation pré-money = R$ 22.7M - R$ 5M = R$ 17.7M
+
+Múltiplo ARR = R$ 17.7M / R$ 1.2M ARR = 14.75x ARR
+(Benchmark 2024 para SaaS B2B early-stage Brasil: 8-20x ARR — razoável)
+```
+
+**4.2 Pré-Série A: Expandir o Option Pool**
+
+Investidores de Série A geralmente exigem um Option Pool de 15-20% no pré-money para futuras contratações. Isso significa:
+
+- Quantas ações novas precisam ser criadas para expandir o pool?
+- Quem é diluído? (Normalmente, os founders — não o investidor Anjo)
+- Qual a posição final dos founders pós-expansão e pós-Série A?
+
+**4.3 Cap Table Final — Série A:**
+
+| Detentor | Ações | % Pré-Série A | % Pós-Série A |
+|----------|-------|--------------|--------------|
+| Lucas | | | |
+| Priya | | | |
+| Fernando | | | |
+| Investidor Anjo | | | |
+| Série A VC | | | |
+| Head Vendas | | | |
+| ML Engineer | | | |
+| Option Pool disponível | | | |
+| **TOTAL** | | | **100%** |
+
+---
+
+### Etapa 5: Análise de Sensibilidade e Cenários Alternativos (2 horas)
+
+**5.1 Cenário: E se um co-founder saísse no mês 10?**
+
+Fernando, o COO, decide sair no mês 10 (antes do cliff de 12 meses).
+
+Responda:
+- Com vesting: quantas ações Fernando mantém?
+- Como o cap table muda?
+- O que acontece com as ações não vestidas?
+- Como isso afeta a próxima rodada de investimento?
+- O que você faria para substituir Fernando? (Quantas opções você ofereceria para um novo COO?)
+
+**5.2 Cenário: E se Luke tivesse pedido 60% na fundação?**
+
+Simule um cenário alternativo onde Lucas insistiu em 60% (por ter tido a ideia e ser CEO).
+
+- Como a Série A fica para Lucas? E para Priya e Fernando?
+- O investidor de Série A teria conforto com esse cap table?
+- Benchmark: VCs geralmente querem ver founders coletivamente com >20% após Série A
+- Qual seria o impacto no alinhamento de incentivos da equipe?
+
+---
+
+## Template da Narrativa Explicativa
+
+Junto com a planilha, escreva um documento de 5-8 páginas com:
+
+### 1. Filosofia de Divisão (1 página)
+- Por que você escolheu a divisão inicial?
+- Quais critérios priorizou?
+- O que a fórmula de Graham diz sobre cada transação?
+
+### 2. Análise de Cada Rodada (2 páginas)
+- Justificativa para aceitar (ou negociar) os termos da rodada Anjo
+- Avaliação do valuation da Série A versus benchmarks de mercado
+- Impacto de cada rodada no alinhamento de incentivos dos founders
+
+### 3. Decisões de Option Pool (1 página)
+- Por que o tamanho do pool inicial escolhido?
+- Raciocínio para as opções de cada contratação-chave
+- Como balancear atratividade para talentos versus diluição dos founders?
+
+### 4. Cenários de Risco (2 páginas)
+- Análise do cenário de saída de Fernando
+- Análise do cenário com Cap Table desbalanceado (60% Lucas)
+- Outras situações de risco identificadas no seu Cap Table
+
+### 5. Reflexão do Founder (1 página)
+- O que você aprendeu ao construir este Cap Table?
+- Qual foi a decisão mais difícil?
+- O que você faria diferente se fosse um dos co-founders da LogiTrack?
+
+---
+
+## Rubrica de Avaliação
+
+| Critério | Insuficiente (0-4) | Satisfatório (5-7) | Exemplar (8-10) | Peso |
+|----------|-------------------|-------------------|----------------|------|
+| **Precisão matemática do Cap Table** | Cálculos incorretos, percentuais não fecham 100% | Cálculos corretos com pequenos erros | Planilha precisa, todos os cenários matematicamente corretos | 25% |
+| **Qualidade das Justificativas** | Decisões sem fundamentação teórica | Usa alguns conceitos do módulo | Fundamenta cada decisão em Graham, Wasserman ou dados de mercado | 25% |
+| **Análise de Cenários** | Apenas cenário base, sem alternativas | 1 cenário alternativo analisado | 2+ cenários com análise de impacto detalhada | 20% |
+| **Raciocínio Estratégico** | Foca apenas nos números sem pensar em implicações | Conecta números a impacto na empresa | Demonstra visão de longo prazo sobre alinhamento de incentivos | 15% |
+| **Usabilidade do Entregável** | Planilha desorganizada, narrativa confusa | Planilha clara, narrativa estruturada | Cap Table + narrativa que você apresentaria a um investidor real | 15% |
+
+**Bônus:**
+- +1 ponto: Simular um quarto evento (ex: aquisição ou bridge round)
+- +1 ponto: Incluir cálculo de waterfall de liquidação em diferentes exit values
+- +1 ponto: Comparar sua estrutura com cap tables públicos de startups brasileiras conhecidas
+
+---
+
+## Conexão com a Realidade
+
+Este projeto replica exatamente o que acontece em qualquer startup que capta investimento externo. O cap table é um documento vivo que founders revisitam antes de cada rodada, a cada nova contratação sênior, e em qualquer evento de liquidez.
+
+Segundo Wasserman em *"The Founder's Dilemmas"*: founders que entendem profundamente seu cap table tomam melhores decisões sobre quando e quanto captar, a quem dar opções, e quando é hora de buscar um exit. Founders que ignoram este documento frequentemente se surpreendem negativamente na hora mais crítica — quando o dinheiro está na mesa.
+
+> *"A semente para todo esse sucesso — e a própria ideia de Receita Previsível — foi plantada de forma incrivelmente dolorosa por uma falha minha."* — Aaron Ross sobre aprender da maneira difícil.
+
+Você não precisa aprender da maneira difícil. Construa seu cap table agora.

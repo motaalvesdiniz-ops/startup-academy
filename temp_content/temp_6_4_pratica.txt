@@ -1,0 +1,339 @@
+# Exercício Prático: Construindo Seu Primeiro Pipeline de Vendas
+
+## Objetivo do Exercício
+
+Ao final deste exercício, você terá:
+- Um Ideal Customer Profile (ICP) documentado para sua startup
+- Uma lista de 20 prospects qualificados com base no ICP
+- Um e-mail de prospecção testado e pronto para envio
+- Um funil de vendas básico para acompanhar seu pipeline
+- Um script de discovery call para as primeiras conversas
+
+Este exercício é 100% executável hoje, independentemente do estágio da sua startup. Se você ainda não tem produto, use uma hipótese de ICP. Se já tem clientes, refine seu ICP com base em quem já comprou.
+
+## Contexto
+
+Você é o founder da **TalentFlow**, uma startup B2B SaaS que ajuda empresas de médio porte (50-500 funcionários) a automatizar o processo de onboarding de novos colaboradores. O produto existe em beta com 3 clientes pagantes que pagam R$ 800/mês. Você precisa chegar a R$ 10.000 MRR em 90 dias para validar o modelo antes da próxima rodada de capital.
+
+*Use este exemplo como referência e substitua pelos dados da sua própria startup.*
+
+---
+
+## Passo a Passo
+
+### Etapa 1: Defina Seu ICP (Ideal Customer Profile) — 30 minutos
+
+Um ICP não é uma persona de marketing — é a descrição precisa da empresa que tem mais probabilidade de comprar, usar e renovar seu produto. Para B2B, o ICP descreve a **empresa**, não a pessoa.
+
+**Preencha o template abaixo:**
+
+```markdown
+## MEU ICP
+
+### Características da Empresa
+- Setor(es): _____
+- Tamanho (número de funcionários): _____ a _____
+- Faturamento anual estimado: R$ _____ a R$ _____
+- Localização: _____
+- Estágio de crescimento: [Estável / Crescendo rápido / Em expansão]
+
+### Problema Que Eu Resolvo Para Esta Empresa
+- Dor primária: _____
+- Consequência da dor (custo, tempo perdido, risco): _____
+- Solução alternativa atual (como resolvem sem mim?): _____
+
+### Perfil do Decisor (pessoa que aprova a compra)
+- Cargo típico: _____
+- Principal métrica de sucesso desta pessoa: _____
+- Principal obstáculo para comprar meu produto: _____
+
+### Sinais de Qualificação (como identifico se é um bom fit?)
+- Sinal 1: _____
+- Sinal 2: _____
+- Sinal 3: _____
+
+### O Que Disqualifica (quem eu NÃO devo tentar vender)
+- _____
+- _____
+```
+
+---
+
+### Etapa 2: Monte Sua Lista de 20 Prospects — 60 minutos
+
+Com o ICP definido, identifique 20 empresas que se encaixam. Fontes gratuitas para começar:
+
+**LinkedIn Sales Navigator (se disponível):**
+- Filtros: Setor + Tamanho + Localização + Cargo do decisor
+- Exporte nomes, cargos e URLs de perfil
+
+**LinkedIn gratuito:**
+- Busque pelo cargo do decisor (ex: "Head of People 500-1000 funcionários")
+- Identifique a empresa e verifique no site se atende ao ICP
+
+**Google:**
+- `site:linkedin.com/in "RH Manager" "empresa de tecnologia"` 
+- Listas de "melhores empresas para trabalhar" do setor alvo
+
+**Fontes brasileiras:**
+- Exame Maiores e Melhores
+- Great Place to Work Brasil
+- Distrito Platform (startups)
+
+**Template de lista de prospects:**
+
+```markdown
+| # | Empresa | Setor | Funcionários | Decisor | Cargo | LinkedIn | Email (estimado) | Sinal de Fit |
+|---|---------|-------|-------------|---------|-------|----------|-----------------|-------------|
+| 1 | | | | | | | | |
+| 2 | | | | | | | | |
+...
+| 20 | | | | | | | | |
+```
+
+---
+
+### Etapa 3: Escreva Seu E-mail de Prospecção — 45 minutos
+
+Baseado no método "Cold Email 2.0" de Aaron Ross (*Receita Previsível*), seu primeiro e-mail deve:
+- Ter no máximo 5 frases
+- Não mencionar seu produto nas primeiras frases
+- Mencionar algo específico sobre a empresa/pessoa
+- Ter um CTA de baixo compromisso
+
+**Template de e-mail:**
+
+```
+Assunto: [Empresa deles] + [resultado específico que você entrega]
+
+Oi [Nome],
+
+[Observação específica sobre a empresa/cargo deles — algo que demonstra que você pesquisou].
+
+[Problema específico que empresas como a deles enfrentam — seja preciso, use números se possível].
+
+[O que você faz diferente para resolver isso — sem jargão, sem features].
+
+Faz sentido conversar 15 minutos esta semana?
+
+[Seu nome]
+[Cargo]
+[Telefone]
+```
+
+---
+
+### Etapa 4: Monte Seu Funil de Vendas — 30 minutos
+
+Um funil simples de 5 estágios para acompanhar seus 20 prospects:
+
+```markdown
+## FUNIL DE VENDAS — [Mês/Ano]
+
+### ESTÁGIO 1: IDENTIFICADO (Prospects na lista)
+| Empresa | Decisor | Data de Identificação | Próxima Ação |
+|---------|---------|----------------------|--------------|
+| | | | |
+
+### ESTÁGIO 2: CONTATADO (E-mail enviado, aguardando resposta)
+| Empresa | Data do 1º Email | Resposta? | Follow-up Agendado |
+|---------|-----------------|-----------|-------------------|
+| | | | |
+
+### ESTÁGIO 3: ENGAJADO (Respondeu, demonstrou interesse)
+| Empresa | Canal de Resposta | Próximo Passo | Data da Call |
+|---------|------------------|---------------|-------------|
+| | | | |
+
+### ESTÁGIO 4: EM NEGOCIAÇÃO (Demo feita, proposta enviada)
+| Empresa | Data da Demo | Proposta Enviada | Valor | Decisão Prevista |
+|---------|-------------|-----------------|-------|-----------------|
+| | | | | |
+
+### ESTÁGIO 5: FECHADO (Ganho ou Perdido)
+| Empresa | Status | Valor | Motivo (se perdido) | Data |
+|---------|--------|-------|--------------------|----- |
+| | | | | |
+```
+
+---
+
+### Etapa 5: Script de Discovery Call — 30 minutos
+
+Quando um prospect responde e aceita uma conversa, você precisa de um script de discovery. O objetivo desta call é **aprender**, não vender. Resista à tentação de apresentar o produto antes de entender o problema.
+
+**Estrutura da Discovery Call (30-45 minutos):**
+
+```markdown
+## SCRIPT DE DISCOVERY CALL
+
+### Abertura (2 minutos)
+"Obrigado pelo tempo, [Nome]. Meu objetivo hoje não é te vender nada — 
+é entender se faz sentido explorarmos uma parceria. 
+Pode me contar um pouco sobre como vocês lidam hoje com [área que você resolve]?"
+
+### Discovery (15-20 minutos)
+PERGUNTAS DE SITUAÇÃO (o que têm hoje):
+- "Como funciona o processo de [área] atualmente?"
+- "Quais ferramentas vocês usam?"
+- "Quantas pessoas estão envolvidas neste processo?"
+
+PERGUNTAS DE PROBLEMA (o que não funciona):
+- "Qual é a maior dificuldade com o processo atual?"
+- "Quando esse problema acontece, qual é o impacto?"
+- "Vocês já tentaram resolver de outras formas?"
+
+PERGUNTAS DE IMPLICAÇÃO (consequências do problema):
+- "Esse problema está crescendo ou diminuindo?"
+- "Quanto tempo sua equipe perde com isso por semana?"
+- "Qual seria o impacto se isso fosse resolvido?"
+
+PERGUNTAS DE NECESSIDADE (visão do futuro):
+- "Como seria o processo ideal para vocês?"
+- "O que seria sucesso para você neste projeto?"
+
+### Qualificação (5 minutos)
+- "Qual é o prazo para vocês decidirem sobre isso?"
+- "Além de você, quem mais estaria envolvido na decisão?"
+- "Há algum orçamento reservado para isso?"
+
+### Fechamento da Call (5 minutos)
+"Com base no que você me contou, acredito que podemos ajudar com [problema específico].
+Faz sentido eu te mostrar como funciona em uma demo rápida?"
+→ Se SIM: Agende a demo na hora
+→ Se NÃO: "O que impede de avançar?"
+```
+
+---
+
+## Exemplo Completo Preenchido — TalentFlow
+
+### ICP da TalentFlow (Exemplo Completo)
+
+```markdown
+## MEU ICP — TalentFlow
+
+### Características da Empresa
+- Setor(es): Tecnologia, Fintechs, Scale-ups de qualquer setor
+- Tamanho (número de funcionários): 80 a 400 funcionários
+- Faturamento anual estimado: R$ 10M a R$ 100M
+- Localização: São Paulo, Rio de Janeiro, Belo Horizonte (inicialmente)
+- Estágio de crescimento: Crescendo rápido (contratando 20+ pessoas/mês)
+
+### Problema Que Eu Resolvo Para Esta Empresa
+- Dor primária: Onboarding manual e inconsistente faz novos colaboradores 
+  demorarem 60-90 dias para serem produtivos, quando a media do setor é 30 dias
+- Consequência: R$ 15.000-40.000 por contratação em tempo perdido de RH e gestor
+- Solução alternativa atual: Planilhas Excel + emails manuais + treinamentos presenciais improvisados
+
+### Perfil do Decisor
+- Cargo típico: Head of People / HR Manager / CHRO / COO
+- Principal métrica: Time-to-productivity de novos colaboradores, 
+  satisfação no período de experiência, retenção no primeiro ano
+- Principal obstáculo para comprar: "Já temos muitas ferramentas de RH, 
+  não queremos mais uma" / Budget aprovado trimestral
+
+### Sinais de Qualificação
+- Sinal 1: Empresa contratou 15+ pessoas nos últimos 3 meses (verifica no LinkedIn)
+- Sinal 2: Tem job opening para "People Ops" ou "Onboarding Specialist" 
+  (problema reconhecido)
+- Sinal 3: Usa Slack, Notion ou Confluence (indica maturidade digital, 
+  integração mais fácil)
+
+### O Que Disqualifica
+- Empresas com menos de 50 funcionários (problema ainda não é doloroso o suficiente)
+- Empresas com high turn-over por motivo de negócio (não é problema de onboarding)
+- Setor público ou empresas muito tradicionais (ciclo de venda muito longo)
+```
+
+### E-mail de Prospecção da TalentFlow (Exemplo)
+
+```
+Assunto: [NomeDaEmpresa] + 40% menos tempo de onboarding
+
+Oi Maria,
+
+Vi que a [NomeDaEmpresa] contratou mais de 25 pessoas nos últimos 2 meses — 
+crescimento incrível.
+
+Empresas em expansão acelerada como a de vocês tipicamente veem o tempo 
+de ramping de novos colaboradores subir de 30 para 90 dias, porque o 
+onboarding não acompanha o ritmo.
+
+Trabalhamos com 3 scale-ups de tecnologia que reduziram o tempo de 
+produtividade de novos colaboradores em 40% nos primeiros 60 dias.
+
+Faz sentido conversarmos 15 minutos esta semana?
+
+Pedro Silva
+CEO, TalentFlow
++55 11 99999-9999
+```
+
+### Lista de 20 Prospects da TalentFlow (Exemplo Parcial)
+
+| # | Empresa | Setor | Funcionários | Decisor | Cargo | Sinal de Fit |
+|---|---------|-------|-------------|---------|-------|--------------|
+| 1 | Contabilizei | Fintech | ~200 | Ana Lima | Head of People | 30 contratações recentes |
+| 2 | Gympass | HRTech | ~300 | João Souza | HR Manager | Expansão Brasil |
+| 3 | Creditas | Fintech | ~400 | Carla Reis | People Ops Lead | Scale-up ativo |
+| 4 | Pipefy | SaaS | ~180 | Lucas Neto | CHRO | Expansão global |
+| 5 | Hotmart | EdTech | ~350 | Fernanda Melo | Head of HR | Crescimento acelerado |
+
+### Funil da TalentFlow Após 2 Semanas (Exemplo)
+
+```markdown
+## FUNIL DE VENDAS — Maio 2026
+
+### ESTÁGIO 1: IDENTIFICADO
+Total: 20 prospects | Foco: escale-ups tech SP/RJ
+
+### ESTÁGIO 2: CONTATADO
+Total: 20 emails enviados
+Taxa de abertura: ~45% (9 abriram)
+Taxa de resposta: ~20% (4 responderam)
+
+### ESTÁGIO 3: ENGAJADO
+- Contabilizei: Respondeu, quer call na quarta
+- Gympass: Interessada, pediu mais info por email
+- Pipefy: Respondeu "interessante, mas agora não é prioridade" 
+  (follow-up em 30 dias)
+
+### ESTÁGIO 4: EM NEGOCIAÇÃO
+- Creditas: Demo feita, proposta de R$ 1.200/mês enviada,
+  decisão prevista para 15/06
+
+### ESTÁGIO 5: FECHADO
+- Hotmart: GANHO — R$ 1.000/mês, início em 01/06
+- 1 prospect disqualificado (empresa com 30 funcionários)
+```
+
+---
+
+## Métricas Para Acompanhar Nesta Semana
+
+Ao final da primeira semana de execução, registre:
+
+| Métrica | Meta | Seu Resultado |
+|---------|------|--------------|
+| Prospects identificados | 20 | |
+| Emails enviados | 20 | |
+| Taxa de abertura (%) | > 40% | |
+| Taxa de resposta (%) | > 15% | |
+| Discovery calls agendadas | ≥ 3 | |
+| Demos realizadas | ≥ 1 | |
+| Propostas enviadas | ≥ 1 | |
+
+---
+
+## Reflexão Final
+
+Ao concluir este exercício, responda:
+
+1. **O que aprendi sobre meu ICP** que não sabia antes de pesquisar os prospects?
+2. **Qual foi a maior dificuldade** ao montar a lista de 20 prospects?
+3. **Quais objeções** você já antecipa que vai receber?
+4. **O que você mudaria** no e-mail de prospecção antes de enviar?
+5. **Qual prospect** você tem mais vontade de contatar primeiro, e por quê?
+
+As respostas a estas perguntas são o início do seu playbook de vendas.

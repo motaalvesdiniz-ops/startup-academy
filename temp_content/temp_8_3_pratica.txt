@@ -1,0 +1,305 @@
+# Exercício Prático: Simulação de Rodada de Investimento — Do Term Sheet à Cap Table
+
+## Objetivo
+
+Ao final deste exercício, você será capaz de:
+- Interpretar um term sheet real com cláusulas de liquidation preference, option pool e anti-diluição
+- Calcular a diluição exata dos founders antes e depois de uma rodada
+- Construir uma cap table completa com fully diluted shares
+- Realizar uma análise de waterfall em múltiplos cenários de saída
+- Identificar cláusulas abusivas em um term sheet e propor contra-oferta fundamentada
+
+## Contexto
+
+Você é co-fundador da **HealthPath** — uma plataforma B2B de saúde corporativa que conecta empresas com redes de clínicas para gestão de saúde preventiva dos funcionários. Fundada há 18 meses, vocês têm:
+- R$ 8M em ARR crescendo 15%/mês
+- 45 empresas clientes (ticket médio R$ 15K/mês)
+- Equipe de 22 pessoas
+- Dois founders (você com 55%, seu co-fundador com 45%)
+- Sem investimento externo até agora (bootstrapped)
+
+Um fundo de venture capital top-tier acaba de enviar um term sheet para uma **Série A de R$ 8M**.
+
+---
+
+## Etapa 1: Leia e Interprete o Term Sheet (20 min)
+
+Abaixo está um term sheet **simplificado mas real** da Série A da HealthPath. Leia cada cláusula e responda as perguntas ao lado.
+
+---
+
+```
+TERM SHEET — SÉRIE A
+HealthPath Saúde Tecnológica S.A.
+
+DATA: [hoje]
+INVESTIDOR LEAD: Fundo Horizonte Ventures IV
+INVESTIMENTO: R$ 8.000.000 (oito milhões de reais)
+TIPO DE AÇÃO: Ações Preferenciais Série A
+
+1. PRE-MONEY VALUATION: R$ 32.000.000
+2. POST-MONEY VALUATION: R$ 40.000.000
+3. PARTICIPAÇÃO DO INVESTIDOR: 20%
+
+4. LIQUIDATION PREFERENCE:
+   - 1x o valor investido, não participante
+   - Em caso de venda abaixo de R$ 8M, investidor recebe tudo
+
+5. OPTION POOL:
+   - Criação de option pool de 15% sobre as ações fully diluted
+   - O pool será criado ANTES do fechamento (pre-money)
+   - Ações do pool serão usadas para contratações futuras
+
+6. ANTI-DILUIÇÃO: Broad-based weighted average
+
+7. BOARD:
+   - 5 membros: 2 founders, 2 Horizonte Ventures, 1 independente
+   - Independente será indicado mutuamente
+
+8. VESTING DOS FOUNDERS:
+   - 4 anos com cliff de 1 ano
+   - Crédito retroativo de 18 meses (tempo desde fundação)
+
+9. PRO RATA:
+   - Horizonte tem direito de manter participação em rodadas futuras
+
+10. DRAG-ALONG:
+    - Maioria dos acionistas pode forçar venda da empresa
+    - Proteção: fundadores podem vetar vendas abaixo de 2x o investimento total
+
+11. INFORMATION RIGHTS:
+    - Relatórios financeiros mensais (P&L, balanço, fluxo de caixa)
+    - Acesso a dados operacionais semanais (MRR, churn, NPS)
+
+12. EXCLUSIVIDADE:
+    - 30 dias de exclusividade após assinatura do term sheet
+    - Proibição de contatar outros investidores durante período
+
+13. DIVIDENDOS: Não aplicável
+```
+
+---
+
+### Perguntas de Interpretação (responda antes de olhar o template):
+
+1. O option pool de 15% é criado **antes ou depois** do investimento? Qual o impacto isso tem na sua diluição real?
+2. A liquidation preference de 1x não-participante é boa ou ruim para os founders? Por quê?
+3. A cláusula de exclusividade de 30 dias — qual o risco para vocês?
+4. O board ficará equilibrado ou favorável ao investidor?
+5. O vesting com crédito retroativo de 18 meses é razoável? O que significa na prática?
+
+---
+
+## Etapa 2: Calcule a Diluição Real (30 min)
+
+Use o template abaixo para calcular a situação acionária **antes e depois** do investimento.
+
+### Template de Cálculo de Diluição
+
+```
+CÁLCULO DE DILUIÇÃO — SÉRIE A HEALTHPATH
+
+SITUAÇÃO PRE-INVESTIMENTO (Antes do Term Sheet)
+================================================
+Founder A (você):     _______ ações = _______%
+Founder B (co-fundador): _______ ações = _______%
+TOTAL:               _______ ações = 100%
+
+PASSO 1: CRIAÇÃO DO OPTION POOL (pre-money, 15%)
+=================================================
+Se antes havia 1.000.000 ações (100%), para criar 15% de pool:
+Novas ações do pool = 1.000.000 × 15% ÷ 85% = _______
+Total após pool: _______ ações
+
+Participação dos founders APÓS pool (antes do investimento):
+Founder A: 550.000 ÷ _______ = _______%
+Founder B: 450.000 ÷ _______ = _______%
+Pool: 176.471 ÷ _______ = 15%
+
+PASSO 2: EMISSÃO DE AÇÕES PARA O INVESTIDOR (20%)
+===================================================
+Para dar 20% ao investidor, calcule novas ações:
+Ações totais existentes (após pool): _______
+Novas ações para investidor = Total_existente × 20% ÷ 80% = _______
+Novo total: _______
+
+PARTICIPAÇÃO FINAL (FULLY DILUTED)
+====================================
+Founder A:   _______ ÷ _______ = _______%
+Founder B:   _______ ÷ _______ = _______%
+Option Pool: _______ ÷ _______ = 15%
+Horizonte:   _______ ÷ _______ = 20%
+TOTAL:       100%
+
+DILUÇÃO LÍQUIDA DOS FOUNDERS:
+Founder A: De 55% para _______% = diluição de _______ pontos percentuais
+Founder B: De 45% para _______% = diluição de _______ pontos percentuais
+```
+
+---
+
+## Etapa 3: Construa a Cap Table Completa (20 min)
+
+```
+CAP TABLE — HEALTHPATH — PÓS-SÉRIE A
+======================================
+[Preencha os valores calculados]
+
+| Acionista | Tipo | Nº Ações | % (fully diluted) | Preço/ação | Valor investido |
+|-----------|------|----------|-------------------|-----------|----------------|
+| Founder A | Ordinária | 550.000 | ____% | R$ 0,001 | R$ 550 |
+| Founder B | Ordinária | 450.000 | ____% | R$ 0,001 | R$ 450 |
+| Option Pool | — | _______ | 15% | — | — |
+| Horizonte Ventures | Pref. Série A | _______ | 20% | R$ _____ | R$ 8.000.000 |
+| TOTAL | | _______ | 100% | | R$ 8.000.550 |
+
+Preço por ação Série A = R$ 40.000.000 ÷ _______ ações = R$ _______
+```
+
+---
+
+## Etapa 4: Análise de Waterfall — Quem Recebe o Quê na Saída? (25 min)
+
+Simule três cenários de saída para a HealthPath após 4 anos:
+
+```
+WATERFALL ANALYSIS — HEALTHPATH
+
+CENÁRIO A: VENDA POR R$ 6M (abaixo do investimento)
+=====================================================
+1. Liquidation preference Horizonte (1x): R$ 8.000.000
+   → Mas a empresa vale só R$ 6M, então: R$ _______ para Horizonte
+2. Restante para founders: R$ _______
+   Founder A recebe: R$ _______
+   Founder B recebe: R$ _______
+
+CENÁRIO B: VENDA POR R$ 40M (1x post-money valuation)
+======================================================
+1. Liquidation preference Horizonte (1x): R$ _______
+2. Restante: R$ _______ para distribuição proporcional
+   → Horizonte converte? Analisando:
+   • Conversão = 20% × R$ 40M = R$ 8M (igual à preferência → indiferente)
+   → Founders distribuição: R$ 32M × (Founder A% + Founder B%)
+   Founder A recebe: R$ _______
+   Founder B recebe: R$ _______
+   Horizonte recebe: R$ _______
+
+CENÁRIO C: VENDA POR R$ 120M (3x post-money)
+=============================================
+1. Horizonte prefere converter (1x ou participação proporcional):
+   • Preferência: R$ 8M
+   • Conversão: 20% × R$ 120M = R$ 24M ← CONVERTE (maior)
+2. Distribuição após conversão (proporcional):
+   Founder A: ____% × R$ 120M = R$ _______
+   Founder B: ____% × R$ 120M = R$ _______
+   Option Pool (funcionários): 15% × R$ 120M = R$ _______
+   Horizonte: 20% × R$ 120M = R$ _______
+```
+
+---
+
+## Etapa 5: Identifique Pontos de Negociação (15 min)
+
+Analise o term sheet e identifique:
+
+```
+ANÁLISE DE NEGOCIAÇÃO — HEALTHPATH SÉRIE A
+
+CLÁUSULA 1: Option Pool pre-money de 15%
+Problema: ___________________________________
+Nossa contra-proposta: _______________________
+Impacto em % dos founders se aceita: _________%
+
+CLÁUSULA 2: Exclusividade de 30 dias
+Problema: ___________________________________
+Nossa proposta: ______________________________
+Por que 15-21 dias é mais razoável: __________
+
+CLÁUSULA 3: Board (2 founders : 2 Horizonte : 1 independente)
+Análise: ____________________________________
+Se o independente votar com o investidor, qual o risco? _______
+
+CLÁUSULA 4 (POSITIVA): Liquidation preference 1x não-participante
+Por que isso é bom para os founders: _________
+O que seria pior: ____________________________
+
+CLÁUSULA 5 (POSITIVA): Broad-based weighted average anti-dilution
+Por que isso é melhor que full ratchet: _______
+```
+
+---
+
+## Exemplo Completo Preenchido — Startup "NutriSync"
+
+A seguir, um exemplo **completamente preenchido** simulando uma startup diferente para você comparar seus cálculos.
+
+**Contexto NutriSync**: Plataforma de nutrição personalizada B2C/B2B. 2 founders (60%/40%). Captando Série A de R$ 5M. Pre-money R$ 15M. Option pool de 10% pre-money exigido.
+
+### Cálculo de Diluição NutriSync:
+
+**Situação inicial:**
+- Founder Maya: 600.000 ações (60%)
+- Founder Carlos: 400.000 ações (40%)
+- Total: 1.000.000 ações
+
+**Passo 1 — Option pool de 10% pre-money:**
+- Novas ações do pool = 1.000.000 × 10% ÷ 90% = 111.111 ações
+- Novo total: 1.111.111 ações
+- Maya: 600.000 ÷ 1.111.111 = **54%**
+- Carlos: 400.000 ÷ 1.111.111 = **36%**
+- Pool: 111.111 ÷ 1.111.111 = **10%**
+
+**Passo 2 — Investidor recebe 25% (R$ 5M sobre post de R$ 20M):**
+- Novas ações = 1.111.111 × 25% ÷ 75% = 370.370 ações
+- Novo total: 1.481.481 ações
+
+**Participação final:**
+
+| Acionista | Ações | % |
+|-----------|-------|---|
+| Maya (Founder) | 600.000 | 40,5% |
+| Carlos (Founder) | 400.000 | 27,0% |
+| Option Pool | 111.111 | 7,5% |
+| Fundo A (Série A) | 370.370 | 25,0% |
+| **TOTAL** | **1.481.481** | **100%** |
+
+**Diluição real dos founders:**
+- Maya: de 60% → 40,5% (diluição de 19,5 pontos)
+- Carlos: de 40% → 27% (diluição de 13 pontos)
+
+### Waterfall NutriSync — Venda por R$ 50M:
+
+**Liquidation preference (1x, não-participante):**
+- Fundo A pode escolher: preferência = R$ 5M OU conversão = 25% × R$ 50M = R$ 12,5M
+- **Fundo converte** (R$ 12,5M > R$ 5M)
+
+**Distribuição proporcional:**
+- Maya: 40,5% × R$ 50M = **R$ 20,25M**
+- Carlos: 27% × R$ 50M = **R$ 13,5M**
+- Funcionários (pool): 7,5% × R$ 50M = **R$ 3,75M**
+- Fundo A: 25% × R$ 50M = **R$ 12,5M**
+
+### Cap Table NutriSync Pós-Série A:
+
+| Acionista | Tipo | Ações | % | Preço/ação | Investido |
+|-----------|------|-------|---|-----------|-----------|
+| Maya | Ordinária | 600.000 | 40,5% | R$ 0,001 | R$ 600 |
+| Carlos | Ordinária | 400.000 | 27,0% | R$ 0,001 | R$ 400 |
+| Option Pool | — | 111.111 | 7,5% | — | — |
+| Fundo Apex | Pref. Série A | 370.370 | 25,0% | R$ 13,50 | R$ 5.000.000 |
+| **TOTAL** | | **1.481.481** | **100%** | | **R$ 5.001.000** |
+
+### Análise de Negociação NutriSync:
+
+**Ponto 1 — Option pool pre-money de 10%:**
+- Problema: Diluiu Maya de 60% para 54% ANTES do investidor entrar
+- Contra-proposta: "Concordamos com 8% de pool, criado post-money, com cronograma de contratações justificando o tamanho"
+- Impacto aceito: Maya teria 41% ao invés de 40,5% → pequena diferença para manter bom relacionamento
+
+**Ponto 2 — Liquidation preference:**
+- Term sheet propunha 1x não-participante → ÓTIMO, não negocie isso para pior
+- Se tivesse sido 1x participante, Maya e Carlos precisariam retornar ao fundo R$ 5M + depois dividir o restante proporcionalmente
+
+**Ponto 3 — Resultado final da negociação:**
+- Maya e Carlos aceitaram o term sheet com pequena modificação no pool (10% → 8% post-money)
+- Resultado: Maya com 41,2%, Carlos com 27,5% — ambos satisfeitos com os termos

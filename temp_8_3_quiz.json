@@ -1,0 +1,68 @@
+[
+  {
+    "q": "Segundo os dilemas do fundador, por que VCs preferem investir em empreendedores motivados pela 'Riqueza' (Wealth-motivated)?",
+    "opts": [
+      "A) Porque são mais fáceis de manipular em decisões jurídicas complexas.",
+      "B) Porque o foco em enriquecer se alinha ao objetivo do fundo de buscar o máximo retorno financeiro possível.",
+      "C) Porque eles aceitam valuations muito menores do que os fundadores focados em controle.",
+      "D) Porque evitam a formação de conselhos de administração formais."
+    ],
+    "correct": 1,
+    "exp": "O modelo de Venture Capital depende de 'home runs' financeiros. Empreendedores wealth-motivated aceitam perder controle e compartilhar o bolo contanto que este cresça absurdamente, alinhando-se aos incentivos de altíssimo retorno dos VCs."
+  },
+  {
+    "q": "Na simulação da Lynx Solutions citada na teoria, a empresa enfrentou problemas com as ofertas de aquisição devido ao otimismo inicial. O que ocorreu?",
+    "opts": [
+      "A) Eles venderam a empresa antes que o software estivesse pronto.",
+      "B) Eles concordaram com termos de Liquidation Preference altos por confiarem em um crescimento irreal.",
+      "C) O fundo pediu para substituir os fundadores no primeiro mês de operação.",
+      "D) Eles aceitaram capital de investidores anjo em vez de fundos experientes."
+    ],
+    "correct": 1,
+    "exp": "Devido ao otimismo exagerado, os fundadores assinaram cláusulas padrão como Liquidation Preference, assumindo que a startup ficaria gigante. Como cresceram moderadamente, na hora da venda o dinheiro ficou todo com os investidores."
+  },
+  {
+    "q": "No caso de Genevieve Thiers, da Sittercity, qual foi o principal dilema e como ela teve que se portar?",
+    "opts": [
+      "A) Escolher entre VCs e Anjos, optando pelo dinheiro com 'menos amarras'.",
+      "B) O mercado B2C parou de crescer e ela precisou pivotar para B2B.",
+      "C) Seu noivo era seu COO, exigindo a criação de 'firewalls' para proteger o negócio da relação.",
+      "D) Ela perdeu o controle da empresa porque era Wealth-motivated."
+    ],
+    "correct": 2,
+    "exp": "A principal preocupação de Genevieve era ter seu parceiro afetivo como cofundador (Dan). Ela precisou implementar 'firewalls' para impedir que problemas na relação destruíssem a empresa e vice-versa."
+  },
+  {
+    "q": "O modelo de negócios dos fundos de Venture Capital baseia-se na remuneração dupla. Quais são essas taxas?",
+    "opts": [
+      "A) Taxa de Juros Anual e Taxa de Saída (Exit Fee).",
+      "B) Dividendos mensais e Liquidation Preference.",
+      "C) Management Fee (Taxa de administração) e Carry (Participação nos lucros).",
+      "D) Diluição de 50% no Dia Um e Royalties mensais."
+    ],
+    "correct": 2,
+    "exp": "O padrão da indústria de VC é cobrar 2% a 2.5% ao ano de taxa de administração para cobrir custos operacionais e 20% de Carried Interest (Carry) sobre o capital retornado com lucro aos LPs."
+  },
+  {
+    "q": "Segundo a teoria, quem são os Limited Partners (LPs)?",
+    "opts": [
+      "A) Os fundadores das startups que recebem pouco percentual da empresa.",
+      "B) Investidores anjo inexperientes que só aportam capital.",
+      "C) As instituições maiores (fundações, fundos de pensão) que colocam capital no fundo gerido pelos VCs.",
+      "D) Os sócios do fundo (General Partners) que gerenciam o dia a dia."
+    ],
+    "correct": 2,
+    "exp": "LPs (Limited Partners) são as grandes entidades e endowments universitários que aportam os milhões para criar os fundos. Os VCs têm dever fiduciário de entregar retorno para os LPs."
+  },
+  {
+    "q": "O que costuma ser uma característica atrativa de um Investidor Anjo para um fundador 'Control-motivated', como visto no dilema inicial de Jim Triandiflou (Ockham)?",
+    "opts": [
+      "A) O forte conhecimento profundo do nicho corporativo B2B.",
+      "B) O dinheiro vir 'sem amarras', exigindo pouco ou nenhum controle no board.",
+      "C) O interesse exclusivo em lucrar e fechar a empresa.",
+      "D) A necessidade de implementar governança sólida em dois meses."
+    ],
+    "correct": 1,
+    "exp": "O anjo de Jim queria 50% mas ficaria de fora da operação ('no strings attached'). Empreendedores focados em controle adoram esse modelo porque podem fazer tudo do próprio jeito, apesar de abrirem mão do 'Smart Money' dos VCs."
+  }
+]

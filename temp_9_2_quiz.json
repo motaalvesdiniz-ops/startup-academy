@@ -1,0 +1,68 @@
+[
+  {
+    "q": "Segundo a estratégia de Sean Ellis aplicada no Dropbox, qual foi o primeiro passo dado antes de investir em publicidade pesada?",
+    "opts": [
+      "A) Contratar uma equipe de 50 vendedores B2B.",
+      "B) Redesenhar completamente a logomarca da empresa.",
+      "C) Fazer uma sondagem de usuários para calcular o grau de necessidade do produto (Índice Must-Have).",
+      "D) Levantar mais dinheiro com investidores-anjo para garantir caixa por 5 anos."
+    ],
+    "correct": 2,
+    "exp": "Antes de gastar com aquisição, Ellis precisava comprovar a retenção através da métrica de frustração. A regra de ouro do Growth é: não se escala um produto que ainda não é indispensável (o balde furado)."
+  },
+  {
+    "q": "Qual é a pergunta central da pesquisa do Índice 'Must-Have' e qual a métrica que indica potencial de hipercrescimento?",
+    "opts": [
+      "A) 'Qual a probabilidade de você nos recomendar?' - NPS acima de 50.",
+      "B) 'Como você se sentiria se não pudesse mais usar o produto?' - Mais de 40% respondendo 'Muito Frustrado(a)'.",
+      "C) 'Você compraria este produto de novo?' - Acima de 80% de 'Sim'.",
+      "D) 'O que você achou do preço?' - A maioria dizendo 'Justo'."
+    ],
+    "correct": 1,
+    "exp": "Sean Ellis descarta métricas tradicionais de satisfação, optando por medir a frustração da ausência. O limiar histórico que separa produtos apáticos dos com product-market fit é 40% respondendo 'Muito Frustrado'."
+  },
+  {
+    "q": "Apesar do boca a boca natural no Dropbox ser alto, não era suficiente para a velocidade esperada. Qual foi a solução engenhada pelo Growth Hacking?",
+    "opts": [
+      "A) Compra intensiva de tráfego pago e mídia offline.",
+      "B) Fechamento temporário de novas contas para criar um gatilho de escassez.",
+      "C) Criação de loops de indicação estruturados (referral program) com incentivos claros e integrados ao produto.",
+      "D) Foco em vendas ativas outbound para grandes corporações."
+    ],
+    "correct": 2,
+    "exp": "Eles transformaram o boca a boca orgânico em uma engrenagem calculada (Referral Loop). Ofereceram espaço extra tanto para quem convidava quanto para quem aceitava o convite."
+  },
+  {
+    "q": "No contexto da indústria de Venture Capital (Sand Hill Road), o que significa um fundo estar em busca de um investimento 'Home Run' ou 'Returner'?",
+    "opts": [
+      "A) Significa procurar startups conservadoras que paguem dividendos constantes em 2 anos.",
+      "B) Buscar a startup que retorne o capital investido integralmente (1x o capital) com segurança e baixo risco.",
+      "C) Encontrar a rara startup que cresça o suficiente para retornar o valor total de todo o fundo sozinha, cobrindo as dezenas de apostas que falharão.",
+      "D) Investir apenas em empresas ligadas à área esportiva (beisebol/futebol)."
+    ],
+    "correct": 2,
+    "exp": "Como a imensa maioria das startups de um portfólio de VC vão à falência ou não decolam, a economia do VC exige que os poucos acertos sejam sucessos estratosféricos (home runs) gigantescos para garantir o lucro do fundo."
+  },
+  {
+    "q": "Scott Kupor cita a 'Assimetria de Informações' como um grande desafio no relacionamento entre investidores e fundadores. O que isso significa na prática?",
+    "opts": [
+      "A) O fundador tem acesso aos códigos do software e o investidor não.",
+      "B) O mercado B2C muda muito rápido, impossibilitando prever lucros.",
+      "C) Os VCs possuem experiência profunda em dezenas de rodadas e termos contratuais, enquanto o fundador geralmente está negociando captações pela primeira vez.",
+      "D) Investidores anjos sabem menos sobre o mercado do que os VCs experientes."
+    ],
+    "correct": 2,
+    "exp": "O VC é um 'repeat player' (jogador contumaz), elaborando e analisando dezenas de Term Sheets todos os anos. O fundador passa pelo processo poucas vezes na vida, gerando um desequilíbrio na negociação."
+  },
+  {
+    "q": "Segundo a teoria de 'Secrets of Sand Hill Road', a duração média de um 'casamento' (relacionamento) entre uma startup e um fundo de VC até o evento de saída (IPO ou Aquisição) é de, no mínimo, cerca de:",
+    "opts": [
+      "A) 1 a 2 anos.",
+      "B) 3 a 5 anos.",
+      "C) 10 anos.",
+      "D) 20 anos."
+    ],
+    "correct": 2,
+    "exp": "O livro enfatiza que as jornadas de sucesso levam, em média, uma década. Portanto, é fundamental escolher bem os investidores e gerir adequadamente os trade-offs de governança e controle, pois é um relacionamento duradouro."
+  }
+]

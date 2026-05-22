@@ -1,0 +1,88 @@
+# Módulos Restantes (A partir do 6.4)
+
+Copie a linha abaixo e envie para o NotebookLM para gerar o conteúdo de cada aba:
+
+### 6.4 - Sales para startups early-stage
+módulo 6.4 e 1
+módulo 6.4 e 2
+módulo 6.4 e 3
+módulo 6.4 e 4
+
+### 7.1 - Co-founders, equity e vesting
+módulo 7.1 e 1
+módulo 7.1 e 2
+módulo 7.1 e 3
+módulo 7.1 e 4
+
+### 7.2 - Primeiras contratações e cultura
+módulo 7.2 e 1
+módulo 7.2 e 2
+módulo 7.2 e 3
+módulo 7.2 e 4
+
+### 7.3 - Liderança em startups e OKRs
+módulo 7.3 e 1
+módulo 7.3 e 2
+módulo 7.3 e 3
+módulo 7.3 e 4
+
+### 8.1 - Fundamentos de fundraising e tipos de investimento
+módulo 8.1 e 1
+módulo 8.1 e 2
+módulo 8.1 e 3
+módulo 8.1 e 4
+
+### 8.2 - Pitch deck e narrativa de investimento
+módulo 8.2 e 1
+módulo 8.2 e 2
+módulo 8.2 e 3
+módulo 8.2 e 4
+
+### 8.3 - Term sheets, dilution e cap table
+módulo 8.3 e 1
+módulo 8.3 e 2
+módulo 8.3 e 3
+módulo 8.3 e 4
+
+### 9.1 - Crossing the Chasm — cruzando o abismo
+módulo 9.1 e 1
+módulo 9.1 e 2
+módulo 9.1 e 3
+módulo 9.1 e 4
+
+### 9.2 - Blitzscaling — quando e como escalar
+módulo 9.2 e 1
+módulo 9.2 e 2
+módulo 9.2 e 3
+módulo 9.2 e 4
+
+### 9.3 - Network effects e plataformas
+módulo 9.3 e 1
+módulo 9.3 e 2
+módulo 9.3 e 3
+módulo 9.3 e 4
+
+### 9.4 - Internacionalização de startups
+módulo 9.4 e 1
+módulo 9.4 e 2
+módulo 9.4 e 3
+módulo 9.4 e 4
+
+### 10.1 - Zero to One — monopólios e segredos
+módulo 10.1 e 1
+módulo 10.1 e 2
+módulo 10.1 e 3
+módulo 10.1 e 4
+
+### 10.2 - Estratégia competitiva e fossos (moats)
+módulo 10.2 e 1
+módulo 10.2 e 2
+módulo 10.2 e 3
+módulo 10.2 e 4
+
+### 10.3 - M&A, exits e lifecycle venture-backed
+módulo 10.3 e 1
+módulo 10.3 e 2
+módulo 10.3 e 3
+módulo 10.3 e 4
+

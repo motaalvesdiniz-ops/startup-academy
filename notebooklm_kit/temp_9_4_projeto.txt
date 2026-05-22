@@ -1,0 +1,217 @@
+# Projeto: Go Global — Plano Completo de Internacionalização
+
+## Contexto de Negócio
+
+Você é founder de uma startup brasileira que acabou de fechar uma Série A de R$ 15 milhões. Seu lead investor — um fundo com portfolio em 6 países da América Latina — tem uma condição: dentro de 18 meses, você precisa demonstrar tração em pelo menos um mercado fora do Brasil.
+
+O desafio: você tem capital, mas não tem experiência em internacionalização. O fundo quer ver um **Plano de Internacionalização** detalhado antes de liberar a segunda parcela do investimento (R$ 6 milhões reservados para expansão).
+
+Você tem 30 dias para entregá-lo.
+
+---
+
+## Objetivo do Projeto
+
+Produzir um **International Market Expansion Plan** (IMEP) profissional, o tipo de documento que VCs internacionais e boards de startups avaliam antes de aprovar capital para expansão geográfica.
+
+---
+
+## Etapas Detalhadas
+
+### Etapa 1: Análise de Prontidão Doméstica (2-3 horas)
+
+Antes de qualquer coisa, você precisa demonstrar ao investidor que o produto está pronto para replicação. Produza uma **Ficha de Saúde do Produto** contendo:
+
+**Métricas obrigatórias a documentar:**
+- NPS atual e evolução nos últimos 6 meses
+- Cohort de retenção (D30, D60, D90 ou equivalente sazonal)
+- CAC médio e tendência (crescendo ou decrescendo?)
+- LTV médio e proporção CAC/LTV
+- % de clientes que são Early Majority (referências para outros clientes)
+- Churn rate mensal e anual
+
+**Análise qualitativa:**
+- O que você sabe que funciona (o "playbook" de vendas documentado)
+- O que ainda é arte (o que depende de pessoas-chave e não pode ser replicado ainda)
+- Qual % da operação está documentada e poderia ser executada por um novo time?
+
+**Output**: Página 1 do IMEP — Resumo de Prontidão (1 página)
+
+---
+
+### Etapa 2: Seleção do Mercado-Alvo com Framework de Scoring (4-5 horas)
+
+Pesquise 4 mercados potenciais (sugestões: México, Colombia, Chile, Argentina, Portugal, EUA — ou outros relevantes para seu setor) e compare-os usando a matriz abaixo:
+
+**Matriz de Seleção de Mercado Internacional**
+
+| Critério | Peso | México | Colômbia | Chile | [4o Mercado] |
+|----------|------|--------|----------|-------|--------------|
+| Tamanho do TAM (USD) | 25% | /10 | /10 | /10 | /10 |
+| Crescimento do mercado (% a.a.) | 15% | /10 | /10 | /10 | /10 |
+| Similaridade cultural/comportamental | 15% | /10 | /10 | /10 | /10 |
+| Complexidade regulatória (inversa) | 15% | /10 | /10 | /10 | /10 |
+| Intensidade competitiva (inversa) | 10% | /10 | /10 | /10 | /10 |
+| Sinais de demanda existente | 10% | /10 | /10 | /10 | /10 |
+| Facilidade de estabelecimento legal | 10% | /10 | /10 | /10 | /10 |
+| **SCORE PONDERADO** | 100% | | | | |
+
+**Justifique cada pontuação** com dados concretos (pesquisa de mercado, reports setoriais, dados públicos).
+
+**Output**: Escolha do mercado com justificativa de 300-500 palavras (Página 2-3 do IMEP)
+
+---
+
+### Etapa 3: Mapeamento Competitivo do Novo Mercado (3-4 horas)
+
+Para o mercado escolhido, construa um **Mapa Competitivo** detalhado:
+
+**3.1 Landscape de Concorrentes**
+
+| Concorrente | Tipo | Posicionamento | Força principal | Nossa vantagem |
+|-------------|------|----------------|----------------|----------------|
+| [Local A] | Startup local | | | |
+| [Local B] | Empresa estabelecida | | | |
+| [Global A] | Multinacional | | | |
+| [Substituto] | Solução alternativa (ex: planilha) | | | |
+
+**3.2 Análise de Posicionamento**
+
+Crie um gráfico de posicionamento (2x2) com dois eixos relevantes para seu mercado (ex: Preço vs. Sofisticação, ou Mercado Alvo vs. Completude de Funcionalidades).
+
+**3.3 Identificação do Espaço Não Atendido**
+
+Onde existe um nicho que concorrentes locais não estão servindo bem e onde você tem vantagem natural?
+
+**Output**: Seção de análise competitiva (Páginas 4-5 do IMEP)
+
+---
+
+### Etapa 4: Definição do Beachhead e Plano de Crossing The Chasm (4-5 horas)
+
+Esta é a seção mais importante do plano. O investidor quer ver que você entende Moore.
+
+**4.1 Definição do Beachhead**
+
+Preencha completamente:
+- **Segmento específico**: [Não "PMEs do mercado X" — seja cirúrgico: "Clínicas de cardiologia com 10-30 médicos na Cidade do México que já usam prontuário eletrônico"]
+- **Tamanho do segmento**: [Quantas empresas/clientes exatamente?]
+- **Por que esse segmento é o pino inicial perfeito?**: [3 razões específicas]
+- **Como uma vitória aqui reverberará para segmentos adjacentes?**: [Mecanismo de referência]
+
+**4.2 Perfil dos Primeiros 10 Clientes**
+
+Descreva o perfil ideal do Cliente 1 ao Cliente 10 no beachhead. Eles não são genéricos — são:
+- Visionários do segmento específico
+- Com dor aguda o suficiente para aceitar um produto ainda sem referências locais
+- Com influência suficiente para ser referência para os pragmáticos que virão depois
+
+**4.3 Estratégia de Crossing The Chasm**
+
+Como você vai da tração com visionários (primeiros 10-20 clientes) para aceitação pelos pragmáticos (Early Majority)?
+
+| Fase | Período | Clientes Alvo | Ação Principal | Critério de Sucesso |
+|------|---------|---------------|----------------|---------------------|
+| **Visionários** | Meses 1-6 | [10-20 clientes específicos] | [Ação] | [NPS, referências] |
+| **Crossing** | Meses 7-12 | [Primeiros pragmáticos] | [Ação] | [X cases, Y referências] |
+| **Early Majority** | Meses 13-18 | [Escala] | [Ação] | [Posição de mercado] |
+
+**Output**: Seção de Beachhead Strategy (Páginas 6-8 do IMEP)
+
+---
+
+### Etapa 5: Plano Operacional e Financeiro (4-5 horas)
+
+**5.1 Estrutura Jurídica**
+
+Qual entidade legal você vai estabelecer? Quando? Quanto custa?
+
+| País | Entidade Legal | Prazo | Custo estimado | Questões de compliance |
+|------|---------------|-------|----------------|----------------------|
+| [Escolhido] | [Tipo de empresa] | [Semanas] | [USD] | [Requisitos chave] |
+
+**5.2 Time para Internacionalização**
+
+Defina a estrutura de time para os primeiros 18 meses:
+
+| Período | Papel | Modelo (Expat/Local/Híbrido) | Custo anual estimado |
+|---------|-------|------------------------------|---------------------|
+| Meses 1-6 | [Papel 1] | | |
+| Meses 1-12 | [Papel 2] | | |
+| Meses 7-18 | [Papel 3] | | |
+
+**5.3 Budget de Internacionalização**
+
+| Categoria | M1-6 (USD) | M7-12 (USD) | M13-18 (USD) | Total |
+|-----------|-----------|------------|-------------|-------|
+| Setup jurídico e compliance | | | | |
+| Adaptação de produto (i18n + l10n) | | | | |
+| Time (salários + benefícios) | | | | |
+| Marketing e geração de leads | | | | |
+| Viagens e operação | | | | |
+| **TOTAL** | | | | |
+
+**5.4 Projeção de Receita no Novo Mercado**
+
+| Período | Clientes Ativos | ARPU (USD/mês) | MRR (USD) | ARR Run Rate |
+|---------|----------------|----------------|-----------|-------------|
+| Mês 6 | | | | |
+| Mês 12 | | | | |
+| Mês 18 | | | | |
+
+**Output**: Seção Operacional e Financeira (Páginas 9-11 do IMEP)
+
+---
+
+### Etapa 6: Gestão de Riscos e Critério Go/No-Go (2-3 horas)
+
+**6.1 Mapa de Riscos**
+
+| Risco | Probabilidade (A/M/B) | Impacto (A/M/B) | Score | Mitigação |
+|-------|----------------------|-----------------|-------|----------|
+| Regulação mais complexa que esperado | | | | |
+| Dificuldade de contratar liderança local | | | | |
+| Concorrente local acelera | | | | |
+| PMF não se transfere (produto não ressoa) | | | | |
+| Câmbio desfavorável | | | | |
+
+**6.2 Critério de Go/No-Go no Mês 6**
+
+Defina claramente: quais são os 3-5 indicadores que, se não atingidos no Mês 6, significam "pivotar a estratégia de internacionalização"?
+
+Exemplo de critério:
+- Mínimo de [X] clientes pagantes no beachhead
+- NPS no novo mercado ≥ [Y]
+- Pelo menos [Z] referências de clientes para novos prospects
+
+**Output**: Seção de Gestão de Riscos (Página 12 do IMEP)
+
+---
+
+## Deliverables
+
+1. **International Market Expansion Plan** — IMEP completo (12-15 páginas)
+2. **Matriz de Seleção de Mercado** (Etapa 2) com dados pesquisados e fontes
+3. **Mapa Competitivo** do mercado escolhido
+4. **Dashboard de Métricas de Internacionalização** — template para acompanhamento trimestral
+
+---
+
+## Rubrica de Avaliação
+
+| Critério | Insuficiente (0-5) | Satisfatório (6-7) | Exemplar (8-10) | Peso |
+|----------|-------------------|-------------------|----------------|------|
+| **Análise de prontidão doméstica** | Genérica, sem dados | Dados presentes mas sem análise | Métricas concretas com interpretação e gaps identificados | 15% |
+| **Seleção de mercado** | "Escolhi porque é grande" | Matriz preenchida com algum dado | Scoring rigoroso com fontes, análise de tradeoffs e justificativa convincente | 20% |
+| **Estratégia de beachhead** | "Vamos atacar o mercado todo" | Segmento definido mas genérico | Beachhead cirúrgico com perfil de primeiros 10 clientes e mecanismo de crossing | 25% |
+| **Plano operacional/financeiro** | Estimativas sem base | Números presentes com lógica básica | Budget detalhado com premissas, projeção de receita e break-even | 20% |
+| **Gestão de riscos** | Sem riscos ou apenas os óbvios | Riscos identificados sem mitigação | Mapa completo com critério Go/No-Go quantificado | 10% |
+| **Qualidade geral do documento** | Confuso, incompleto | Claro, estruturado | Profissional, data-driven, apresentável para board | 10% |
+
+---
+
+## Conexão com a Realidade
+
+Este projeto simula exatamente o que founders de startups brasileiras como Nubank (México, Colômbia), TOTVS (Latam), Movile (diversas regiões) e Gympass (global) tiveram que fazer antes de seus primeiros movimentos internacionais. O IMEP que você produzir é, literalmente, o documento que abrirá ou fechará portas em conversas com investidores internacionais, parceiros locais e potenciais executivos que você tentará convencer a se juntar à sua operação internacional.
+
+Como Moore nos lembra: a internacionalização bem-sucedida não é sobre "ir para fora" — é sobre cruzar o abismo, de novo, em um novo mercado, com a disciplina de quem já aprendeu uma vez que os pragmáticos não compram potencial. Compram evidências.

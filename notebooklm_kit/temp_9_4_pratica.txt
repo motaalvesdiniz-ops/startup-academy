@@ -1,0 +1,290 @@
+# Exercício Prático: Plano de Internacionalização — Escolha seu Próximo Mercado
+
+## Objetivo
+
+Ao final deste exercício, você será capaz de:
+- Avaliar a prontidão da sua startup para internacionalização
+- Selecionar e justificar um mercado-alvo internacional com critérios objetivos
+- Identificar o segmento beachhead ideal no mercado selecionado
+- Mapear os principais riscos e adaptar a estratégia para o novo contexto
+
+## Contexto
+
+Não existe "o melhor mercado para internacionalizar" abstrato — existe o melhor mercado **para o seu produto, no seu momento, com seus recursos**. Este exercício força você a tomar essa decisão de forma estruturada, usando os frameworks de Moore (Crossing the Chasm) e as boas práticas de startups globais.
+
+---
+
+## Passo a Passo
+
+### Etapa 1: Avalie a Prontidão Doméstica (15 minutos)
+
+Antes de olhar para fora, confirme que o "dentro de casa" está em ordem. Responda:
+
+| Critério | Sua realidade | Pronto? |
+|----------|--------------|---------|
+| NPS atual (mercado doméstico) | [Número] | ☐ >40 |
+| Retenção de clientes (D90 ou equivalente) | [%] | ☐ >30% |
+| CAC < LTV × 3 | CAC: [R$] / LTV: [R$] | ☐ Sim |
+| Pelo menos 100 clientes pragmáticos (Early Majority) | [Número] | ☐ Sim |
+| Operação documentada o suficiente para replicar | [Nível 1-5] | ☐ Nível 3+ |
+| Runway para absorver custo de internacionalização | [Meses] | ☐ >18 meses |
+
+**Interpretação**:
+- 6/6 critérios atendidos: Prontidão alta — prossiga
+- 4-5 critérios: Prontidão média — identifique o gap e decida conscientemente
+- Menos de 4: Prontidão baixa — foque no mercado doméstico primeiro
+
+---
+
+### Etapa 2: Selecione e Compare Mercados Potenciais (30 minutos)
+
+Identifique 3 mercados candidatos e compare-os:
+
+| Critério | Mercado A: _____ | Mercado B: _____ | Mercado C: _____ |
+|----------|-----------------|-----------------|-----------------|
+| **Tamanho de mercado (TAM)** | | | |
+| **Proximidade cultural** (1-5, sendo 5 = muito próximo) | | | |
+| **Similaridade regulatória** (1-5) | | | |
+| **Existência de concorrentes locais fortes** (1=muitos, 5=poucos) | | | |
+| **Sinais de demanda inbound** (leads, cadastros espontâneos) | | | |
+| **Facilidade de estabelecimento jurídico** (1-5) | | | |
+| **Custo estimado de go-to-market** (R$ ou US$) | | | |
+| **Existência de VCs / ecosystem local que poderiam apoiar** | | | |
+| **PONTUAÇÃO TOTAL** | | | |
+
+**Escolha o mercado com maior pontuação ajustada pelo seu momento de capital e time.**
+
+---
+
+### Etapa 3: Defina o Beachhead no Mercado Escolhido (20 minutos)
+
+Inspirado em Moore: não entre no mercado inteiro. Entre em um nicho específico onde pode criar uma referência forte.
+
+Preencha:
+
+**Mercado escolhido**: _______________
+
+**Segmento beachhead** (seja específico):
+- Indústria/vertical: _______________
+- Tamanho das empresas alvo: _______________
+- Localização dentro do país: _______________
+- Perfil do tomador de decisão: _______________
+
+**Por que esse segmento?**
+1. [Razão 1: menor resistência / maior similaridade com clientes domésticos]
+2. [Razão 2: menor competição local]
+3. [Razão 3: potencial de referência que reverberará para segmentos adjacentes]
+
+**Meta do beachhead**: _____ clientes em _____ meses antes de expandir
+
+---
+
+### Etapa 4: Identifique as Adaptações Necessárias (25 minutos)
+
+Para cada dimensão, indique se você precisa adaptar e o que:
+
+| Dimensão | Mudança necessária? | O que especificamente | Tempo estimado | Custo estimado |
+|----------|--------------------|-----------------------|---------------|----------------|
+| Idioma/UI | ☐ Sim ☐ Não | | | |
+| Regulação/compliance | ☐ Sim ☐ Não | | | |
+| Integrações locais | ☐ Sim ☐ Não | | | |
+| Modelo de pricing | ☐ Sim ☐ Não | | | |
+| Processo de vendas | ☐ Sim ☐ Não | | | |
+| Suporte ao cliente | ☐ Sim ☐ Não | | | |
+| Marketing/mensagens | ☐ Sim ☐ Não | | | |
+
+---
+
+## Template Completo
+
+```markdown
+# PLANO DE INTERNACIONALIZAÇÃO
+## [Nome da Startup] → [País/Mercado Alvo]
+
+### AVALIAÇÃO DE PRONTIDÃO DOMÉSTICA
+**NPS atual:** [Número]
+**Retenção D90:** [%]
+**Proporção CAC/LTV:** [X vezes]
+**Clientes Early Majority:** [Número]
+**Runway disponível:** [Meses]
+**Conclusão de prontidão:** [Alta / Média / Baixa — justifique]
+
+---
+
+### MERCADO ESCOLHIDO E JUSTIFICATIVA
+**País/Região:** [Nome]
+
+**Por que esse mercado?**
+1. [Razão estratégica principal]
+2. [Razão de timing]
+3. [Razão de vantagem competitiva]
+
+**Tamanho do mercado endereçável no país:** [US$ ou R$]
+
+**Principais concorrentes locais:**
+| Concorrente | Posicionamento | Nossa vantagem |
+|-------------|---------------|----------------|
+| [Nome] | [Como posicionado] | [Por que somos melhores para o beachhead] |
+
+---
+
+### SEGMENTO BEACHHEAD
+**Segmento específico:** [Descrição detalhada]
+**Por que esse segmento primeiro:** [3 razões]
+**Meta quantitativa:** [X clientes em Y meses]
+**Critério de sucesso antes de expandir:** [NPS > X, retenção > Y%, Z referências]
+
+---
+
+### PLANO DE ADAPTAÇÕES
+**Adaptações de produto:**
+- [Lista das adaptações necessárias com prazo]
+
+**Adaptações de go-to-market:**
+- [Ajustes no processo de vendas, mensagens, canais]
+
+**Compliance regulatório:**
+- [Requisitos mapeados e prazo de obtenção]
+
+---
+
+### MODELO DE TIME
+**Estratégia de time escolhida:**
+[ ] Expatriado  [ ] Liderança local  [ ] Híbrido
+
+**Primeiro contrato no novo mercado:**
+- Papel: [Função]
+- Perfil: [Experiência necessária]
+- Prazo para contratação: [Meses]
+
+---
+
+### MODELO FINANCEIRO SIMPLIFICADO (12 MESES)
+
+| Item | M1-3 | M4-6 | M7-9 | M10-12 |
+|------|------|------|------|--------|
+| Clientes no mercado | 0 | [N] | [N] | [N] |
+| Receita mensal (local) | 0 | [R$] | [R$] | [R$] |
+| Custo de operação local | [R$] | [R$] | [R$] | [R$] |
+| Investimento de entrada | [R$] | — | — | — |
+| Break-even estimado | — | — | — | [Mês X] |
+
+---
+
+### PRINCIPAIS RISCOS E MITIGAÇÕES
+| Risco | Probabilidade | Impacto | Mitigação |
+|-------|-------------|---------|----------|
+| [Risco 1] | Alta/Média/Baixa | Alto/Médio/Baixo | [Ação preventiva] |
+| [Risco 2] | | | |
+| [Risco 3] | | | |
+
+---
+
+### PRÓXIMOS 90 DIAS
+**Semana 1-4:** [Ações de preparação — pesquisa, mapeamento regulatório]
+**Semana 5-8:** [Ações de validação — primeiros contatos com visionários locais]
+**Semana 9-12:** [Decisão go/no-go baseada em sinais dos primeiros contatos]
+```
+
+---
+
+## Exemplo Completo: Startup "HealthRoute" Internacionalizando para México
+
+```markdown
+# PLANO DE INTERNACIONALIZAÇÃO
+## HealthRoute → México
+
+**O que é a HealthRoute:** Plataforma SaaS B2B que conecta clínicas médicas de pequeno e médio porte a laboratórios de exames, automatizando o processo de pedido, rastreamento e entrega de laudos. Fundada em 2021, São Paulo.
+
+### AVALIAÇÃO DE PRONTIDÃO DOMÉSTICA
+**NPS atual:** 58 (Excelente)
+**Retenção D90:** 72% (saudável)
+**Proporção CAC/LTV:** CAC R$ 1.200 / LTV R$ 8.400 = 7x (sólido)
+**Clientes Early Majority:** 340 clínicas ativas (superou early adopters)
+**Runway disponível:** 22 meses (funding de Série A recente)
+**Conclusão de prontidão:** Alta — produto comprovado, métricas sólidas, capital disponível
+
+---
+
+### MERCADO ESCOLHIDO E JUSTIFICATIVA
+**País/Região:** México (iniciando na Cidade do México + Monterrey)
+
+**Por que esse mercado?**
+1. **Estratégico:** 130M de habitantes, saúde privada crescendo 12% a.a., sistema similar ao Brasil (clínicas privadas + laboratórios fragmentados)
+2. **Timing:** Nenhum player estabelecido nesse nicho específico no México — janela de 12-18 meses antes de concorrência internacional entrar
+3. **Vantagem competitiva:** Nosso produto nasceu para mercado fragmentado de healthcare — México tem fragmentação idêntica ao Brasil de 2018
+
+**Tamanho do mercado endereçável no país:** USD 280M (30.000 clínicas privadas com 5+ médicos)
+
+---
+
+### SEGMENTO BEACHHEAD
+**Segmento específico:** Clínicas de especialidades (cardiologia, endocrinologia, ortopedia) na Cidade do México com 10-30 médicos, que já usam sistema de prontuário eletrônico mas pedem exames de forma manual/telefone.
+
+**Por que esse segmento primeiro:**
+1. Menor resistência: já digitalizadas (têm prontuário eletrônico = abertas à tecnologia)
+2. Maior dor: fazem alto volume de exames especializados = maior perda de tempo no processo manual
+3. Melhor caso de referência: uma clínica de cardiologia de referência em CDMX influencia outras do mesmo setor em todo o México
+
+**Meta quantitativa:** 30 clínicas ativas em 6 meses (gera prova social suficiente)
+**Critério de sucesso antes de expandir para Monterrey:** NPS > 45, retenção M6 > 60%, 5 cases documentados
+
+---
+
+### PLANO DE ADAPTAÇÕES
+
+**Adaptações de produto:**
+- Tradução completa para espanhol mexicano: 6 semanas
+- Integração com SAT (faturamento fiscal mexicano equivalente à NF-e): 8 semanas
+- Integração com IMSS/ISSSTE para exames cobertos por plano de saúde: 16 semanas (maior esforço)
+- Adaptação de templates de laudo para formatos usados no México: 2 semanas
+
+**Adaptações de go-to-market:**
+- Ciclo de vendas: No Brasil é de 21 dias; no México, estimamos 35-45 dias (cultura de negócios mais formal, mais reuniões)
+- Canal: WhatsApp Business para comunicação (igual ao Brasil — ótimo)
+- Precificação: USD 180-250/clínica/mês (equivalente ao MXN 3.200-4.500)
+
+**Compliance regulatório:**
+- Constituição de SA de CV (equivalente à LTDA): 4-6 semanas, US$ 2.500
+- Registro como prestador de serviços de salud digital (COFEPRIS): 8-12 semanas
+- Conformidade com Ley Federal de Protección de Datos (equivalente à LGPD): adaptação de T&C e política de privacidade
+
+---
+
+### MODELO DE TIME
+**Estratégia:** Híbrida
+- Meses 1-6: Cofundador brasileiro (Country Manager temporário) abre operação, contrata time local
+- Meses 4-6: Contratação de Head of Sales México (mexicano, background em healthtech ou SaaS B2B medical)
+- Mês 7+: Head of Sales assume operação; cofundador retorna ao Brasil mas visita mensalmente
+
+---
+
+### MODELO FINANCEIRO SIMPLIFICADO (12 MESES)
+
+| Item | M1-3 | M4-6 | M7-9 | M10-12 |
+|------|------|------|------|--------|
+| Clínicas ativas | 0 → 8 | 8 → 30 | 30 → 75 | 75 → 150 |
+| Receita mensal (USD) | ~$1.200 | ~$5.400 | ~$15.000 | ~$30.000 |
+| Custo de operação local | $18.000 | $22.000 | $28.000 | $35.000 |
+| Investimento inicial | $45.000 | — | — | — |
+| Break-even operacional | — | — | — | Mês 11 |
+
+**Total investimento estimado para 12 meses:** USD 280.000 (confortável dentro do runway)
+
+---
+
+### PRINCIPAIS RISCOS E MITIGAÇÕES
+| Risco | Probabilidade | Impacto | Mitigação |
+|-------|-------------|---------|----------|
+| Integração COFEPRIS mais longa que previsto | Alta | Médio | Iniciar processo no Mês 1; produto pode funcionar sem isso inicialmente |
+| Dificuldade de contratar Head of Sales qualificado | Média | Alto | Usar recruiting especializado em healthtech + rede de VCs mexicanos como fonte |
+| Concorrente global (ex: Epic, Salesforce Health) entrar no segmento | Baixa | Alto | Focar em clínicas menores que big tech ignora; construir rede de referências rapidamente |
+```
+
+---
+
+## Reflexão Final
+
+Moore ensina que o maior perigo na expansão de mercado é "fazer a transição de um mercado inicial para um mainstream". Na internacionalização, essa transição acontece em slow motion — e por isso é ainda mais fácil confundir os primeiros 10 clientes visionários com prova de traction real.
+
+O exercício que você acabou de fazer — especialmente a definição do beachhead e dos critérios de sucesso antes de expandir — é o que separa internacionalização estratégica de internacionalização impulsiva. Um cliente mainstream no México vale mais que cem visionários.

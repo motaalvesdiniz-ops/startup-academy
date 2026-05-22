@@ -1,0 +1,68 @@
+[
+  {
+    "q": "O que caracteriza uma inovação como 'Descontínua' ou 'Disruptiva' segundo Geoffrey Moore?",
+    "opts": [
+      "A) Ser muito mais cara que as soluções atuais do mercado.",
+      "B) Exigir que o consumidor mude seu modo atual de comportamento ou modifique outras infraestruturas.",
+      "C) Ser uma melhoria natural e contínua de um produto existente (como um Gmail melhorado).",
+      "D) Não utilizar tecnologia digital em seu núcleo."
+    ],
+    "correct": 1,
+    "exp": "Inovações descontínuas requerem mudanças de hábito significativas por parte dos consumidores, tornando-as mais difíceis de adotar (exigindo que o consumidor saia de sua zona de conforto e mude comportamentos estabelecidos)."
+  },
+  {
+    "q": "Qual grupo no Ciclo de Adoção de Tecnologia é descrito como pragmático e exige referências de seus próprios pares antes de comprar?",
+    "opts": [
+      "A) Inovadores (Innovators)",
+      "B) Adotantes Iniciais (Early Adopters)",
+      "C) Maioria Inicial (Early Majority)",
+      "D) Retardatários (Laggards)"
+    ],
+    "correct": 2,
+    "exp": "A Maioria Inicial (Early Majority) é pragmática. Eles não querem ser os primeiros a testar e não confiam na referência de visionários isolados; eles querem ver outros pragmáticos do seu próprio setor usando o produto com sucesso."
+  },
+  {
+    "q": "Por que o 'Abismo' (The Chasm) se forma entre os Visionários e os Pragmáticos?",
+    "opts": [
+      "A) Porque os pragmáticos não aceitam produtos incompletos e não confiam na referência de visionários.",
+      "B) Porque falta dinheiro de Venture Capital nessa etapa.",
+      "C) Porque os inovadores perdem o interesse na tecnologia assim que ela se torna popular.",
+      "D) Porque o produto se torna muito barato para o mercado corporativo."
+    ],
+    "correct": 0,
+    "exp": "A quebra ocorre porque o grupo anterior (visionários) gosta de risco e aceita bugs, enquanto o grupo seguinte (pragmáticos) é avesso ao risco, exigindo um 'Produto Completo' e referências de outros pragmáticos, o que a startup ainda não tem."
+  },
+  {
+    "q": "Qual é a principal estratégia recomendada por Moore para atravessar o abismo?",
+    "opts": [
+      "A) Vender para o maior número possível de indústrias diferentes ao mesmo tempo para maximizar receita.",
+      "B) Investir grandes orçamentos em marketing de massa e publicidade televisiva.",
+      "C) Focar a empresa inteira em dominar um único nicho de mercado específico (Mercado Cabeça-de-Praia).",
+      "D) Baixar o preço do produto para que ele seja percebido como uma inovação contínua."
+    ],
+    "correct": 2,
+    "exp": "A estratégia da 'Pista de Boliche' (Bowling Alley) exige o foco absoluto e total da empresa em derrubar um único pino (nicho de mercado), alcançando dominância e gerando boca a boca dentro desse segmento específico antes de expandir."
+  },
+  {
+    "q": "Segundo Moore, o que deve caracterizar o comportamento do time da startup durante a travessia do abismo?",
+    "opts": [
+      "A) A busca incessante por tacadas geniais de marketing e gestos extravagantes.",
+      "B) União e consenso informados, executando planos cuidadosos e racionando recursos.",
+      "C) Separação das equipes em mini-startups focadas em 10 nichos simultâneos.",
+      "D) Substituição rápida de funcionários a cada três meses para trazer sangue novo."
+    ],
+    "correct": 1,
+    "exp": "Moore destaca que cruzar o abismo requer 'um grau incomum de união da empresa', abandonando a genialidade excêntrica em favor de 'consenso entre meros mortais', foco e o menor número possível de erros."
+  },
+  {
+    "q": "Em relação aos modelos de negócio, o modelo de 'Crossing the Chasm' é essencialmente focado em desenvolver quais mercados?",
+    "opts": [
+      "A) O modelo puro B2C (Business-to-Consumer) sem intervenção humana.",
+      "B) Principalmente o mercado de produtos físicos de baixo valor agregado.",
+      "C) O mercado de commodities alimentícias.",
+      "D) O desenvolvimento de mercados B2B (Business-to-Business) ou soluções complexas."
+    ],
+    "correct": 3,
+    "exp": "Embora algumas lições sirvam para B2C, Moore afirma que, no fundo, 'Crossing the Chasm' é um modelo de desenvolvimento de mercado B2B. As compras corporativas seguem o padrão pragmático fortemente dependente de referências."
+  }
+]

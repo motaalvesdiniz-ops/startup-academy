@@ -1,0 +1,280 @@
+# Projeto: Construindo o Playbook de Vendas da Sua Startup
+
+## Visão Geral
+
+Este projeto desafia você a construir, do zero, um **Playbook de Vendas** completo para sua startup — o documento que permitirá que qualquer nova pessoa na área de vendas seja capaz de executar o processo com consistência, sem depender da sua presença em cada negociação.
+
+Um Playbook de Vendas não é um manual burocrático. É o destilado do seu aprendizado: o que funciona, com quem funciona, como dizer, como qualificar, e como fechar. Para uma startup early-stage, ter um Playbook — mesmo rudimentar — é a diferença entre "vendas heroicas do founder" e "processo que pode ser contratado e treinado".
+
+**Entregável final:** Um documento de 10-15 páginas (ou Notion/Google Docs) que seja seu Playbook de Vendas real, utilizável amanhã.
+
+---
+
+## Contexto de Negócio
+
+Você está no mês 8 da sua startup. Tem entre 5 e 25 clientes pagantes (use seus dados reais; se não tem, simule com a startup fictícia abaixo). Você mesmo fez todas as vendas até agora.
+
+Um investidor seed que acompanha sua jornada fez uma observação que tirou seu sono:
+
+> *"Você vende muito bem. Mas se eu te contratar um vendedor amanhã, o que acontece? Você tem um processo? Você tem um script? Você tem os critérios de qualificação escritos? Porque se não tem, você não tem uma empresa de vendas — você tem um vendedor com uma empresa por trás."*
+
+Este projeto é sua resposta a esse questionamento.
+
+**Startup fictícia (referência):** HealthFlow — plataforma SaaS para clínicas médicas de médio porte automatizarem confirmações de consulta e redução de no-show. MRR atual: R$ 8.500 com 11 clientes. Preço: R$ 750-1.200/mês.
+
+---
+
+## Etapas Detalhadas do Projeto
+
+### Etapa 1: Análise dos Clientes Atuais (2-3 horas)
+
+Antes de criar qualquer processo, extraia inteligência dos clientes que já compraram de você.
+
+**1.1 Mapeie seus atuais clientes em uma tabela:**
+
+| Cliente | Setor | Tam. | Como chegou | Por que comprou | Tempo para fechar | Objeções que teve | Está usando bem? |
+|---------|-------|------|-------------|-----------------|------------------|-------------------|-----------------|
+| | | | | | | | |
+
+**1.2 Responda com base nos dados:**
+
+- Quais características os clientes mais satisfeitos têm em comum?
+- Quais características os clientes mais problemáticos têm em comum?
+- Qual foi o gatilho que fez cada um decidir comprar agora (e não depois)?
+- Qual foi o canal de primeiro contato mais frequente?
+- Qual objeção apareceu mais de uma vez?
+
+**1.3 Escreva seu ICP refinado** (com base em dados reais, não suposições):
+
+O ICP deve ter:
+- Setor(es) e tamanho ideal de empresa
+- Cargo e perfil do decisor
+- 3-5 sinais de qualificação (como identificar um bom fit)
+- 3-5 disqualificadores (quem NÃO comprar)
+- O "momento de dor" — qual evento na empresa dispara a necessidade do seu produto
+
+---
+
+### Etapa 2: Mapeamento do Funil de Vendas (2 horas)
+
+Documente cada etapa do seu processo atual de vendas, mesmo que seja informal:
+
+**Template de funil:**
+
+```
+ESTÁGIO 1: PROSPECÇÃO
+- Como você identifica prospects?
+- Quais ferramentas usa?
+- Quantos prospects você tenta por semana?
+- Critério para avançar: _____
+
+ESTÁGIO 2: PRIMEIRO CONTATO
+- Canal preferencial (email, LinkedIn, telefone, indicação)?
+- Template/script de abordagem
+- Taxa de resposta atual: ___%
+- Critério para avançar: _____
+
+ESTÁGIO 3: DISCOVERY CALL (30-45 min)
+- Agenda padrão da call
+- 10 perguntas obrigatórias
+- Como você qualifica (BANT: Budget, Authority, Need, Timeline)?
+- Critério para avançar: _____
+
+ESTÁGIO 4: DEMO/APRESENTAÇÃO (30-60 min)
+- Estrutura da apresentação
+- 3 casos de uso principais que você mostra
+- Como você adapta para o problema do cliente?
+- Critério para avançar: _____
+
+ESTÁGIO 5: PROPOSTA
+- Template de proposta
+- Quanto tempo leva para enviar?
+- Como você faz follow-up?
+- Critério para avançar: _____
+
+ESTÁGIO 6: NEGOCIAÇÃO E FECHAMENTO
+- Descontos: você dá? Quando? Quanto?
+- Quem assina o contrato?
+- Processo de onboarding inicial
+- Critério de vitória: _____
+```
+
+**Métricas do funil (preencha com dados reais ou estimados):**
+
+| Etapa | Entradas por mês | Taxa de avanço (%) | Tempo médio na etapa |
+|-------|-----------------|-------------------|----------------------|
+| Prospecção | | | |
+| Contato | | | |
+| Discovery | | | |
+| Demo | | | |
+| Proposta | | | |
+| Fechamento | | | |
+
+---
+
+### Etapa 3: Scripts e Templates de Comunicação (3-4 horas)
+
+Esta é a parte que mais impacta a capacidade de treinar outras pessoas.
+
+**3.1 Template de E-mail de Prospecção Fria (versão final testada)**
+
+Escreva 3 versões diferentes do e-mail inicial, para 3 segmentos diferentes do seu ICP. Para cada versão:
+- Linha de assunto (testada para taxa de abertura > 40%)
+- Corpo do e-mail (máximo 5 frases)
+- CTA (baixo compromisso — não é "agende uma demo de 1 hora")
+- Sequência de follow-up (quando e o que dizer se não responder)
+
+**3.2 Script de Discovery Call**
+
+Documente palavra por palavra (ou próximo disso):
+- Abertura (como você configura o contexto da conversa)
+- 10 perguntas de discovery em ordem lógica
+- Como você transita de discovery para apresentação
+- Como você fecha a call com próximo passo claro
+
+**3.3 Template de Proposta Comercial**
+
+Sua proposta deve ter:
+- Resumo do problema discutido (mostra que você ouviu)
+- Solução proposta e casos de uso específicos para esta empresa
+- Planos e preços claros
+- Próximos passos e cronograma
+- Garantia ou política de cancelamento (reduz risco percebido)
+
+**3.4 Guia de Objeções**
+
+Documente as 7 objeções mais comuns e como você responde:
+
+```
+OBJEÇÃO: "Não temos budget agora"
+Frequência: Alta
+Resposta eficaz:
+"Entendo. Quando vocês normalmente revisam budgets? 
+[aguarda resposta] 
+Posso te enviar os números de ROI dos nossos clientes atuais para você 
+ter em mãos quando chegar esse momento?"
+
+Resultado esperado:
+→ Mantém o prospect engajado sem pressão
+→ Coloca você na agenda para o próximo ciclo de budget
+```
+
+---
+
+### Etapa 4: Métricas e KPIs de Vendas (1-2 horas)
+
+Um Playbook sem métricas é um diário. Defina os indicadores que uma pessoa contratada para vendas deverá reportar:
+
+**KPIs Semanais:**
+- Número de novos prospects identificados
+- Emails de prospecção enviados
+- Taxa de resposta
+- Calls de discovery realizadas
+- Demos agendadas
+
+**KPIs Mensais:**
+- MQL (Marketing Qualified Leads) recebidos
+- SQL (Sales Qualified Leads) criados
+- Propostas enviadas
+- Deals fechados
+- MRR gerado
+- Churn de novos clientes nos primeiros 90 dias
+
+**KPIs de Eficiência (calcule trimestralmente):**
+- CAC (Custo de Aquisição de Cliente)
+- Payback Period (meses para recuperar o CAC)
+- Taxa de conversão de cada etapa do funil
+- Ciclo médio de vendas (em dias)
+
+**Dashboard mínimo:** Crie uma planilha ou use um CRM gratuito (HubSpot CRM, Pipedrive trial, Notion) para acompanhar estes números em tempo real.
+
+---
+
+### Etapa 5: Onboarding do Primeiro Vendedor (1 hora)
+
+Se você fosse contratar um SDR ou AE amanhã, o que precisaria existir para que essa pessoa estivesse operacional em 30 dias?
+
+**Crie um plano de 30-60-90 dias:**
+
+```
+DIAS 1-30: APRENDIZADO
+[ ] Leitura do Playbook completo
+[ ] Shadowing de 5 discovery calls com o founder
+[ ] Estudo dos casos de sucesso dos clientes atuais
+[ ] Prática dos scripts com o founder (roleplay)
+[ ] Primeira prospecção autônoma (com revisão)
+OBJETIVO: Primeira discovery call independente no dia 30
+
+DIAS 31-60: PRÁTICA GUIADA
+[ ] 3 discovery calls independentes por semana
+[ ] Acompanhamento do founder nas primeiras 5 demos
+[ ] Refinamento do ICP com base em aprendizados
+[ ] Primeira demo independente
+OBJETIVO: Primeiro deal em negociação próprio no dia 60
+
+DIAS 61-90: AUTONOMIA
+[ ] Pipeline próprio de 20+ prospects ativos
+[ ] Demos independentes com feedback semanal
+[ ] Primeiro fechamento autônomo
+[ ] Contribuição para atualização do Playbook
+OBJETIVO: MRR gerado por conta própria no dia 90
+```
+
+---
+
+## Rubrica de Avaliação
+
+| Critério | Insuficiente (0-4) | Satisfatório (5-7) | Exemplar (8-10) | Peso |
+|----------|-------------------|-------------------|----------------|------|
+| **ICP e Análise de Clientes** | ICP genérico, sem dados reais | ICP claro com alguns dados de clientes | ICP baseado em análise real de clientes com padrões identificados | 20% |
+| **Funil e Processo** | Etapas vagas, sem critérios de avanço | Funil com etapas claras e alguma métrica | Funil completo com critérios, métricas e taxas de conversão | 20% |
+| **Scripts e Templates** | Templates genéricos e não testados | Templates customizados para o ICP | Templates testados com variações para diferentes segmentos | 25% |
+| **Guia de Objeções** | Menos de 3 objeções documentadas | 5-6 objeções com respostas razoáveis | 7+ objeções com respostas testadas e resultados esperados | 15% |
+| **Métricas e KPIs** | Sem métricas definidas | Métricas básicas sem sistema de acompanhamento | Dashboard funcional com KPIs semanais, mensais e de eficiência | 10% |
+| **Usabilidade Real** | Documento que você usaria como referência | Documento que um vendedor júnior poderia seguir | Playbook que você confiaria a um vendedor sem supervisão constante | 10% |
+
+**Bônus:**
+- +1 ponto: Playbook testado com uma pessoa real (amigo, colega) que leu e deu feedback
+- +1 ponto: Inclui gravação de roleplay de discovery call para treinamento
+- +1 ponto: Inclui análise de concorrentes no guia de objeções
+
+---
+
+## Conexão com a Realidade do Empreendedor
+
+### Por Que Este Projeto Importa Agora
+
+Aaron Ross em *Receita Previsível* é direto: *"A menos que você esteja em uma indústria verdadeiramente baseada no relacionamento, não tem como rodar o negócio baseado na velha escola de vendas"*. O Playbook de Vendas é a transição de "vendas baseadas no fundador" para "vendas baseadas no processo".
+
+Investidores Série A perguntam sobre Playbooks. Não porque precisam ler cada página — mas porque a existência de um Playbook prova que você tem processo, não apenas talento pessoal. Talento não escala. Processo, sim.
+
+### O Teste do Ônibus
+
+Existe um teste brutal mas revelador para founders em vendas: **"Se você fosse atropelado por um ônibus amanhã, sua startup conseguiria fechar clientes no próximo mês?"**
+
+Se a resposta é "não sei" ou "provavelmente não", você não tem um processo de vendas — você é o processo de vendas. Este projeto existe para mudar isso.
+
+### Depoimento de Founder
+
+> *"Levei 18 meses para perceber que estava enganando a mim mesmo. Tinha 15 clientes, growing 20% ao mês, achava que estava indo bem. Aí tentei contratar meu primeiro vendedor. Ele ficou 60 dias, não fechou nada, e saiu. Aí contratei outro. Mesma coisa. Perdi R$ 120k em salários e 6 meses de crescimento antes de entender: o problema não era o vendedor. Era que eu nunca tinha documentado o que fazia. Cada venda era diferente porque eu adaptava na hora com base em intuição. Quando fui escrever o Playbook, percebi que nem eu sabia exatamente por que meus clientes compravam."*
+>
+> — Founder anônimo, SaaS B2B, São Paulo, 2024
+
+---
+
+## Recursos Adicionais
+
+**Para construir o Playbook:**
+- HubSpot: Templates gratuitos de Playbook de Vendas
+- Notion: Template "Sales Playbook" na galeria pública
+- PipeDrive: CRM gratuito para acompanhar o funil
+
+**Para testar os scripts:**
+- Gong.io (pago): Análise de calls de vendas
+- Otter.ai (freemium): Transcrição de calls para análise
+- Roleplay com colegas ou outros founders do programa
+
+**Leitura complementar:**
+- *Receita Previsível* — Aaron Ross e Marylou Tyler (completo)
+- *The Sales Acceleration Formula* — Mark Roberge (HubSpot)
+- *SPIN Selling* — Neil Rackham (clássico de discovery)

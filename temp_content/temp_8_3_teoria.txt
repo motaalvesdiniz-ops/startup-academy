@@ -1,0 +1,334 @@
+# Term Sheets, Dilution e Cap Table
+
+## Por que este módulo é decisivo para sua startup?
+
+Você pode ter o melhor produto, o time mais talentoso e um mercado bilionário à frente — mas se você assinar um term sheet sem entender completamente suas implicações, pode perder o controle da sua empresa antes mesmo de ela decolar. Esta não é uma hipérbole: é o que acontece a dezenas de founders anualmente no Brasil e no mundo.
+
+Como registrado em *The Founder's Dilemmas* (Noam Wasserman, Princeton University Press, 2012), **a tensão entre riqueza e controle é o dilema central do fundador**. E essa tensão se manifesta concretamente nos documentos jurídicos que você assina ao aceitar investimento: o term sheet, as cláusulas de anti-diluição, as liquidation preferences e a estrutura da cap table. Wasserman demonstra, com dados de centenas de startups, que a maioria dos founders **não entende as repercussões** de aceitar capital externo até que seja tarde demais.
+
+Este módulo resolve isso. Você vai aprender a ler e negociar term sheets como um insider, calcular dilution em múltiplas rodadas, construir e interpretar uma cap table, e tomar decisões de fundraising com clareza estratégica — não às cegas.
+
+---
+
+## O Term Sheet: A Carta de Intenções que Define Tudo
+
+### O que é um Term Sheet?
+
+O **term sheet** (folha de termos) é um documento não vinculante — ou com vinculação limitada a certas cláusulas — que resume os principais termos econômicos e de governança de uma rodada de investimento. Embora juridicamente não seja o contrato final, na prática **define os parâmetros dentro dos quais o contrato definitivo será redigido**. Mudar termos após assinar um term sheet é possível, mas politicamente custoso e sinaliza fraqueza na negociação.
+
+Conforme descrito em *Venture Capital Strategy* (o livro de referência do curso), um VC que emite um term sheet sério geralmente tem **forte intenção de fechar o negócio**. Firmas top-tier raramente emitem term sheets sem intenção real de investir — ao contrário de firmas secundárias, onde a taxa de ruptura pode chegar a 50%. Paul Graham (Y Combinator) advertiu repetidamente: "Se um VC te der um term sheet e sumir, você perdeu tempo que não pode recuperar e pode ter assustado outros investidores."
+
+### Anatomia de um Term Sheet: Cláusulas Essenciais
+
+Um term sheet típico de rodada VC ou Série A contém dois blocos principais: **termos econômicos** e **termos de governança**. Vamos dissecar cada um.
+
+---
+
+#### Bloco 1: Termos Econômicos
+
+**1.1 Valuation (Avaliação)**
+
+A valuation define quanto sua empresa "vale" no momento do investimento. Existem dois conceitos fundamentais:
+
+- **Pre-money valuation**: quanto a empresa vale *antes* de receber o investimento
+- **Post-money valuation**: quanto a empresa vale *depois* de receber o investimento
+
+A fórmula é simples:
+> Post-money = Pre-money + Investimento
+
+A participação do investidor é calculada sobre o post-money:
+> % do VC = Investimento ÷ Post-money
+
+**Exemplo prático**: VC oferece R$ 2M em uma pre-money de R$ 8M.
+- Post-money = R$ 8M + R$ 2M = R$ 10M
+- % do VC = R$ 2M ÷ R$ 10M = **20%**
+- Founders retêm 80% (antes de considerar option pool)
+
+Como demonstrado no *VC Math Cheat Sheet* do livro *Venture Capital Strategy*:
+
+| Investimento sobre Pre | % do VC |
+|------------------------|---------|
+| 1M sobre 2M | 33% |
+| 1M sobre 3M | 25% |
+| 1M sobre 4M | 20% |
+| 2M sobre 5M | ~29% |
+| 3M sobre 6M | 33% |
+
+**Atenção crítica**: Confundir pre e post-money é o erro mais comum de founders iniciantes. Um VC que diz "investimento de R$ 5M em post-money de R$ 10M" está oferecendo 50% da empresa. O mesmo VC dizendo "R$ 5M em pre-money de R$ 10M" está pedindo 33%. São propostas radicalmente diferentes com fraseamento similar.
+
+---
+
+**1.2 Investment Size (Tamanho do Investimento)**
+
+O montante a ser investido determina quanto capital você recebe e, junto com a valuation, define sua diluição imediata. Porém, nem todo investimento é simples:
+
+- **Investimento único (bullet)**: Recebe todo o capital de uma vez
+- **Tranching (parcelas)**: Capital liberado em marcos (*milestones*) específicos — entrega do produto, número de clientes, receita mínima. Isso protege o investidor, mas adiciona pressão operacional ao founder.
+
+Conforme explicitado em *Venture Capital Strategy*: o tranching é uma ferramenta de controle de risco do investidor. Para founders, negociar marcos razoáveis é crucial — marcos impossíveis podem tornar o capital inacessível na prática.
+
+---
+
+**1.3 Liquidation Preference (Preferência de Liquidação)**
+
+Esta é, provavelmente, a cláusula que mais surpreende founders na hora da saída. A **liquidation preference** define a ordem de pagamento quando a empresa é vendida ou encerra operações.
+
+**Estrutura básica**: O investidor recebe sua preferência *antes* que qualquer outro acionista receba qualquer valor.
+
+**Tipos principais**:
+
+| Tipo | Descrição | Impacto |
+|------|-----------|---------|
+| **1x não participante** | VC recebe 1x seu investimento OU converte em ações e participa proporcionalmente (o que for maior) | Mais favorável ao founder |
+| **1x participante** | VC recebe 1x seu investimento E depois participa proporcionalmente no restante | Moderadamente desfavorável |
+| **Múltiplo** (ex: 2x, 3x) | VC recebe 2x ou 3x o investimento antes de qualquer outro | Muito desfavorável ao founder |
+
+**Exemplo de impacto dramático**: A startup Lynx Solutions (citada em *The Founder's Dilemmas*, Wasserman, 2012) concordou com preferência de liquidação na rodada A — o que causou problemas sérios quando, rodadas depois, recebeu ofertas de aquisição *abaixo* do valor acumulado das preferências. Os founders ficaram sem nada mesmo com uma saída.
+
+**Cláusula anti-diluição**: Frequentemente acompanha a liquidation preference. Protege o investidor em *down rounds* (rodadas com valuation menor que a anterior). Existem dois tipos principais:
+- **Broad-based weighted average**: Calcula ajuste ponderado mais suave — mais justo para founders
+- **Full ratchet**: Ajusta o preço de conversão para o menor preço da nova rodada — muito agressivo, praticamente elimina diluição do VC às custas dos founders
+
+Como registrado em *The Founder's Dilemmas*: "Founders que concordam com termos secundários como anti-dilution protection e dividends acumulados estão potencialmente sacrificando muito valor econômico em cenários de saída moderada, que são estatisticamente os mais prováveis."
+
+---
+
+**1.4 Option Pool (Pool de Opções)**
+
+O option pool é uma reserva de ações destinada a contratar e reter talentos futuros através de stock options. O ponto de conflito crítico está em **quando e como o option pool é criado**.
+
+Conforme demonstrado em *The Founder's Dilemmas* (Wasserman, 2012) com dados de mais de 3.200 startups:
+
+- **Pré-financiamento**: 46% das startups criam pools antes do primeiro round
+- **Na Série A**: 80% dos startups têm pools formalizados
+- **Na Série B+**: >90% mantêm pools ativos
+
+O tamanho médio dos pools:
+- **Startups jovens**: ~20% das ações fully diluted
+- **Série C/D**: ~10% das ações fully diluted
+
+**O truque do option pool pre-money**: VCs frequentemente exigem que o option pool seja *criado antes do investimento*, o que o inclui no cálculo do pre-money — diluindo os founders, não o VC. Se um VC pede 20% de option pool e 20% de participação, os founders podem ficar com apenas 60%, não 80% como parecem.
+
+**Negociação estratégica**: Fundadores devem argueir por option pools menores e criados *após* o investimento (post-money) sempre que possível.
+
+---
+
+**1.5 Dividends (Dividendos)**
+
+Embora incomuns em startups early-stage, dividendos acumulativos podem criar obrigações financeiras crescentes. O caso Ockham Technologies citado em *The Founder's Dilemmas* ilustra isso: a Noro-Moseley queria dividendo acumulativo de **18% ao ano** — o que significava que, após 5 anos, o valor preferencial teria crescido 138% antes de qualquer distribuição aos founders.
+
+**Regra prática**: Resista a dividendos acumulativos em qualquer formato. Dividendos não-acumulativos e apenas pagáveis se declarados pelo board são mais aceitáveis.
+
+---
+
+#### Bloco 2: Termos de Governança
+
+**2.1 Board Seats (Assentos no Conselho)**
+
+O conselho de administração (board) tem poder real sobre decisões estratégicas: aprovação de budget, contratação/demissão do CEO, aprovação de novas rodadas. A composição do board é negociada no term sheet.
+
+**Composição típica pré-Série A**: 3 membros — 2 founders + 1 independente
+**Composição típica Série A**: 5 membros — 2 founders + 2 VCs + 1 independente mutualmente acordado
+**Composição Série B+**: Pode expandir para 7-9, com mais poder institucional
+
+Conforme Jim Triandiflou da Ockham Technologies (citado em *The Founder's Dilemmas*), ao comparar a proposta do angel texano (que mantinha board 2:1 para founders) com VCs que pediam igualdade de representação, a decisão de board composition determinou quem realmente controlaria a empresa.
+
+**2.2 Pro Rata Rights (Direito de Preferência)**
+
+O direito de pro rata permite que investidores existentes mantenham sua porcentagem participando de rodadas futuras *antes* de novos investidores. É extremamente valioso para VCs — protege participação em winners. Para founders, cria limitação na base de investidores futuros.
+
+**2.3 Information Rights (Direitos de Informação)**
+
+Determinam que relatórios financeiros e operacionais o investidor tem direito de receber e com que frequência. Padrão: relatórios mensais (P&L, balanço, métricas chave) para angels e seed VCs; relatórios trimestrais auditados para VCs maiores.
+
+---
+
+## Dilution: A Matemática do Crescimento pelo Capital
+
+### O Que É Diluição?
+
+**Dilution (diluição)** é a redução percentual na participação de um acionista quando novas ações são emitidas. Isso ocorre em cada rodada de investimento, na criação de option pools, e em conversão de notas conversíveis.
+
+A fórmula básica de diluição:
+> Nova participação = Participação anterior × (Ações anteriores ÷ Ações totais após emissão)
+
+### Diluição em Múltiplas Rodadas: O Exemplo Completo
+
+Vamos rastrear uma startup desde a fundação até a Série B:
+
+**Fundação**:
+- Founder A: 60% | Founder B: 40% | Total: 100% (1.000.000 ações)
+
+**Rodada Seed (Pré-Série A)**:
+- Investidor investe R$ 500K em pre-money de R$ 2M
+- Post-money = R$ 2,5M → Investidor recebe 20%
+- Criação de option pool: 10% antes da rodada
+- Resultado: Founder A: 48% | Founder B: 32% | Option Pool: 10% | Seed: 10%
+
+**Série A**:
+- VC investe R$ 3M em pre-money de R$ 9M
+- Post-money = R$ 12M → VC recebe 25%
+- Option pool refreshed: mais 5%
+- Resultado: Founder A: ~34% | Founder B: ~23% | Pools: ~13% | Seed: 7,5% | Série A: 22,5%
+
+**Série B**:
+- Investimento de R$ 15M em pre-money de R$ 45M
+- VC recebe 25%
+- Resultado: Founder A: ~25% | Founder B: ~17% | ...
+
+Após três rodadas, Founder A saiu de 60% para ~25%. Isso é **diluição esperada e saudável** em uma startup com trajetória ascendente — desde que a *valuation* tenha crescido proporcionalmente (o que aqui aumentou de zero para R$ 60M).
+
+### Dilution Boa vs. Dilution Ruim
+
+| | Dilution Boa | Dilution Ruim |
+|---|---|---|
+| **Valuation** | Cresce em cada rodada (up round) | Cai ou estagna (down round/flat round) |
+| **Uso do capital** | Gera crescimento que justifica nova rodada maior | Capital queimado sem progresso mensurável |
+| **Termos** | Liquidation preferences razoáveis (1x não participante) | Múltiplos de liquidation + anti-dilution full ratchet |
+| **Poder** | Board balanceado, founders mantêm controle operacional | VCs com maioria + provisions de controle excessivas |
+
+### Down Rounds: O Pesadelo da Diluição
+
+Em uma *down round*, a nova rodada ocorre com valuation menor que a anterior. Além da diluição normal, os mecanismos de anti-diluição se ativam — aumentando a participação dos investidores protegidos às custas dos founders e investidores sem proteção.
+
+Conforme *Venture Capital Strategy*: "Down rounds causam problemas em cascata: ativam anti-dilution, destroem moral da equipe, complicam próximas rodadas e criam conflitos de interesse no board."
+
+---
+
+## Cap Table: O Mapa Acionário da sua Startup
+
+### O Que É uma Cap Table?
+
+A **capitalization table** (cap table ou tabela de capitalização) é o registro completo de todos os detentores de participação na empresa: fundadores, investidores, funcionários com opções, advisors, e qualquer outro detentor de instrumentos conversíveis.
+
+Uma cap table bem mantida responde às perguntas:
+- Quem possui quanto da empresa (percentual e número de ações)?
+- Qual é o preço por ação em cada rodada?
+- Quem tem direitos especiais (liquidation preference, anti-dilution)?
+- Qual seria o retorno de cada acionista em diferentes cenários de saída?
+
+### Estrutura de uma Cap Table
+
+**Cap Table — TechBrasil S.A. — Pré-Série A**
+
+| Acionista | Tipo de Ação | Nº de Ações | % (fully diluted) | Preço Médio Pago | Valor Investido |
+|-----------|-------------|-------------|-------------------|-----------------|----------------|
+| Ana Costa (Founder CEO) | Ordinária | 4.000.000 | 40% | R$ 0,001 | R$ 4.000 |
+| Bruno Lima (Founder CTO) | Ordinária | 3.000.000 | 30% | R$ 0,001 | R$ 3.000 |
+| Option Pool | — | 1.000.000 | 10% | — | — |
+| Fundo Anjo BR (Seed) | Preferencial A | 2.000.000 | 20% | R$ 0,50 | R$ 1.000.000 |
+| **TOTAL** | | **10.000.000** | **100%** | | **R$ 1.007.000** |
+
+**Notas importantes**:
+- *Fully diluted* = todas as ações emitidas + todas as opções autorizadas (mesmo não exercidas)
+- O option pool "dilui" founders mesmo antes de ser distribuído a funcionários
+- Preferencial A tem liquidation preference 1x = R$ 1M deve ser devolvido aos investidores antes de qualquer distribuição
+
+### Waterfall Analysis: O Que Cada Um Recebe na Saída?
+
+O **waterfall** (cascata de pagamentos) determina quem recebe quanto em diferentes cenários de saída. Esta análise é crítica — e frequentemente surpreende founders.
+
+**Cenário: TechBrasil vendida por R$ 5M**
+
+| Passo | Beneficiário | Valor |
+|-------|-------------|-------|
+| 1. Liquidation preference 1x | Fundo Anjo BR | R$ 1.000.000 |
+| 2. Distribuição proporcional do restante | Todos os ordinários (incluindo founders) | R$ 4.000.000 × 70% = R$ 2.800.000 |
+| Recebido pelos founders | Ana + Bruno | R$ 2.800.000 × (70/70) = R$ 2.800.000 |
+
+**Cenário: TechBrasil vendida por R$ 800K (abaixo do investimento)**
+
+| Passo | Beneficiário | Valor |
+|-------|-------------|-------|
+| 1. Liquidation preference 1x | Fundo Anjo BR | R$ 800.000 (recebe tudo) |
+| 2. Distribuição restante | Founders | R$ 0 |
+
+Neste cenário, os founders que construíram a empresa por anos não recebem nada. É por isso que Paul Graham (Y Combinator) adverte: "Founders muito otimistas concordam com liquidation preferences achando que nunca venderão por um valor baixo. Mas saídas moderadas são as mais comuns."
+
+### Ferramentas para Gerenciar sua Cap Table
+
+| Ferramenta | Foco | Preço | Ideal para |
+|-----------|------|-------|-----------|
+| **Carta** | Cap table + equity management | US$ 99-599/mês | Startups com múltiplos investidores |
+| **Pulley** | Alternativa ao Carta | US$ 50-300/mês | Startups em early stage |
+| **AngelList** | Deal rooms + cap table | Gratuito básico | Rounds via sindicatos |
+| **Excel/Sheets** | Controle manual | Gratuito | Pré-seed, muito inicial |
+| **Captable.io** | Simples e gratuito | Gratuito | Brasileiros em early stage |
+
+**Regra de ouro**: A partir do primeiro investimento externo, mantenha uma cap table digital atualizada. Erros em cap tables descobertos tarde custam fortunas em honorários advocatícios.
+
+---
+
+## Negociação Estratégica: O Que Founders Devem Priorizar
+
+### Hierarquia de Negociação
+
+Com base em *The Founder's Dilemmas* e *Venture Capital Strategy*, a ordem de prioridade na negociação de um term sheet para um founder deve ser:
+
+**Alta prioridade (negocie firmemente):**
+1. **Pre-money valuation** — diretamente determina sua diluição
+2. **Liquidation preference** — use 1x não-participante como padrão; resista a múltiplos
+3. **Option pool timing e tamanho** — peça que seja criado após o investimento (post-money)
+4. **Composição do board** — mantenha controle operacional enquanto puder
+5. **Anti-diluição** — peça broad-based weighted average; recuse full ratchet
+
+**Média prioridade (negocie com flexibilidade):**
+6. **Pro rata rights** — razoáveis para investidores de qualidade
+7. **Vesting dos founders** — aceite vesting, mas negocie cliff e carve-out para fundação anterior
+
+**Baixa prioridade (aceite com cuidado):**
+8. **Information rights** — padrão aceitável
+9. **Drag-along** — garanta proteção adequada para founders
+
+### O Conselho de Paul Graham: A Escolha Entre Rich e King
+
+Em *The Founder's Dilemmas*, Noam Wasserman documenta o dilema central que aparece repetidamente nas histórias de fundadores: escolher entre **ser Rico** (maximizar valor econômico pessoal) ou **ser Rei** (manter controle da empresa). 
+
+Founders que tentam maximizar controle aceitarão menos capital, crescerão mais devagar, mas manterão o poder decisório. Founders que priorizam riqueza aceitarão diluição maior de investidores que trazem valor real, crescerão mais rápido e acumularão mais valor absoluto — mesmo com percentual menor.
+
+Wasserman demonstra que **investors preferem founders wealth-motivated** — com eles há alinhamento de objetivos em torno de crescimento e saída. Founders control-motivated criam conflitos que eventualmente levam à substituição do CEO.
+
+---
+
+## Exemplos Reais: Lições de Cap Tables Históricas
+
+### Facebook: Dilution Extrema com Resultado Extraordinário
+
+Mark Zuckerberg fundou o Facebook com 65% das ações. Após múltiplas rodadas de investimento (Peter Thiel, Accel, DST, Goldman Sachs, etc.), detinha aproximadamente 28% no IPO de 2012 — mas 28% de uma empresa de US$ 104 bilhões = US$ 29 bilhões pessoais. A diluição foi massiva, mas o valor criado foi ainda mais massivo.
+
+### Snapchat: Controle Preservado via Dual Class
+
+Evan Spiegel e Bobby Murphy criaram estrutura de ações de classe dupla (Class A sem voto, Class B com voto) — permitindo levantar capital significativo mantendo controle de voto. No IPO de 2017, acionistas públicos receberam ações *sem direito de voto*, concentrando poder nos founders.
+
+### Problema Comum no Brasil: Formalização Tardia
+
+Muitas startups brasileiras operam por 2-3 anos em estrutura informal (sócios-quotistas em Ltda.) sem uma cap table clara. Quando tentam captar com VCs internacionais, precisam passar por reestruturação societária cara e demorada (conversão para S.A., emissão de ações ordinárias e preferenciais). Custo típico: R$ 50-150K em honorários advocatícios e meses de processo.
+
+**Lição**: Comece com estrutura societária adequada desde o início. Use S.A. fechada desde a fundação se já souber que buscará venture capital.
+
+---
+
+## Síntese: O Framework de Decisão para Fundraising
+
+Ao avaliar qualquer term sheet, aplique este checklist:
+
+**Antes de assinar:**
+- [ ] Calculei minha diluição considerando option pool pre-money?
+- [ ] Entendo o waterfall completo em 3 cenários de saída (pessimista, realista, otimista)?
+- [ ] A liquidation preference é 1x não-participante?
+- [ ] Não há dividendos acumulativos?
+- [ ] A composição do board após o round me permite manter controle operacional?
+- [ ] Revisei com advogado especializado em startups (não advogado corporativo genérico)?
+- [ ] Tenho pelo menos 2-3 term sheets para comparar (criando competição)?
+
+**Sinal verde para assinar:**
+- Pre-money justa vs. estágio + tração
+- Termos de governança razoáveis
+- Investidor com track record de suporte ativo e transparência
+
+**Sinal vermelho — negocie ou recuse:**
+- Liquidation preference > 1x participante
+- Full ratchet anti-dilution
+- Option pool > 20% criado pre-money sem justificativa
+- Board com maioria dos VCs imediatamente após rodada seed
+- Dividendos acumulativos > 10% ao ano

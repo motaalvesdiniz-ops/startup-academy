@@ -1,0 +1,282 @@
+# Exercício Prático: Simulando a Divisão de Equity Entre Co-founders
+
+## Objetivo do Exercício
+
+Ao final deste exercício, você será capaz de:
+- Aplicar um framework objetivo de divisão de equity entre co-founders
+- Identificar os fatores que aumentam ou diminuem a participação de cada sócio
+- Estruturar uma conversa difícil sobre equity com clareza e dados
+- Avaliar os principais elementos de um acordo de vesting padrão
+- Reconhecer os erros mais comuns na divisão de equity que destroem startups
+
+Este exercício é executável hoje e simula um dos momentos mais delicados e importantes da jornada de qualquer startup.
+
+---
+
+## Contexto
+
+Noam Wasserman, em *"The Founder's Dilemmas"* (Princeton University Press, 2012), analisou centenas de startups e chegou a uma conclusão perturbadora: **65% das falhas dentro de portfólios de venture capital são atribuídas a problemas dentro da equipe fundadora** — e uma das principais fontes desses conflitos é a divisão de equity feita de forma precipitada, emocional ou por evitação.
+
+Paul Graham, em *"The Equity Equation"* (2007), oferece a lógica financeira fundamental: *"You should give up n% of your company if what you trade it for improves your average outcome enough that the (100-n)% you have left is worth more than the whole company was before."*
+
+Este exercício integra os dois frameworks para criar um processo estruturado de tomada de decisão.
+
+---
+
+## Passo a Passo
+
+### Etapa 1: Levantamento de Dados dos Co-founders (20 minutos)
+
+Para cada co-founder, documente as informações abaixo. Se estiver simulando, use os personagens do exemplo ao final.
+
+**Template por co-founder:**
+
+```markdown
+## CO-FOUNDER: [Nome]
+
+### Contribuições até hoje
+- Ideia original: [ ] Criou sozinho  [ ] Co-criou  [ ] Entrou depois
+- Código/Produto: [ ] Criou sozinho  [ ] Co-criou  [ ] Não contribuiu
+- Capital investido: R$ _____
+- Tempo dedicado (horas/semana): _____ por _____ meses
+- Contratos/clientes trazidos: _____
+- Ativos trazidos (IP, rede, tecnologia): _____
+
+### Comprometimento futuro
+- Dedicação full-time? [ ] Sim  [ ] Não  [ ] Planejado para [data]
+- Cargo pretendido: _____
+- Período de comprometimento declarado: _____
+
+### Habilidades e papel
+- Principal habilidade: _____
+- Quão difícil seria substituir? [ ] Muito fácil  [ ] Difícil  [ ] Insubstituível
+- Papel é crítico para o produto ou para o negócio? _____
+
+### Contexto pessoal
+- Precisa de salário imediatamente? [ ] Sim  [ ] Não
+- Tem outros projetos paralelos? [ ] Sim (quais?) _____ [ ] Não
+- Já fundou startup antes? [ ] Sim  [ ] Não
+```
+
+---
+
+### Etapa 2: Aplique a Calculadora de Equity (30 minutos)
+
+O modelo UpDown, documentado em *"The Founder's Dilemmas"* de Wasserman (Figura 6.6), oferece uma abordagem sistemática. Adapte para o contexto brasileiro:
+
+**Para cada co-founder, pontue cada dimensão (0-10):**
+
+| Dimensão | Peso | Co-founder A | Co-founder B | Co-founder C |
+|----------|------|-------------|-------------|-------------|
+| **Ideia original** | 1x | | | |
+| **Código/Produto desenvolvido** | 2x | | | |
+| **Capital investido** | 1.5x | | | |
+| **Habilidades únicas e críticas** | 2x | | | |
+| **Tempo investido até agora** | 1.5x | | | |
+| **Comprometimento futuro** | 2.5x | | | |
+| **Rede de contatos/clientes** | 1x | | | |
+| **Experiência relevante anterior** | 1x | | | |
+| **Tolerância a risco/salário baixo** | 1.5x | | | |
+
+**Cálculo:**
+
+```
+Pontuação Ponderada A = (Ideia×1) + (Código×2) + (Capital×1.5) + ... 
+Pontuação Ponderada B = ...
+Pontuação Ponderada C = ...
+
+Participação A = Pontuação A / (Pontuação A + B + C) × 100%
+```
+
+*Nota: Esta calculadora é um ponto de partida para a conversa, não uma fórmula definitiva.*
+
+---
+
+### Etapa 3: Simule Diferentes Cenários de Divisão (20 minutos)
+
+Com base na calculadora, simule 3 cenários:
+
+**Cenário 1: Divisão Equal Split (todos recebem igual)**
+- % A: ___ / % B: ___ / % C: ___
+- Consequência positiva: _____
+- Consequência negativa: _____
+
+**Cenário 2: Divisão Proporcional (baseada na calculadora)**
+- % A: ___ / % B: ___ / % C: ___
+- Consequência positiva: _____
+- Consequência negativa: _____
+
+**Cenário 3: Divisão Diferenciada (um co-founder é claramente mais crítico)**
+- % A: ___ / % B: ___ / % C: ___
+- Consequência positiva: _____
+- Consequência negativa: _____
+
+---
+
+### Etapa 4: Estruture o Acordo de Vesting (30 minutos)
+
+Independentemente de como a equity for dividida, o vesting é o mecanismo de proteção contra o pior cenário: um co-founder sair cedo e manter toda a participação.
+
+**Template de acordo de vesting padrão Silicon Valley (adapte):**
+
+```markdown
+## ACORDO DE VESTING — [Startup Name]
+
+### Estrutura Base
+- Cliff: 12 meses (sem vesting nos primeiros 12 meses)
+- Período total de vesting: 48 meses (4 anos)
+- Frequência de vesting após cliff: Mensal (1/48 por mês após cliff)
+- Início do período: Data de fundação ou data de assinatura
+
+### Cláusula de Aceleração
+Trigger de aceleração simples (single trigger):
+[ ] Sim — Em caso de aquisição, 100% das ações vestem imediatamente
+[ ] Não — Vesting continua mesmo após aquisição
+
+Trigger de aceleração duplo (double trigger):
+[ ] Sim — Aceleração apenas se: (1) aquisição E (2) demissão sem causa
+[ ] Não
+
+### Cláusula de Saída
+Se um co-founder sair antes do cliff:
+→ A empresa tem direito de recomprar 100% das ações ao preço de emissão
+
+Se um co-founder sair após o cliff:
+→ Ações já vestidas pertencem ao co-founder
+→ A empresa pode recomprar ações não vestidas ao preço de emissão
+
+### Cláusula de Bom Samaritano (boa-fé)
+Em caso de doença grave, morte ou incapacidade:
+→ [Definir tratamento específico]
+
+### Cláusula de Não-Competição
+[ ] Período: ___ meses após saída
+[ ] Geograficamente limitada a: _____
+[ ] Setores limitados: _____
+
+### Revisão da Divisão
+[ ] A divisão pode ser renegociada em consenso após ___ meses
+[ ] Qualquer alteração requer aprovação de ___ % dos co-founders
+```
+
+---
+
+### Etapa 5: Prepare a Conversa Sobre Equity (20 minutos)
+
+A divisão de equity requer uma conversa estruturada. Prepare uma agenda para a reunião entre co-founders:
+
+```markdown
+## AGENDA: REUNIÃO DE DIVISÃO DE EQUITY
+
+### Antes da Reunião
+[ ] Cada co-founder preencheu individualmente a calculadora de pontos
+[ ] Cada co-founder revisou 3 cenários possíveis
+[ ] Todos concordaram em basear a conversa em critérios objetivos, não em emoção
+
+### Agenda (90 minutos)
+1. [15 min] Alinhamento de valores: O que cada um espera da startup?
+2. [20 min] Apresentação das contribuições de cada um (sem debates ainda)
+3. [20 min] Comparação das calculadoras individuais (diferenças reveladoras)
+4. [20 min] Negociação de um cenário consensual
+5. [15 min] Discussão e alinhamento sobre vesting
+[ ] Definir data para revisão formal em advogado
+
+### Regras da Conversa
+- Não usar "mas eu tive a ideia" como argumento principal
+- Não misturar salário com equity
+- Não decidir em pressão de tempo (não marcar depois de evento, viagem, etc.)
+- Não deixar pontos não resolvidos para "depois"
+- Comprometer: se não chegar a consenso hoje, marcar outra reunião
+
+### Sinal de Alerta
+Se após 2 reuniões estruturadas ainda não houver consenso sobre equity,
+isso é um sinal de conflito fundamental de valores — a divisão de equity
+é o menor dos problemas.
+```
+
+---
+
+## Exemplo Completo Preenchido
+
+### A Startup: EduBot
+
+**Contexto:** Três co-founders formando uma EdTech B2B para automação de tutoria em escolas privadas.
+
+- **Rafael** (CEO): Teve a ideia, ex-diretor de escola, rede extensa com diretores de escolas privadas, dedica 100% do tempo, sem salário há 6 meses
+- **Juliana** (CTO): Construiu 90% do produto em 4 meses, dev sênior, ainda mantém um projeto freelance paralelo (20% do tempo), requer salário mínimo em 3 meses
+- **Marcos** (CMO): Entrou 2 meses depois, ex-gestor de marketing em EdTech, trouxe os primeiros 2 clientes pilotos, dedica 80% do tempo, investiu R$ 30.000 no negócio
+
+### Calculadora Preenchida (EduBot)
+
+| Dimensão | Peso | Rafael | Juliana | Marcos |
+|----------|------|--------|---------|--------|
+| Ideia original | 1x | 10 | 3 | 1 |
+| Código/Produto | 2x | 1 | 10 | 2 |
+| Capital investido | 1.5x | 0 | 0 | 10 |
+| Habilidades únicas | 2x | 8 (rede escolas) | 10 (tech) | 7 (mktg EdTech) |
+| Tempo investido | 1.5x | 10 | 8 | 6 |
+| Comprometimento futuro | 2.5x | 10 | 7 | 8 |
+| Rede/Clientes | 1x | 9 | 3 | 8 |
+| Experiência anterior | 1x | 8 | 7 | 8 |
+| Tolerância a risco | 1.5x | 10 | 6 | 7 |
+
+**Cálculo:**
+
+```
+Rafael:  (10×1)+(1×2)+(0×1.5)+(8×2)+(10×1.5)+(10×2.5)+(9×1)+(8×1)+(10×1.5)
+       = 10+2+0+16+15+25+9+8+15 = 100
+
+Juliana: (3×1)+(10×2)+(0×1.5)+(10×2)+(8×1.5)+(7×2.5)+(3×1)+(7×1)+(6×1.5)
+       = 3+20+0+20+12+17.5+3+7+9 = 91.5
+
+Marcos:  (1×1)+(2×2)+(10×1.5)+(7×2)+(6×1.5)+(8×2.5)+(8×1)+(8×1)+(7×1.5)
+       = 1+4+15+14+9+20+8+8+10.5 = 89.5
+
+TOTAL = 281
+
+Participação Rafael:  100/281 = 35.6%
+Participação Juliana: 91.5/281 = 32.6%
+Participação Marcos:  89.5/281 = 31.8%
+```
+
+### Cenários Analisados (EduBot)
+
+**Cenário 1 (Equal Split):** 33.3% / 33.3% / 33.3%
+- **Positivo:** Elimina conflito de "quem é mais importante", facilita tomada de decisão
+- **Negativo:** Subestima o papel crítico de Rafael (ideia + rede) e não reconhece o investimento de Marcos; pode gerar ressentimento latente
+
+**Cenário 2 (Proporcional):** 35.6% / 32.6% / 31.8%
+- **Positivo:** Matematicamente justo, baseado em critérios objetivos
+- **Negativo:** Diferenças muito pequenas (3.8% entre maior e menor) — pode não valer o atrito de negociar
+
+**Cenário Negociado (consenso):** 40% / 35% / 25%
+- **Justificativa:** Rafael recebe mais por ter a ideia, rede crítica e 100% de dedicação. Juliana pelo produto. Marcos recebe menos inicialmente, mas tem 4% em opções de performance atreladas a metas de receita, e sua posição pode ser revista em 12 meses com base em resultados.
+
+### Acordo de Vesting (EduBot)
+
+```markdown
+- Cliff: 12 meses para todos
+- Vesting: 48 meses total (linear, mensal)
+- Aceleração dupla em caso de aquisição + demissão sem causa
+- Rafael: pode converter 5% do seu unvested em crédito de salário retroativo 
+  se a empresa captar Série A (compensação pelo período sem salário)
+- Juliana: tem cláusula de revisão de equity em 12 meses se dedicar 100% 
+  do tempo (hoje está em 80%)
+- Marcos: 4% em opções de performance (1% a cada R$ 50k de ARR gerado)
+```
+
+---
+
+## Reflexão Final
+
+Após completar o exercício, responda:
+
+1. **Qual foi a maior surpresa** ao aplicar a calculadora? O resultado foi diferente do que você esperava emocionalmente?
+
+2. **Qual dimensão gerou mais discordância** entre os co-founders? Por quê?
+
+3. **Se você fosse um investidor**, como olharia para a divisão que chegaram? Ficaria confortável em investir?
+
+4. **Qual é o risco não resolvido** na sua divisão atual? Há algo que ficou "para depois" que precisa ser resolvido agora?
+
+5. **A cláusula de vesting** mudou como você pensa sobre o comprometimento dos co-founders? O que você faria diferente se soubesse disso no início?

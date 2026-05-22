@@ -1,0 +1,285 @@
+# Exercício Prático: Mapeando seu Ecossistema de Financiamento
+
+## Objetivo do Exercício
+
+Ao final deste exercício, você será capaz de:
+- Identificar qual fonte de capital é adequada para o estágio atual da sua startup
+- Construir uma lista qualificada dos 10 primeiros potenciais investidores para abordar
+- Calcular a diluição esperada em cada rodada e prever sua participação no exit
+- Criar um cronograma realista de fundraising baseado no seu runway atual
+
+## Contexto
+
+A maioria dos founders aborda o fundraising de forma reativa — só começa a pensar em captação quando o caixa está acabando. Isso é a receita para captar de qualquer um, nas piores condições.
+
+Este exercício vai guiá-lo para construir uma **estratégia de fundraising proativa** — sabendo quem vai abordar, quando, com quais argumentos e com quais instrumentos financeiros.
+
+Usaremos como exemplo a startup fictícia **ClinAI** — uma healthtech que usa IA para otimizar diagnósticos de imagem em clínicas de pequeno porte.
+
+---
+
+## Pré-requisitos
+
+- **Tempo necessário:** 90-120 minutos
+- **Materiais:** Editor de texto, planilha (Google Sheets recomendado)
+- **O que você precisa:** Métricas atuais da startup e uma compreensão básica do seu mercado
+
+---
+
+## Parte 1: Diagnóstico de Estágio e Fonte Adequada (20 min)
+
+### Questionário de Estágio
+
+Marque a afirmação que melhor descreve sua startup hoje:
+
+**Produto:**
+- [ ] A — Ainda não tenho produto, só uma ideia ou protótipo conceitual
+- [ ] B — Tenho um MVP funcional mas sem usuários reais
+- [ ] C — Tenho usuários ativos mas sem cobrança/receita
+- [ ] D — Tenho clientes pagantes (receita recorrente ou one-time)
+- [ ] E — Tenho MRR crescendo consistentemente por 3+ meses
+
+**Equipe:**
+- [ ] A — Só eu (solo founder)
+- [ ] B — Cofundadores, mas sem time de execução
+- [ ] C — Time pequeno (3-8 pessoas), principalmente técnico
+- [ ] D — Time completo com liderança em produto, vendas e tecnologia
+
+**Métricas:**
+- [ ] A — Sem métricas relevantes
+- [ ] B — Métricas de vaidade (visitas, downloads, cadastros)
+- [ ] C — Métricas de engajamento (retenção, DAU/MAU, NPS)
+- [ ] D — Métricas financeiras (MRR, CAC, LTV, Churn)
+
+### Tabela de Fonte Adequada por Estágio
+
+Com base nas suas respostas, identifique a fonte mais adequada:
+
+| Combinação | Estágio | Fonte Primária Adequada | Ticket Típico (BR) |
+|-----------|---------|------------------------|-------------------|
+| A/A/A ou A/B/A | Pré-seed | Bootstrapping + FFF + Aceleradora | R$ 0 a R$ 1M |
+| B/B/B ou B/C/B | Seed | Angels + Aceleradora | R$ 500K a R$ 5M |
+| C/C/C | Seed avançado | Angels + VC Seed | R$ 2M a R$ 10M |
+| D/D/C ou D/D/D | Series A | VC institucional | R$ 10M a R$ 60M |
+| E/D/D | Series A/B | VC institucional + growth equity | R$ 30M a R$ 200M |
+
+**Meu diagnóstico:**
+```
+Estágio: _______________________________
+Fonte primária recomendada: _____________
+Ticket típico no BR: ___________________
+Razão: ________________________________
+```
+
+---
+
+## Parte 2: Cálculo de Runway e Timing Ideal (20 min)
+
+### Template de Cálculo de Runway
+
+Preencha a planilha abaixo com os dados da sua startup:
+
+| Categoria | Valor Mensal (R$) |
+|-----------|------------------|
+| **Custos Fixos** | |
+| Salários e encargos | |
+| Infraestrutura tecnológica | |
+| Aluguel / escritório | |
+| Ferramentas e softwares | |
+| **Custos Variáveis** | |
+| Marketing e aquisição | |
+| Comissões de vendas | |
+| COGS (custo do produto) | |
+| **TOTAL BURN MENSAL** | R$ ________ |
+| **Caixa disponível** | R$ ________ |
+| **RUNWAY** | ________ meses |
+
+### Regra de Ouro de Graham: A Regra dos 6-3-1
+
+Graham não articula essa regra de forma explícita, mas o princípio emerge de suas obras:
+- **6 meses antes** do runway acabar: comece a construir relacionamentos com investidores (sem pedir dinheiro)
+- **3 meses antes**: entre em fundraising mode formal
+- **1 mês antes** do runway acabar: você está em crise — qualquer captação será nas piores condições
+
+**Meu cronograma de fundraising:**
+
+| Evento | Data Calculada |
+|--------|---------------|
+| Caixa atual | R$ __________ |
+| Burn mensal | R$ __________ |
+| Data de esgotamento do runway | ____________ |
+| **-6 meses**: Início de networking | ____________ |
+| **-3 meses**: Início do fundraising formal | ____________ |
+| **-1 mês**: Deadline crítico | ____________ |
+
+---
+
+## Parte 3: Construção da Lista de Alvos (40 min)
+
+### 3.1 Critérios de Qualificação de Investidores
+
+Antes de listar nomes, defina seus critérios:
+
+| Critério | Seu Valor |
+|----------|----------|
+| Ticket mínimo que preciso | R$ __________ |
+| Ticket máximo que aceito por investidor | R$ __________ |
+| Estágio que preciso que o investidor cubra | Seed / Series A / etc. |
+| Setor de especialidade relevante | ____________ |
+| Geografias relevantes (SP, RJ, Nacional, Internacional) | ____________ |
+
+### 3.2 Template de Pipeline de Investidores
+
+| # | Nome | Tipo | Cheque Típico | Setor Foco | Portfólio Relevante | Conexão Existente | Próximo Passo |
+|---|------|------|--------------|-----------|--------------------|--------------------|--------------|
+| 1 | | Angel / VC / Aceleradora | | | | Sim / Não / Quem? | |
+| 2 | | | | | | | |
+| 3 | | | | | | | |
+| 4 | | | | | | | |
+| 5 | | | | | | | |
+| 6 | | | | | | | |
+| 7 | | | | | | | |
+| 8 | | | | | | | |
+| 9 | | | | | | | |
+| 10 | | | | | | | |
+
+**Fontes para pesquisa de investidores brasileiros:**
+- Distrito Platform (distrito.me)
+- Crunchbase (crunchbase.com)
+- LinkedIn (busca por "venture capital Brasil" + setor)
+- ABStartups (abstartups.com.br)
+- Latam List (latamlist.com)
+- Relatórios de ecossistema: Distrito, Endeavor, Cubo
+
+### 3.3 Priorização por Probabilidade
+
+Após listar os 10, priorize usando a matriz:
+
+| Quadrante | Critério | Ação |
+|-----------|----------|------|
+| **Alta Prob / Alto Cheque** | Conhece seu setor, cheque alinhado, conexão existente | Abordar primeiro — são seus "leads quentes" |
+| **Alta Prob / Baixo Cheque** | Provavelmente investe, cheque menor | Abordar para completar rodada após âncora |
+| **Baixa Prob / Alto Cheque** | Não tem conexão mas seria transformacional | Trabalhar para conseguir introdução nos próximos 3 meses |
+| **Baixa Prob / Baixo Cheque** | Improvável + cheque pequeno | Não prioritário — evite gastar energia |
+
+---
+
+## Parte 4: Cálculo de Diluição (20 min)
+
+### Template de Projeção de Cap Table
+
+Simule sua cap table ao longo das rodadas usando esta tabela:
+
+| Rodada | Investimento (R$) | Pre-money Valuation (R$) | Post-money Valuation (R$) | % Vendido | % Founder (pós-rodada) |
+|--------|------------------|------------------------|--------------------------|-----------|------------------------|
+| Hoje (Baseline) | — | R$ ________ | — | — | 100% |
+| Seed (angels) | R$ _________ | R$ _________ | R$ _________ | ___% | ___% |
+| Series A | R$ _________ | R$ _________ | R$ _________ | ___% | ___% |
+| Series B | R$ _________ | R$ _________ | R$ _________ | ___% | ___% |
+| **Exit (M&A/IPO)** | — | R$ _________ | — | — | **___% → R$ ___** |
+
+**Fórmula:**
+```
+% Founder pós-rodada = % Founder pré-rodada × (1 - % vendido na rodada)
+Valor no exit = Valuation exit × % Founder pós última rodada
+```
+
+---
+
+## Exemplo Completo: ClinAI
+
+### Perfil da ClinAI
+
+A **ClinAI** é uma healthtech que desenvolveu um módulo de IA integrado a sistemas de laudos médicos de clínicas de pequeno porte, reduzindo em 60% o tempo de análise de imagens de radiologia. Fundada há 12 meses por dois engenheiros com experiência em ML e um médico radiologista.
+
+**Métricas atuais:**
+- MRR: R$ 18.000 (12 clínicas pagantes, R$ 1.500/mês)
+- Churn: 0% (ainda nenhum cliente cancelou)
+- NPS: 72 (excelente)
+- Equipe: 5 pessoas (2 founders + 3 contratados)
+- Caixa: R$ 280.000 (vindo do programa Pipe.social + bootstrapping)
+- Burn mensal: R$ 45.000
+- Runway: ~6 meses
+
+**Diagnóstico de Estágio:**
+- Produto: D (tem clientes pagantes)
+- Equipe: C (time pequeno mas funcional)
+- Métricas: D (MRR, Churn, NPS)
+→ **Estágio: Seed** → **Fonte adequada: Angels + VC Seed**
+
+---
+
+### Cálculo de Runway da ClinAI
+
+| Categoria | Valor Mensal (R$) |
+|-----------|------------------|
+| Salários e encargos (5 pessoas) | R$ 28.000 |
+| Infraestrutura cloud (AWS + APIs de IA) | R$ 6.000 |
+| Marketing digital | R$ 4.000 |
+| Ferramentas e softwares | R$ 2.000 |
+| Despesas diversas | R$ 5.000 |
+| **TOTAL BURN MENSAL** | **R$ 45.000** |
+| **Caixa disponível** | **R$ 280.000** |
+| **RUNWAY** | **~6,2 meses** |
+
+**Cronograma de fundraising da ClinAI:**
+
+| Evento | Data |
+|--------|------|
+| Runway esgota em | Dezembro/2024 |
+| Início de networking (-6 meses) | **Junho/2024** ← AGORA |
+| Fundraising mode formal (-3 meses) | Setembro/2024 |
+| Deadline crítico (-1 mês) | Novembro/2024 |
+
+**Conclusão:** A ClinAI precisou ter iniciado o networking com investidores **hoje mesmo**. Cada semana perdida encurta o runway de negociação.
+
+---
+
+### Pipeline de Investidores da ClinAI (Top 10)
+
+| # | Nome | Tipo | Cheque BR | Foco | Portfólio Relevante | Conexão | Prioridade |
+|---|------|------|-----------|------|---------------------|---------|-----------|
+| 1 | Kaszek Ventures | VC | R$ 5-50M | Health, Fintech | VTEX, Creditas | Introdução via mentor do Pipe | 🔴 Alta |
+| 2 | Indicium Capital | VC | R$ 2-15M | AI, B2B SaaS | Docket, Arquivei | Linkedin 2º grau | 🟡 Média |
+| 3 | Solano Neto (Angel) | Angel | R$ 300K-1M | Healthtech | CliniConnect | Não | 🟡 Média |
+| 4 | Wayra Brasil | Aceleradora | R$ 300K | Telecom+Tech | Vários | Aplicação aberta | 🟢 Abordar |
+| 5 | BNDES Startups | Fomento | R$ 1-5M | Todas | Vários | Não precisa | 🟢 Abordar |
+| 6 | Astella Investimentos | VC | R$ 3-20M | B2B SaaS | Linx, Omie | Não | 🟡 Média |
+| 7 | Endeavor Scale-Up | Aceleradora | R$ 0 (mentoria) | Escala | Nubank, iFood | Inscrição pública | 🟢 Abordar |
+| 8 | Dr. Fernando Leão | Angel médico | R$ 100-300K | Health | Memed | Contato direto LinkedIn | 🔴 Alta |
+| 9 | Maya Capital | VC | R$ 2-10M | Consumer, Health | Nuvemshop | Não | 🟡 Média |
+| 10 | InvestHealth (grupo angels) | Grupo Angel | R$ 200K-2M | Healthtech | Vários | Via ABStartups | 🔴 Alta |
+
+---
+
+### Projeção de Cap Table da ClinAI
+
+| Rodada | Investimento | Pre-money | Post-money | % Vendido | % Founders |
+|--------|-------------|-----------|-----------|-----------|-----------|
+| Hoje | — | R$ 3M | — | — | 100% |
+| Seed | R$ 1,5M | R$ 5M | R$ 6,5M | 23% | 77% |
+| Series A | R$ 8M | R$ 25M | R$ 33M | 24% | 58% |
+| Series B | R$ 25M | R$ 90M | R$ 115M | 22% | 46% |
+| **Exit (M&A)** | — | R$ 400M | — | — | **46% → R$ 184M** |
+
+**Aprendizado:** Mesmo após 3 rodadas de captação com diluição total de 54%, os founders da ClinAI mantêm 46% da empresa. Em um exit de R$ 400M, isso representa R$ 184M para a dupla de founders — R$ 92M cada. A diluição, quando bem planejada, não é inimiga do founder.
+
+---
+
+## Ação Imediata
+
+Com base no exercício, defina sua ação para esta semana:
+
+| Se você está... | Ação recomendada |
+|----------------|-----------------|
+| Com runway > 12 meses | Construa relacionamentos (networking sem pedir dinheiro) com 5 potenciais investidores este mês |
+| Com runway de 6-12 meses | Complete o pipeline de 10 investidores e peça 3 introduções esta semana |
+| Com runway < 6 meses | Entre em fundraising mode imediatamente — dedique 50% do tempo a isso |
+| Com runway < 3 meses | Explore Bridge (nota convertível de angel de emergência) + corte de burn |
+
+**Minha ação para esta semana:**
+```
+Ação específica: ________________________________________
+Prazo: _________________________________________________
+Resultado esperado: _____________________________________
+```

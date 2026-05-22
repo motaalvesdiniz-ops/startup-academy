@@ -1,0 +1,279 @@
+# Exercício Prático: Defina seus Primeiros OKRs e Mapa de Liderança
+
+## Objetivo do Exercício
+
+Ao final deste exercício, você será capaz de:
+- Construir um conjunto completo de OKRs para o próximo trimestre da sua startup
+- Diagnosticar seu estilo de liderança atual e identificar se está em "Tempo de Paz" ou "Tempo de Guerra"
+- Criar um mapa de 1:1s e check-ins que sustente a execução dos OKRs
+- Praticar a escrita de OKRs reais — não de atividade, mas de resultado
+
+## Contexto
+
+OKRs mal definidos são piores que nenhum OKR. A maioria das startups que tenta implementar OKRs pela primeira vez comete os mesmos erros: metas fáceis demais, KRs de atividade (não de resultado), desconexão entre o objetivo da empresa e o trabalho diário da equipe.
+
+Este exercício vai guiá-lo passo a passo para construir OKRs reais para sua startup, com templates preenchíveis e um exemplo completo de uma startup fictícia: a **FlowPay** — uma fintech B2B que automatiza conciliação financeira para PMEs.
+
+---
+
+## Pré-requisitos
+
+- **Tempo necessário:** 60-90 minutos
+- **Materiais:** Editor de texto (Notion recomendado) ou papel e caneta
+- **O que você precisa ter em mãos:** Métricas atuais da sua startup (mesmo que estimadas)
+
+---
+
+## Parte 1: Diagnóstico de Contexto Situacional (15 min)
+
+Antes de definir OKRs, você precisa saber em qual modo você está liderando. Responda honestamente:
+
+### Questionário: Tempo de Paz ou Tempo de Guerra?
+
+Marque todas as afirmações verdadeiras para sua startup **hoje**:
+
+**Indicadores de Tempo de Guerra:**
+- [ ] Meu runway é inferior a 12 meses
+- [ ] Ainda não atingi product-market fit
+- [ ] Estou perdendo clientes relevantes para um competidor
+- [ ] A equipe está desmotivada ou com alta rotatividade
+- [ ] Receita está estagnada ou caindo por mais de 2 meses seguidos
+- [ ] Há um problema técnico crítico não resolvido há mais de 4 semanas
+
+**Indicadores de Tempo de Paz:**
+- [ ] Tenho runway seguro (18+ meses)
+- [ ] NPS acima de 40 com clientes ativos
+- [ ] Crescimento consistente nos últimos 3 meses
+- [ ] Equipe estável e engajada
+- [ ] Product-market fit demonstrável (retenção D90 > 40%)
+- [ ] Modelo de receita funcionando e previsível
+
+**Interpretação:**
+- **4+ indicadores de guerra**: Você está em Tempo de Guerra. Seus OKRs devem ser de sobrevivência e foco. Liderança deve ser mais diretiva.
+- **4+ indicadores de paz**: Você está em Tempo de Paz. OKRs podem ser aspiracionais. Liderança pode ser mais colaborativa (Founder Mode participativo).
+- **Misto**: Você está em transição. Cuidado redobrado ao definir OKRs — priorize o que salva o negócio antes do que o faz crescer.
+
+**Meu diagnóstico:**
+```
+Contexto atual: [Tempo de Guerra / Tempo de Paz / Transição]
+Principal razão: _______________________________________________
+Implicação para liderança: ____________________________________
+```
+
+---
+
+## Parte 2: Construindo seus OKRs (40 min)
+
+### Etapa 2.1: Defina o Objetivo da Empresa
+
+O Objetivo deve ser qualitativo, inspiracional e memorável. Deve responder: **"Para onde estamos indo neste trimestre?"**
+
+**Critérios de um bom Objetivo:**
+- ✅ Causa um leve desconforto (ambicioso, mas possível)
+- ✅ É memorável — um funcionário consegue citar de cabeça
+- ✅ Está ligado à missão maior da empresa
+- ✅ Tem prazo implícito (trimestral ou anual)
+- ❌ Não é mensurável em si (isso fica nos KRs)
+- ❌ Não começa com "Aumentar" ou "Reduzir" (isso é KR)
+
+**Template:**
+
+```
+OBJETIVO DA EMPRESA — Q[X] 20XX
+
+"[Verbo de ação] + [O que queremos alcançar] + [Para quem/Por quê]"
+
+Exemplo válido:
+"Tornar-nos a plataforma de conciliação financeira indispensável para PMEs do setor varejista"
+
+Exemplo inválido (é KR, não Objetivo):
+"Aumentar MRR de R$ 50K para R$ 120K"
+
+Meu Objetivo:
+________________________________________________
+________________________________________________
+```
+
+### Etapa 2.2: Defina os Key Results (3-5 por Objetivo)
+
+Cada KR deve ser:
+- **Mensurável**: número específico com baseline e meta
+- **De resultado**: mede impacto, não atividade
+- **Verificável**: ao final do trimestre, é obvio se foi atingido ou não
+- **Desafiador**: 60-70% de probabilidade de sucesso
+
+**Template de KR:**
+
+```
+KR[N]: [Verbo de ação] + [Métrica] + [Baseline] + [Meta] + [Prazo]
+
+Formato: "Aumentar [métrica] de [X] para [Y] até [data]"
+
+Exemplos válidos:
+KR1: Aumentar MRR de R$ 50.000 para R$ 95.000 até 30/Jun
+KR2: Reduzir Churn mensal de 8% para 4% até 30/Jun
+KR3: Atingir NPS ≥ 45 com clientes ativos (baseline atual: 31)
+
+Exemplos inválidos (são atividades, não resultados):
+❌ KR: "Fazer 50 demos com potenciais clientes"
+❌ KR: "Contratar 2 desenvolvedores"
+❌ KR: "Lançar feature X"
+```
+
+### Template Completo de OKR da Empresa:
+
+| # | Componente | Conteúdo | Baseline | Meta | Score |
+|---|-----------|----------|----------|------|-------|
+| O | **Objetivo** | _Descreva aqui o objetivo inspiracional_ | — | — | — |
+| KR1 | Resultado-Chave 1 | _Métrica mensurável_ | _Valor atual_ | _Valor alvo_ | __/10 |
+| KR2 | Resultado-Chave 2 | _Métrica mensurável_ | _Valor atual_ | _Valor alvo_ | __/10 |
+| KR3 | Resultado-Chave 3 | _Métrica mensurável_ | _Valor atual_ | _Valor alvo_ | __/10 |
+| KR4 | Resultado-Chave 4 (opcional) | _Métrica mensurável_ | _Valor atual_ | _Valor alvo_ | __/10 |
+
+**Score médio do OKR:** ___/10
+
+---
+
+### Etapa 2.3: OKRs de Área (opcional para times com 3+ pessoas)
+
+Se você já tem times definidos, crie 1 OKR por área:
+
+| Área | Objetivo de Área | KR1 | KR2 | KR3 |
+|------|-----------------|-----|-----|-----|
+| Produto | | | | |
+| Growth/Marketing | | | | |
+| Vendas | | | | |
+| Customer Success | | | | |
+
+---
+
+## Parte 3: Mapa de Liderança e 1:1s (20 min)
+
+Ben Horowitz enfatiza que **one-on-ones (1:1s) regulares são o mecanismo mais poderoso de gestão disponível para um CEO**. Não são reuniões de status — são espaço para o funcionário trazer seus bloqueios e o líder fornecer contexto e suporte.
+
+### Template do Mapa de 1:1s
+
+| Pessoa | Frequência | Duração | Foco Principal |
+|--------|-----------|---------|---------------|
+| Co-founder | | | Alinhamento estratégico |
+| Head de Produto | | | Roadmap e prioridades |
+| Head de Vendas | | | Pipeline e obstáculos |
+| [Nome] | | | |
+| [Nome] | | | |
+
+**Frequências recomendadas por Horowitz:**
+- Primeiros reports (C-level, heads): **semanal, 30-45 min**
+- Equipe técnica: **quinzenal, 30 min**
+- Times maiores: **mensal, 30 min mínimo**
+
+### Template de Pauta do 1:1
+
+```markdown
+## 1:1 — [Seu nome] x [Nome da pessoa]
+**Data:** ___________
+
+### 1. O que está indo bem? (5 min)
+[Espaço para a pessoa compartilhar 1-2 vitórias recentes]
+
+### 2. O que está travado ou preocupante? (10-15 min)
+[Principal bloqueio ou preocupação da pessoa]
+
+### 3. Progresso nos OKRs (5 min)
+- KR1: [Score atual] — [Comentário]
+- KR2: [Score atual] — [Comentário]
+
+### 4. O que eu (líder) posso fazer para ajudar? (5 min)
+[Ação concreta do líder até a próxima sessão]
+
+### 5. Alinhamento estratégico (se necessário) (5 min)
+[Contexto sobre decisões da empresa relevantes para a pessoa]
+
+**Ações desta sessão:**
+- [ ] [Pessoa]: _________________ até _______
+- [ ] [Líder]: _________________ até _______
+```
+
+---
+
+## Parte 4: Exemplo Completo — FlowPay
+
+A **FlowPay** é uma fintech B2B que automatiza conciliação bancária e fiscal para PMEs do varejo. Fundada há 18 meses, tem atualmente:
+- MRR: R$ 62.000
+- Clientes ativos: 87
+- Churn mensal: 6,3%
+- NPS: 38
+- Runway: 14 meses
+- Equipe: 11 pessoas (3 devs, 2 comerciais, 1 CS, 1 produto, 4 operações)
+
+### Diagnóstico Situacional da FlowPay
+
+**Contexto:** Transição (tendendo a Tempo de Paz)
+- Runway de 14 meses: confortável
+- MRR crescendo 12% ao mês nos últimos 3 meses: bom sinal
+- Churn de 6.3%: ainda alto, risco real
+- NPS 38: abaixo do ideal (meta mínima: 40)
+
+**Implicação para liderança:** Founder em modo participativo, mas com atenção especial ao churn. OKRs devem equilibrar crescimento e retenção.
+
+---
+
+### OKRs da FlowPay — Q3 2024
+
+| # | Componente | Conteúdo | Baseline | Meta | 
+|---|-----------|----------|----------|------|
+| **O** | **Objetivo** | **Tornar a FlowPay indispensável para o varejo paulistano e eliminar a fricção financeira que custa horas ao nosso cliente** | — | — |
+| KR1 | MRR | Aumentar MRR mensal | R$ 62.000 | R$ 105.000 |
+| KR2 | Churn | Reduzir churn mensal | 6,3% | ≤ 3% |
+| KR3 | NPS | Elevar NPS com clientes ativos | 38 | ≥ 50 |
+| KR4 | Ativação | Reduzir tempo de onboarding (primeira conciliação) | 4,2 dias | ≤ 1 dia |
+| KR5 | Retenção | Atingir taxa de retenção D90 | 71% | ≥ 85% |
+
+---
+
+### OKRs por Área da FlowPay
+
+| Área | Objetivo | KR1 | KR2 | KR3 |
+|------|---------|-----|-----|-----|
+| **Produto** | Lançar funcionalidades que tornem o offboarding impossível | Lançar integração automática com Omie/Conta Azul (hoje: manual) | Reduzir tickets de suporte em 40% via feature de auto-diagnóstico | Atingir 90% de adoção da feature de conciliação automática entre usuários ativos |
+| **Growth** | Construir pipeline suficiente para dobrar o MRR | Gerar 120 leads qualificados B2B via conteúdo + LinkedIn | Converter 15% dos leads em demos (hoje: 8%) | Fechar 25 novos contratos (hoje: média 12/mês) |
+| **Customer Success** | Transformar clientes em defensores ativos da marca | Conduzir QBR (Quarterly Business Review) com todos os 87 clientes ativos | Aumentar Net Revenue Retention de 94% para 103% | Conseguir 5 depoimentos em vídeo publicados no site |
+
+---
+
+### Mapa de 1:1s da FlowPay
+
+| Pessoa | Cargo | Frequência | Duração | Foco |
+|--------|-------|-----------|---------|------|
+| Marina | Co-founder / CTO | Semanal | 45 min | Roadmap técnico, cultura de engenharia, KRs de produto |
+| Ricardo | Head de Vendas | Semanal | 30 min | Pipeline, objeções dos leads, forecast |
+| Camila | Customer Success | Semanal | 30 min | NPS, churn risk, feedback qualitativo |
+| Dev 1, Dev 2, Dev 3 | Engenharia | Quinzenal | 20 min | Bloqueadores técnicos, bem-estar, crescimento |
+| Ana | Produto | Quinzenal | 30 min | Priorização, discovery, OKRs de produto |
+
+---
+
+### Reflexão do Founder da FlowPay
+
+Após definir os OKRs, o CEO da FlowPay (Marcos) escreve:
+
+> **"O que descobri com esse exercício: eu estava focando demais em growth (novos clientes) e ignorando que estou perdendo 6,3% dos existentes todo mês — ou seja, gastando energia enchendo um balde furado. O KR2 (Churn ≤ 3%) é o mais importante do trimestre. Se não o resolver, o KR1 (MRR) nunca vai sustentar."**
+
+---
+
+## Ação Imediata
+
+Com base no seu exercício preenchido, defina **uma ação que você fará ainda hoje**:
+
+| Situação | Ação Recomendada |
+|----------|-----------------|
+| Nunca fez OKRs antes | Agende uma sessão de 2h com co-founders esta semana para preencher o template juntos |
+| Já tem OKRs mas são de atividade | Reescreva pelo menos 2 KRs para medir resultado, não atividade |
+| OKRs existem mas equipe não sabe | Agende uma reunião todos-mãos nos próximos 3 dias para apresentar os OKRs |
+| OKRs bem definidos | Configure um tracker semanal (Notion, planilha) para monitorar scores |
+
+**Minha ação para hoje:**
+```
+Ação: _________________________________________
+Prazo: ________________________________________
+Como saberei que completei: ___________________
+```
