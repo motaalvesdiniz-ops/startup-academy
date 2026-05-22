@@ -12,18 +12,13 @@ import { ragKnowledgeBase } from "@/lib/rag";
 import { Section, loadingMessages } from "@/lib/prompts";
 import {
   getContent,
-  saveContent,
-  deleteContent,
   hasContent,
   getProgress,
   markModuleDone,
   QuizQuestion,
-  getIncomplete,
-  setIncomplete,
 } from "@/lib/storage";
 import SectionTabs from "./SectionTabs";
 import QuizView from "./QuizView";
-import LoadingSteps from "./LoadingSteps";
 
 const CustomMarkdownComponents: import("react-markdown").Components = {
   h1: ({ node, ...props }) => (
@@ -68,9 +63,6 @@ interface ModuleViewProps {
 export default function ModuleView({ moduleId }: ModuleViewProps) {
   const [activeSection, setActiveSection] = useState<Section>("teoria");
   const [content, setContent] = useState<string | QuizQuestion[] | null>(null);
-  const [isGenerating, setIsGenerating] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [isIncomplete, setIsIncomplete] = useState(false);
   const [generatedSections, setGeneratedSections] = useState<Set<string>>(
     new Set()
   );
@@ -123,63 +115,9 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
     if (!mounted) return;
     const saved = getContent(moduleId, activeSection);
     setContent(saved);
-    setIsIncomplete(getIncomplete(moduleId, activeSection));
-    setError(null);
   }, [activeSection, moduleId, mounted]);
 
-  const generate = useCallback(
-    async (regenerate = false, isContinue = false) => {
-      if (!found) return;
-      setIsGenerating(true);
-      setError(null);
 
-      if (regenerate && !isContinue) {
-        deleteContent(moduleId, activeSection);
-      }
-
-      const ragContext = ragKnowledgeBase[moduleId] || "Conteúdo não disponível na RAG para este módulo.";
-
-      try {
-        const res = await fetch("/api/generate", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            moduleId,
-            moduleTitle: found.module.title,
-            section: activeSection,
-            ragContext,
-            previousContent: isContinue ? content : undefined,
-          }),
-        });
-
-        if (!res.ok) {
-          const data = await res.json();
-          throw new Error(data.error || `Erro HTTP ${res.status}`);
-        }
-
-        const data = await res.json();
-        const newContent = isContinue && typeof content === "string" 
-          ? content + data.content 
-          : data.content;
-
-        // Save to localStorage
-        saveContent(moduleId, activeSection, newContent);
-        setIncomplete(moduleId, activeSection, data.isIncomplete);
-        setContent(newContent);
-        setIsIncomplete(data.isIncomplete);
-        setGeneratedSections((prev) => new Set([...prev, activeSection]));
-      } catch (err: unknown) {
-        const message =
-          err instanceof Error
-            ? err.message
-            : "Erro desconhecido ao gerar conteúdo";
-        setError(message);
-      } finally {
-        setIsGenerating(false);
-      }
-    },
-    [found, moduleId, activeSection]
-  );
 
   const handleMarkDone = () => {
     markModuleDone(moduleId);
@@ -269,41 +207,8 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
       <div className="rounded-2xl border border-[#2a3f5f]/40 bg-gradient-to-b from-[#0C1826] to-[#0A121E] min-h-[400px] shadow-[0_8px_30px_rgba(0,0,0,0.4)] relative overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-32 bg-blue-500/5 blur-[80px] pointer-events-none" />
-        {isGenerating ? (
-          <LoadingSteps messages={loadingMessages[activeSection]} />
-        ) : error ? (
-          <div className="flex flex-col items-center justify-center py-16 gap-4">
-            <div className="w-16 h-16 rounded-full bg-red-500/10 flex items-center justify-center">
-              <span className="text-2xl">⚠️</span>
-            </div>
-            <p className="text-red-400 text-center max-w-md">{error}</p>
-            <button
-              onClick={() => generate()}
-              className="px-5 py-2.5 rounded-lg bg-red-600 hover:bg-red-500 text-white text-sm transition-colors"
-            >
-              Tentar novamente
-            </button>
-          </div>
-        ) : content ? (
+        {content ? (
           <div className="p-6 md:p-8">
-            {/* Regenerate and Continue buttons */}
-            <div className="flex justify-end gap-3 mb-4">
-              {isIncomplete && (
-                <button
-                  onClick={() => generate(false, true)}
-                  className="flex items-center gap-2 px-4 py-1.5 text-xs rounded-lg border border-blue-500/30 text-blue-400 bg-blue-500/10 hover:bg-blue-500/20 hover:text-blue-300 transition-colors shadow-[0_0_10px_rgba(59,130,246,0.1)]"
-                >
-                  <span>▶️</span> Continuar Geração (Parou no limite)
-                </button>
-              )}
-              <button
-                onClick={() => generate(true)}
-                className="flex items-center gap-2 px-3 py-1.5 text-xs rounded-lg border border-[#2a3f5f] text-gray-500 hover:text-white hover:border-blue-500 transition-colors"
-              >
-                <span>↺</span> Regenerar
-              </button>
-            </div>
-
             {/* Render content */}
             {activeSection === "quiz" && Array.isArray(content) ? (
               <QuizView questions={content as QuizQuestion[]} />
@@ -349,30 +254,8 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
                 : "🚀"}
             </div>
             <p className="text-gray-400 text-center">
-              Este conteúdo ainda não foi gerado.
-              <br />
-              <span className="text-gray-500 text-sm">
-                Clique abaixo para gerar com IA baseado em conhecimento real.
-              </span>
+              Este conteúdo ainda não está disponível ou não foi carregado.
             </p>
-            <button
-              onClick={() => generate()}
-              className="flex items-center gap-2 px-6 py-3 rounded-xl text-white font-medium transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
-              style={{
-                background: `linear-gradient(135deg, ${phase.color}, ${phase.color}cc)`,
-                boxShadow: `0 0 20px ${phase.color}30`,
-              }}
-            >
-              <span>⚡</span>
-              Gerar{" "}
-              {activeSection === "teoria"
-                ? "Teoria"
-                : activeSection === "pratica"
-                ? "Prática"
-                : activeSection === "quiz"
-                ? "Quiz"
-                : "Projeto"}
-            </button>
           </div>
         )}
       </div>
