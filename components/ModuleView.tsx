@@ -61,16 +61,16 @@ interface ModuleViewProps {
 }
 
 const PrintMarkdownComponents: import("react-markdown").Components = {
-  h1: ({ node, ...props }) => <h1 className="text-3xl font-bold mb-6 text-black" {...props} />,
-  h2: ({ node, ...props }) => <h2 className="text-2xl font-bold mt-8 mb-4 border-b border-gray-200 pb-2 text-black" {...props} />,
-  h3: ({ node, ...props }) => <h3 className="text-xl font-bold mt-6 mb-3 text-black" {...props} />,
-  p: ({ node, ...props }) => <p className="mb-4 text-black text-base leading-relaxed" {...props} />,
-  ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-4 text-black" {...props} />,
-  ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-4 text-black" {...props} />,
-  li: ({ node, ...props }) => <li className="mb-2 text-black" {...props} />,
-  strong: ({ node, ...props }) => <strong className="font-bold text-black" {...props} />,
+  h1: ({ node, ...props }) => <h1 className="text-3xl font-bold mb-6 mt-8" {...props} />,
+  h2: ({ node, ...props }) => <h2 className="text-2xl font-bold mt-10 mb-4 pb-2 border-b-2 border-gray-100" {...props} />,
+  h3: ({ node, ...props }) => <h3 className="text-xl font-bold mt-8 mb-3" {...props} />,
+  p: ({ node, ...props }) => <p className="mb-5 leading-relaxed" {...props} />,
+  ul: ({ node, ...props }) => <ul className="list-disc pl-6 mb-5" {...props} />,
+  ol: ({ node, ...props }) => <ol className="list-decimal pl-6 mb-5" {...props} />,
+  li: ({ node, ...props }) => <li className="mb-2" {...props} />,
+  strong: ({ node, ...props }) => <strong className="font-bold" {...props} />,
   blockquote: ({ node, children, ...props }) => (
-    <blockquote className="border-l-4 border-gray-300 pl-4 py-2 my-4 italic text-gray-700 bg-gray-50" {...props}>
+    <blockquote className="border-l-8 border-gray-300 pl-6 py-4 my-6 italic bg-gray-50 rounded-r-lg" {...props}>
       {children}
     </blockquote>
   ),
@@ -328,20 +328,41 @@ export default function ModuleView({ moduleId }: ModuleViewProps) {
         )}
       </div>
 
-      {/* Hidden Print View for Entire Module */}
-      <div className="hidden print:block text-black bg-white">
-        <div className="mb-12 border-b-2 border-black pb-4">
-          <h1 className="text-4xl font-extrabold text-black mb-2">{module.id} - {module.title}</h1>
-          <p className="text-xl text-gray-700">Fase {phase.id}: {phase.title}</p>
+      {/* Hidden Print View for Entire Module (Apostila Format) */}
+      <div className="hidden print:block print-apostila bg-white w-full">
+        
+        {/* Capa */}
+        <div className="flex flex-col items-center justify-center text-center pb-20" style={{ minHeight: '25cm', pageBreakAfter: 'always', paddingTop: '5cm' }}>
+          <div className="border-4 border-gray-900 p-16 w-[80%] mx-auto relative">
+            <h3 className="text-xl text-gray-500 uppercase tracking-[0.3em] font-semibold mb-10">
+              Startup Academy
+            </h3>
+            <h1 className="text-5xl font-extrabold text-black mb-8 leading-tight">
+              {module.title}
+            </h1>
+            <div className="h-1 w-32 bg-gray-900 mx-auto mb-8"></div>
+            <p className="text-3xl text-gray-800 font-medium">
+              Fase {phase.id}
+            </p>
+            <p className="text-2xl text-gray-600 mt-2">
+              {phase.title}
+            </p>
+            <p className="text-lg text-gray-400 mt-20 font-mono">
+              MÓDULO {module.id}
+            </p>
+          </div>
         </div>
         
+        {/* Conteúdo */}
         {(["teoria", "pratica", "projeto", "quiz"] as Section[]).map((section) => {
           if (!fullContent[section]) return null;
           return (
             <div key={section} className="page-break mb-12">
-              <h2 className="text-3xl font-bold uppercase mb-6 text-black bg-gray-100 p-3 rounded-lg border-l-8 border-gray-800">
-                {section === "teoria" ? "Teoria" : section === "pratica" ? "Prática" : section === "projeto" ? "Projeto" : "Quiz"}
-              </h2>
+              <div className="border-b-4 border-gray-900 pb-4 mb-8">
+                <h2 className="text-3xl font-black uppercase tracking-wider text-black">
+                  {section === "teoria" ? "1. Teoria" : section === "pratica" ? "2. Prática" : section === "projeto" ? "3. Projeto" : "4. Quiz"}
+                </h2>
+              </div>
               {section === "quiz" && Array.isArray(fullContent[section]) ? (
                  <QuizView questions={fullContent[section] as QuizQuestion[]} />
               ) : (

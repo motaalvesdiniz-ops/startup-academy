@@ -140,18 +140,20 @@ html {
   background-color: var(--bg-card);
 }
 
-/* ─── Print Styles (A4) ───────────────────────────────────── */
+/* ─── Print Styles (Apostila) ───────────────────────────────── */
 
 @media print {
   @page {
     size: A4;
-    margin: 2.5cm;
+    margin: 2cm;
   }
 
   body {
     background: white !important;
     color: #1a1a1a !important;
-    font-size: 12pt;
+    font-size: 11pt;
+    line-height: 1.6;
+    font-family: 'Georgia', 'Merriweather', serif;
   }
 
   .no-print,
@@ -161,31 +163,36 @@ html {
     display: none !important;
   }
 
-  .prose {
-    color: #1a1a1a !important;
+  /* Resetting everything specifically for Print class */
+  .print-apostila {
+    text-align: justify;
+    hyphens: auto;
   }
 
-  .prose h2 {
-    color: #1a1a1a !important;
-    border-bottom: 1px solid #ddd !important;
+  .print-apostila h1,
+  .print-apostila h2,
+  .print-apostila h3 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #111 !important;
+    text-align: left;
+    page-break-after: avoid;
   }
 
-  .prose h3 {
-    color: #333 !important;
-  }
-
-  .prose p,
-  .prose li {
-    color: #333 !important;
+  .print-apostila p,
+  .print-apostila li {
+    color: #222 !important;
   }
 
   .page-break {
     page-break-before: always;
   }
 
+  /* Imagens A4 Support */
   img {
     max-width: 100% !important;
     page-break-inside: avoid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .img-full {
